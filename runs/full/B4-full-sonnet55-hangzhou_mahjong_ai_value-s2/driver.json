@@ -1,0 +1,1 @@
+{"run_id": "B4-full-sonnet55-hangzhou_mahjong_ai_value-s2", "order": 7, "writer_called": true, "writer_subprocess_seconds": 10.07, "writer_wall_seconds": 8.44, "scoring_wall_seconds": 80.5, "total_seconds": 90.58, "scoring_exit": 0, "finished_at": "2026-11-20T06:42:21+00:00"}

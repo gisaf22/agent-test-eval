@@ -1,0 +1,29 @@
+{
+  "run_id": "B1-20261119T181458Z-sonnet55-toposort",
+  "tag": "dry_run",
+  "module": "toposort",
+  "model_id": "claude-sonnet-5-5",
+  "effort": "low",
+  "seed": "s1",
+  "prompt_hash": "9c407f6b6e8870edaa6b91607144c1efcd29a0947dc37d79e064fb043c03acc7",
+  "iterations": 2,
+  "stop": "writer_done",
+  "tokens_in": 4360,
+  "tokens_out": 1302,
+  "estimated_cost": 0.02174,
+  "wall_seconds": 8.96,
+  "parse_failures": [],
+  "api_error": null,
+  "suite_dir": "runs/dry_run/B1-20261119T181458Z-sonnet55-toposort/suite",
+  "suite_files": [
+    "test_toposort.py"
+  ],
+  "caps": {
+    "max_iterations": 3,
+    "max_tokens_per_call": 16000,
+    "run_token_cap": 120000,
+    "run_wall_cap_s": 900,
+    "spend_cap_usd": 2.0
+  },
+  "timestamp": "2026-11-19T18:15:08+00:00"
+}

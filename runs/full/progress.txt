@@ -1,0 +1,7 @@
+updated 2026-11-23T07:56:58+00:00
+runs done 49 of 117
+last run_id B4-full-sonnet55-intent_relations-s3
+cumulative spend $3.0242 (cap $3.15)
+failed 0
+elapsed this invocation 4782s; summed run wall 5651s
+tolerated scoring exits (B4b, b4_tolerated_runs.jsonl): 3 (B4-full-sonnet55-skijack_ast-s1, B4-full-sonnet55-skijack_ast-s2, B4-full-sonnet55-skijack_ast-s3)

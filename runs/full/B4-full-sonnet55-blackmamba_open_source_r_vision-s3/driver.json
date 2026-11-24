@@ -1,0 +1,1 @@
+{"run_id": "B4-full-sonnet55-blackmamba_open_source_r_vision-s3", "order": 116, "writer_called": true, "writer_subprocess_seconds": 40.91, "writer_wall_seconds": 38.63, "scoring_wall_seconds": 85.62, "total_seconds": 126.53, "scoring_exit": 0, "finished_at": "2026-11-23T07:54:53+00:00"}

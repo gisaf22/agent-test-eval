@@ -1,0 +1,1 @@
+{"run_id": "B4-full-sonnet55-mergedeep-s2", "order": 48, "writer_called": true, "writer_subprocess_seconds": 17.8, "writer_wall_seconds": 15.54, "scoring_wall_seconds": 45.86, "total_seconds": 63.66, "scoring_exit": 0, "finished_at": "2026-11-23T07:09:03+00:00"}

@@ -1,0 +1,1 @@
+{"run_id": "B4-full-sonnet55-zagentic_ir_schema-s3", "order": 3, "writer_called": true, "writer_subprocess_seconds": 12.71, "writer_wall_seconds": 11.07, "scoring_wall_seconds": 91.72, "total_seconds": 104.43, "scoring_exit": 0, "finished_at": "2026-11-20T06:25:45+00:00"}

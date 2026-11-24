@@ -1,0 +1,1 @@
+{"run_id": "B4-full-sonnet55-toposort-s3", "order": 102, "writer_called": true, "writer_subprocess_seconds": 13.85, "writer_wall_seconds": 12.1, "scoring_wall_seconds": 56.62, "total_seconds": 70.46, "scoring_exit": 0, "finished_at": "2026-11-23T07:47:40+00:00"}

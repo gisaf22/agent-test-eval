@@ -1,0 +1,104 @@
+{
+  "run_id": "B4-full-sonnet55-wtftd_war_thunder_full_t_minimap-s1",
+  "tag": "full",
+  "module": "wtftd_war_thunder_full_t_minimap",
+  "model_id": "claude-sonnet-5-5",
+  "effort": "low",
+  "seed": "s1",
+  "prompt_hash": "9c407f6b6e8870edaa6b91607144c1efcd29a0947dc37d79e064fb043c03acc7",
+  "iterations": 3,
+  "stop": "max_iterations",
+  "stop_reasons": [
+    "end_turn",
+    "end_turn",
+    "end_turn"
+  ],
+  "tokens_in": 29356,
+  "tokens_out": 14284,
+  "estimated_cost": 0.201552,
+  "wall_seconds": 72.71,
+  "parse_failures": [],
+  "api_error": null,
+  "suite_dir": "runs/full/B4-full-sonnet55-wtftd_war_thunder_full_t_minimap-s1/suite",
+  "suite_files": [
+    "test_wtftd_war_thunder_full_t_minimap.py"
+  ],
+  "run_started_at": "2026-11-23T07:43:51+00:00",
+  "iterations_used": 3,
+  "suite_iterations": 3,
+  "first_iteration_pass": true,
+  "unparsable_files": [],
+  "unparsable_by_iteration": {},
+  "response_models": [
+    "claude-sonnet-5-5",
+    "claude-sonnet-5-5",
+    "claude-sonnet-5-5"
+  ],
+  "response_model": "claude-sonnet-5-5",
+  "request_ids": [
+    "req_011ChKV8G6CNkU3XwYUUVvE3",
+    "req_011ChKVA2HYLZA786e6xv9e2",
+    "req_011ChKVBpkK63VDK2mjPHsLx"
+  ],
+  "usage_full": [
+    {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "global",
+      "input_tokens": 4903,
+      "output_tokens": 4434,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "service_tier": "standard",
+      "speed": "standard"
+    },
+    {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "global",
+      "input_tokens": 9635,
+      "output_tokens": 4892,
+      "output_tokens_details": {
+        "thinking_tokens": 254
+      },
+      "service_tier": "standard",
+      "speed": "standard"
+    },
+    {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "global",
+      "input_tokens": 14818,
+      "output_tokens": 4958,
+      "output_tokens_details": {
+        "thinking_tokens": 198
+      },
+      "service_tier": "standard",
+      "speed": "standard"
+    }
+  ],
+  "peak_input_tokens_per_call": 14818,
+  "retry_count": 0,
+  "api_events": [],
+  "caps": {
+    "max_iterations": 3,
+    "max_tokens_per_call": 32000,
+    "run_token_cap": 120000,
+    "run_wall_cap_s": 900,
+    "spend_cap_usd": 8.0
+  },
+  "timestamp": "2026-11-23T07:45:04+00:00"
+}

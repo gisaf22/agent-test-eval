@@ -1,0 +1,22 @@
+{
+  "run_id": "B3-check-gaming-toposort",
+  "tag": "dry_run",
+  "module": "toposort",
+  "model_id": null,
+  "effort": null,
+  "seed": null,
+  "prompt_hash": null,
+  "iterations": 0,
+  "stop": "synthetic",
+  "stop_reasons": [],
+  "tokens_in": 0,
+  "tokens_out": 0,
+  "estimated_cost": 0.0,
+  "wall_seconds": 0.0,
+  "parse_failures": [],
+  "api_error": null,
+  "suite_dir": "derived/b3_checks/gaming_toposort/suite",
+  "suite_files": [
+    "test_cheat.py"
+  ]
+}

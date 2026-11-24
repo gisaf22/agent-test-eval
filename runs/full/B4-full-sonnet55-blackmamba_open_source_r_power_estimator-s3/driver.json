@@ -1,0 +1,1 @@
+{"run_id": "B4-full-sonnet55-blackmamba_open_source_r_power_estimator-s3", "order": 1, "writer_called": true, "writer_subprocess_seconds": 14.67, "writer_wall_seconds": 13.07, "scoring_wall_seconds": 80.19, "total_seconds": 94.86, "scoring_exit": 0, "finished_at": "2026-11-20T06:21:46+00:00"}

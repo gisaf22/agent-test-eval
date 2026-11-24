@@ -1,0 +1,1 @@
+{"run_id": "B4-full-sonnet55-trace2task_experience_runtime-s2", "order": 107, "writer_called": true, "writer_subprocess_seconds": 14.39, "writer_wall_seconds": 12.62, "scoring_wall_seconds": 82.7, "total_seconds": 97.09, "scoring_exit": 0, "finished_at": "2026-11-23T07:52:46+00:00"}

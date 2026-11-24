@@ -1,0 +1,33 @@
+{
+  "run_id": "B2c-pilot-sonnet55-portable_hermes_agent_inline_markdown-s3",
+  "tag": "pilot",
+  "module": "portable_hermes_agent_inline_markdown",
+  "model_id": "claude-sonnet-5-5",
+  "effort": "low",
+  "seed": "s3",
+  "prompt_hash": "9c407f6b6e8870edaa6b91607144c1efcd29a0947dc37d79e064fb043c03acc7",
+  "iterations": 2,
+  "stop": "writer_done",
+  "stop_reasons": [
+    "end_turn",
+    "end_turn"
+  ],
+  "tokens_in": 7099,
+  "tokens_out": 1559,
+  "estimated_cost": 0.029788,
+  "wall_seconds": 11.53,
+  "parse_failures": [],
+  "api_error": null,
+  "suite_dir": "runs/pilot/B2c-pilot-sonnet55-portable_hermes_agent_inline_markdown-s3/suite",
+  "suite_files": [
+    "test_portable_hermes_agent_inline_markdown.py"
+  ],
+  "caps": {
+    "max_iterations": 3,
+    "max_tokens_per_call": 32000,
+    "run_token_cap": 120000,
+    "run_wall_cap_s": 900,
+    "spend_cap_usd": 2.5
+  },
+  "timestamp": "2026-11-19T22:43:10+00:00"
+}

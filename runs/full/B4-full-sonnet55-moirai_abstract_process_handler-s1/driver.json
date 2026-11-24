@@ -1,0 +1,1 @@
+{"run_id": "B4-full-sonnet55-moirai_abstract_process_handler-s1", "order": 92, "writer_called": true, "writer_subprocess_seconds": 44.54, "writer_wall_seconds": 42.87, "scoring_wall_seconds": 95.74, "total_seconds": 140.28, "scoring_exit": 0, "finished_at": "2026-11-23T07:41:58+00:00"}

@@ -1,0 +1,5 @@
+import angelbot_triage  # noqa: F401
+
+
+def test_import_only():
+    pass

@@ -1,0 +1,4982 @@
+{
+ "meta": {
+  "stage": "A1d",
+  "generated_at": "2026-11-19T16:15:34+00:00",
+  "source": "candidates.json (A1b, seed 20261118, generated_at 2026-11-19T15:12:02+00:00)",
+  "source_sha256": "255e668017aa900561258f8b306668139f996b25c80149205336951a6f3db6a8",
+  "primary_window": "newer_since_2026-07-01",
+  "human_certain_max": "2022-11-30",
+  "note": "Later stages read this file and never rerun the search. Rules: DECISIONS.md (A1b, A1c).",
+  "python": "3.10.14"
+ },
+ "counts": {
+  "newer_since_2025-09-01": {
+   "repos_with_candidate": 46,
+   "candidates": 69,
+   "test_direct": 27,
+   "test_indirect_only": 6,
+   "test_none": 36,
+   "ai_trace": 30,
+   "possible_copy": 7,
+   "baseline_human_certain": 0
+  },
+  "newer_since_2026-02-01": {
+   "repos_with_candidate": 31,
+   "candidates": 49,
+   "test_direct": 25,
+   "test_indirect_only": 4,
+   "test_none": 20,
+   "ai_trace": 22,
+   "possible_copy": 5,
+   "baseline_human_certain": 0
+  },
+  "newer_since_2026-07-01": {
+   "repos_with_candidate": 23,
+   "candidates": 38,
+   "test_direct": 21,
+   "test_indirect_only": 3,
+   "test_none": 14,
+   "ai_trace": 17,
+   "possible_copy": 4,
+   "baseline_human_certain": 0
+  },
+  "baseline_set": {
+   "repos_with_candidate": 8,
+   "candidates": 9,
+   "test_direct": 5,
+   "test_indirect_only": 4,
+   "test_none": 0,
+   "ai_trace": 0,
+   "possible_copy": 2,
+   "baseline_human_certain": 5,
+   "stage0_passing_a1b_rules": 3
+  },
+  "all": {
+   "repos_with_candidate": 54,
+   "candidates": 78,
+   "test_direct": 32,
+   "test_indirect_only": 10,
+   "test_none": 36,
+   "ai_trace": 30,
+   "possible_copy": 9,
+   "baseline_human_certain": 5
+  },
+  "removed_a1d_vendored": {
+   "newer_since_2025-09-01": 1,
+   "newer_since_2026-02-01": 0,
+   "newer_since_2026-07-01": 0,
+   "baseline_set": 0
+  },
+  "primary_no_ai_trace_direct_test": 8
+ },
+ "candidates": [
+  {
+   "id": "BA-CalderonMorales/terminal-agent:src/terminal_agent/core/contracts.py",
+   "repo_url": "https://github.com/BA-CalderonMorales/terminal-agent",
+   "path": "src/terminal_agent/core/contracts.py",
+   "pinned_sha": "26323df12e50065d962fa487d702b1b9bda9930a",
+   "default_branch": "develop",
+   "module_sha256": "67385548c3ffc3bd798e56ee75f73c76d0743fb2b556d9610db4dffd098a32f0",
+   "first_commit_date": "2025-10-24T03:47:57+00:00",
+   "first_commit_sha": "a9bef36a798d1c7e4003ecabe047a8affe60d752",
+   "first_commit_date_path_only": "2025-10-24T03:47:57+00:00",
+   "last_change_date": "2025-10-24T03:47:57+00:00",
+   "last_change_sha": "a9bef36a798d1c7e4003ecabe047a8affe60d752",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 55,
+   "upstream_test": null,
+   "upstream_test_kind": "none",
+   "upstream_tests_all": [],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2025-10-23T21:48:44-05:00",
+   "norm_sha256": "aeb10fd37089d5aaa9d6491adfb14847688afcc77ae9eab97752a2f0b3be3b5d",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": null,
+   "upstream_test_last_change_date": null,
+   "upstream_test_sha256": null,
+   "baseline_human_certain": false,
+   "ai_trace": true,
+   "ai_trace_files": [
+    ".github/copilot-instructions.md",
+    "AGENTS.md"
+   ],
+   "ai_trace_commits": [
+    {
+     "sha": "a9bef36a798d1c7e4003ecabe047a8affe60d752",
+     "path": "src/terminal_agent/core/contracts.py",
+     "match": "identity:copilot-swe-agent[bot]"
+    }
+   ],
+   "ai_trace_commits_scanned": 1,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": false,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "Certainty7/angelbot:angel/context_acl.py",
+   "repo_url": "https://github.com/Certainty7/angelbot",
+   "path": "angel/context_acl.py",
+   "pinned_sha": "95b50fa4ef1d93d044d16c4b5f1c3010711eecac",
+   "default_branch": "master",
+   "module_sha256": "b69c7dfebd53ba0d4bb9b99a6474d78f2bf5dcc5f9f0a6482cfe41b1e2cf0468",
+   "first_commit_date": "2026-11-16T03:56:58+00:00",
+   "first_commit_sha": "94c1c02a179d8a906f671fd456fb68682b7836dd",
+   "first_commit_date_path_only": "2026-11-16T03:56:58+00:00",
+   "last_change_date": "2026-11-19T14:25:40+04:00",
+   "last_change_sha": "614330d88e2a58c73fd05b592e458b7230ae678c",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 76,
+   "upstream_test": null,
+   "upstream_test_kind": "none",
+   "upstream_tests_all": [],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01",
+    "newer_since_2026-07-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-11-16T03:56:58+00:00",
+   "norm_sha256": "bd841daf3392cd3fc01f9136f893ed023bd3363a95ee3c37b6f541690cec97ef",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": null,
+   "upstream_test_last_change_date": null,
+   "upstream_test_sha256": null,
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 2,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": true
+   },
+   "primary_set": true,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "Certainty7/angelbot:angel/triage.py",
+   "repo_url": "https://github.com/Certainty7/angelbot",
+   "path": "angel/triage.py",
+   "pinned_sha": "95b50fa4ef1d93d044d16c4b5f1c3010711eecac",
+   "default_branch": "master",
+   "module_sha256": "29680668ed04e6c535779304ecadfd69117d833c3c468fd2cce25ee91490d6a8",
+   "first_commit_date": "2026-11-16T03:56:58+00:00",
+   "first_commit_sha": "94c1c02a179d8a906f671fd456fb68682b7836dd",
+   "first_commit_date_path_only": "2026-11-16T03:56:58+00:00",
+   "last_change_date": "2026-11-16T03:56:58+00:00",
+   "last_change_sha": "94c1c02a179d8a906f671fd456fb68682b7836dd",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 59,
+   "upstream_test": null,
+   "upstream_test_kind": "none",
+   "upstream_tests_all": [],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01",
+    "newer_since_2026-07-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-11-16T03:56:58+00:00",
+   "norm_sha256": "a48523501cff05c15d6706b0ad213bd5a86f5ecaf365803e41ae4f61c880d763",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": null,
+   "upstream_test_last_change_date": null,
+   "upstream_test_sha256": null,
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 1,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": true
+   },
+   "primary_set": true,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "Cooing-code/WDCNet:src/wdcnet/engine/scheduler.py",
+   "repo_url": "https://github.com/Cooing-code/WDCNet",
+   "path": "src/wdcnet/engine/scheduler.py",
+   "pinned_sha": "ccd34b2300a5ec9ae4cd28a5508fd90fb795217d",
+   "default_branch": "main",
+   "module_sha256": "5b0aaeb44e90f3ad7ee5f9a07acb474e1a77a875024e593033f014cc5f5f5822",
+   "first_commit_date": "2026-07-13T19:36:59+08:00",
+   "first_commit_sha": "bcc26d0b9f7f737f30d9f9c1df967c80af7bdd00",
+   "first_commit_date_path_only": "2026-07-13T19:36:59+08:00",
+   "last_change_date": "2026-07-13T19:36:59+08:00",
+   "last_change_sha": "bcc26d0b9f7f737f30d9f9c1df967c80af7bdd00",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 60,
+   "upstream_test": null,
+   "upstream_test_kind": "none",
+   "upstream_tests_all": [],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01",
+    "newer_since_2026-07-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-07-13T19:32:11+08:00",
+   "norm_sha256": "83b468be16ef16b4bf311aec996b2e21f0392a81f25469c766027cda44d37b4b",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": null,
+   "upstream_test_last_change_date": null,
+   "upstream_test_sha256": null,
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 1,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": true
+   },
+   "primary_set": true,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "Cooing-code/WDCNet:src/wdcnet/utils/config_schema.py",
+   "repo_url": "https://github.com/Cooing-code/WDCNet",
+   "path": "src/wdcnet/utils/config_schema.py",
+   "pinned_sha": "ccd34b2300a5ec9ae4cd28a5508fd90fb795217d",
+   "default_branch": "main",
+   "module_sha256": "2323facf4c0164eae3546eb38bcd23756393a07e4d6b538f926bc962d051a1f7",
+   "first_commit_date": "2026-07-13T19:36:59+08:00",
+   "first_commit_sha": "bcc26d0b9f7f737f30d9f9c1df967c80af7bdd00",
+   "first_commit_date_path_only": "2026-07-13T19:36:59+08:00",
+   "last_change_date": "2026-07-13T19:36:59+08:00",
+   "last_change_sha": "bcc26d0b9f7f737f30d9f9c1df967c80af7bdd00",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 139,
+   "upstream_test": null,
+   "upstream_test_kind": "none",
+   "upstream_tests_all": [],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01",
+    "newer_since_2026-07-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-07-13T19:32:11+08:00",
+   "norm_sha256": "11abbce64d592cef4a9a6aafa242830335749df30f6f47afdf6b004037953873",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": null,
+   "upstream_test_last_change_date": null,
+   "upstream_test_sha256": null,
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 1,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": true
+   },
+   "primary_set": true,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "DAOZHENREN/trace2task:src/trace2task/experience.py",
+   "repo_url": "https://github.com/DAOZHENREN/trace2task",
+   "path": "src/trace2task/experience.py",
+   "pinned_sha": "6d6baa875a0a4fb5a587cdefef61079cfe64eb9c",
+   "default_branch": "main",
+   "module_sha256": "b9181366b2caf5bcb17467496c35e6e57d5f9b746d63fa1d3f3e36bf797b72c3",
+   "first_commit_date": "2026-08-28T23:35:48+08:00",
+   "first_commit_sha": "6f5c0b5127636ee1aa5b14dcec52729ab56db1f8",
+   "first_commit_date_path_only": "2026-08-28T23:35:48+08:00",
+   "last_change_date": "2026-08-28T23:35:48+08:00",
+   "last_change_sha": "6f5c0b5127636ee1aa5b14dcec52729ab56db1f8",
+   "licence": "Apache-2.0",
+   "licence_file": "LICENSE",
+   "lines": 149,
+   "upstream_test": "tests/test_experience.py",
+   "upstream_test_kind": "direct",
+   "upstream_tests_all": [
+    "tests/test_experience.py"
+   ],
+   "upstream_tests_direct": [
+    "tests/test_experience.py"
+   ],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01",
+    "newer_since_2026-07-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-08-27T21:21:49+08:00",
+   "norm_sha256": "ae2bcbba8ba328d70c9b0deedfb8903153affade0e804a089c0e870565e6032f",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": "6f5c0b5127636ee1aa5b14dcec52729ab56db1f8",
+   "upstream_test_last_change_date": "2026-08-28T23:35:48+08:00",
+   "upstream_test_sha256": "a2f981d29f2cc69228add1b730f802b371948c28d0bac123f7a240c5969831db",
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 1,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": true
+   },
+   "primary_set": true,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "DAOZHENREN/trace2task:src/trace2task/experience_runtime.py",
+   "repo_url": "https://github.com/DAOZHENREN/trace2task",
+   "path": "src/trace2task/experience_runtime.py",
+   "pinned_sha": "6d6baa875a0a4fb5a587cdefef61079cfe64eb9c",
+   "default_branch": "main",
+   "module_sha256": "ae71e8c95fef9c76bfb6c06247eda486630cfe28f1989d0857c607751df0a68d",
+   "first_commit_date": "2026-09-29T13:20:02+08:00",
+   "first_commit_sha": "f96eee199112937765a6e99f7a80f1b6cb508a58",
+   "first_commit_date_path_only": "2026-09-29T13:20:02+08:00",
+   "last_change_date": "2026-10-03T15:33:10+08:00",
+   "last_change_sha": "f544ae428814e0bd088d7e59e297d1c305523ae4",
+   "licence": "Apache-2.0",
+   "licence_file": "LICENSE",
+   "lines": 83,
+   "upstream_test": "tests/test_experience_runtime.py",
+   "upstream_test_kind": "direct",
+   "upstream_tests_all": [
+    "tests/test_experience_runtime.py"
+   ],
+   "upstream_tests_direct": [
+    "tests/test_experience_runtime.py"
+   ],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01",
+    "newer_since_2026-07-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-08-27T21:21:49+08:00",
+   "norm_sha256": "bb18f9324e4512cb685b652bdf2e13e437750105ff70548256e1ba6a65a1c376",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": "f96eee199112937765a6e99f7a80f1b6cb508a58",
+   "upstream_test_last_change_date": "2026-09-29T13:20:02+08:00",
+   "upstream_test_sha256": "fedcd334ea15d87e6d68d6d80a15db7b4119490e71d02e81a29b26cb139db4f4",
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 2,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": true
+   },
+   "primary_set": true,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "GifariKemal/SURGE-WSI:archive/old_configs/flexible_config.py",
+   "repo_url": "https://github.com/GifariKemal/SURGE-WSI",
+   "path": "archive/old_configs/flexible_config.py",
+   "pinned_sha": "66be871eb902f5a4cf5547b95dea1d4083568936",
+   "default_branch": "main",
+   "module_sha256": "131b12c6acb67686b94a6a6ffc16e3a2d3374ced347683a0f422f60c8f334541",
+   "first_commit_date": "2026-01-29T15:03:56+07:00",
+   "first_commit_sha": "1475ed7a01cc5d58245a537c0e33db28ceccb236",
+   "first_commit_date_path_only": "2026-01-30T06:34:14+07:00",
+   "last_change_date": "2026-01-30T06:34:14+07:00",
+   "last_change_sha": "1ad69d2c0239f13f02d4d66897fdfb3f1c4b5fbc",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 127,
+   "upstream_test": null,
+   "upstream_test_kind": "none",
+   "upstream_tests_all": [],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-01-25T07:33:10+07:00",
+   "norm_sha256": "4d21da78ccbd44ec4e6bc72a71b35e4abde247429c20e0a2c347db4215f8c4b9",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": null,
+   "upstream_test_last_change_date": null,
+   "upstream_test_sha256": null,
+   "baseline_human_certain": false,
+   "ai_trace": true,
+   "ai_trace_files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+   ],
+   "ai_trace_commits": [
+    {
+     "sha": "1475ed7a01cc5d58245a537c0e33db28ceccb236",
+     "path": "archive/old_configs/flexible_config.py",
+     "match": "Co-Authored-By: Claude Opus 4.5 <noreply@anthropic"
+    }
+   ],
+   "ai_trace_commits_scanned": 2,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": false,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "GifariKemal/SURGE-WSI:archive/old_configs/intel60_config.py",
+   "repo_url": "https://github.com/GifariKemal/SURGE-WSI",
+   "path": "archive/old_configs/intel60_config.py",
+   "pinned_sha": "66be871eb902f5a4cf5547b95dea1d4083568936",
+   "default_branch": "main",
+   "module_sha256": "e12c9c2fcf6b42211579f108bc111a12b19f8dd7844f1d8ee5e787ac5da2d8fc",
+   "first_commit_date": "2026-01-29T15:03:56+07:00",
+   "first_commit_sha": "1475ed7a01cc5d58245a537c0e33db28ceccb236",
+   "first_commit_date_path_only": "2026-01-30T06:34:14+07:00",
+   "last_change_date": "2026-01-30T06:34:14+07:00",
+   "last_change_sha": "1ad69d2c0239f13f02d4d66897fdfb3f1c4b5fbc",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 109,
+   "upstream_test": null,
+   "upstream_test_kind": "none",
+   "upstream_tests_all": [],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-01-25T07:33:10+07:00",
+   "norm_sha256": "24943a70b423a09d16a6ef18d0c6c8cfbb11c923aaaa4faa5fb3b03621723fa9",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": null,
+   "upstream_test_last_change_date": null,
+   "upstream_test_sha256": null,
+   "baseline_human_certain": false,
+   "ai_trace": true,
+   "ai_trace_files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+   ],
+   "ai_trace_commits": [
+    {
+     "sha": "1475ed7a01cc5d58245a537c0e33db28ceccb236",
+     "path": "archive/old_configs/intel60_config.py",
+     "match": "Co-Authored-By: Claude Opus 4.5 <noreply@anthropic"
+    }
+   ],
+   "ai_trace_commits_scanned": 2,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": false,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "GragasLab/nufftax:docs/conf.py",
+   "repo_url": "https://github.com/GragasLab/nufftax",
+   "path": "docs/conf.py",
+   "pinned_sha": "ba1ed8de9a17fc879fda76288a9306d2072b2a77",
+   "default_branch": "main",
+   "module_sha256": "a6932bf974e438ea68d2fea3188de169ac72662c74d1333c1cdbf157cc6eb3b9",
+   "first_commit_date": "2026-01-05T19:45:46+01:00",
+   "first_commit_sha": "6abf0fdc346e8c5b7769e74d09264f98006cc455",
+   "first_commit_date_path_only": "2026-01-05T19:45:46+01:00",
+   "last_change_date": "2026-06-11T10:39:11+02:00",
+   "last_change_sha": "bd764c416091bdc2cf832de2899e31eba92f5e94",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 108,
+   "upstream_test": null,
+   "upstream_test_kind": "none",
+   "upstream_tests_all": [],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2025-12-30T23:29:08+01:00",
+   "norm_sha256": "d2a3335fe74d17980c45c87100c7b9ae3120a4289b9ca5d89c048d1e23a8ce15",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": null,
+   "upstream_test_last_change_date": null,
+   "upstream_test_sha256": null,
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 6,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": false,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "GragasLab/nufftax:nufftax/utils/grid.py",
+   "repo_url": "https://github.com/GragasLab/nufftax",
+   "path": "nufftax/utils/grid.py",
+   "pinned_sha": "ba1ed8de9a17fc879fda76288a9306d2072b2a77",
+   "default_branch": "main",
+   "module_sha256": "4e359cf3e2355113ce1165fe55553373057a4982d0e5ec90abdcb8a7b94c28b7",
+   "first_commit_date": "2025-12-30T23:29:08+01:00",
+   "first_commit_sha": "5ca43524647737e5d6c4a7bc428ecefc9bca3b74",
+   "first_commit_date_path_only": "2025-12-31T11:15:15+01:00",
+   "last_change_date": "2026-02-20T14:16:04+01:00",
+   "last_change_sha": "bf31fd9245717b68a9705aa29510beaf0a00de68",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 58,
+   "upstream_test": null,
+   "upstream_test_kind": "none",
+   "upstream_tests_all": [],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2025-12-30T23:29:08+01:00",
+   "norm_sha256": "f6b656eb52a08f0f03f78c9ded9f4007b52afa349d29440a440b06bd104b8e4a",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": null,
+   "upstream_test_last_change_date": null,
+   "upstream_test_sha256": null,
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 4,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": false,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "Guiss-Guiss/raspberry-pi-face-recognition-doorlock:config.py",
+   "repo_url": "https://github.com/Guiss-Guiss/raspberry-pi-face-recognition-doorlock",
+   "path": "config.py",
+   "pinned_sha": "7f6579b863f7200d5bd1a835962b56f5ed79e2fd",
+   "default_branch": "main",
+   "module_sha256": "082d8176a70a54e3e1c6e6b0ba7fb0d3d8d9506ca9e2053b67c121b48a71b4c1",
+   "first_commit_date": "2026-01-24T20:06:07-05:00",
+   "first_commit_sha": "eb7f6a2644a7b63bacf7a0cb519a30916f27e5d1",
+   "first_commit_date_path_only": "2026-01-24T20:06:07-05:00",
+   "last_change_date": "2026-01-24T20:06:07-05:00",
+   "last_change_sha": "eb7f6a2644a7b63bacf7a0cb519a30916f27e5d1",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 109,
+   "upstream_test": null,
+   "upstream_test_kind": "none",
+   "upstream_tests_all": [],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-01-24T20:06:07-05:00",
+   "norm_sha256": "f972e0d44f21a8b3bde3d8df04cab0dc2758f3e71d73f538604bdedb86d18433",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": null,
+   "upstream_test_last_change_date": null,
+   "upstream_test_sha256": null,
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 1,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": false,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "Im-Tim-mI/Home-Assistant_Budget-Book:budget_book/rootfs/app/analytics.py",
+   "repo_url": "https://github.com/Im-Tim-mI/Home-Assistant_Budget-Book",
+   "path": "budget_book/rootfs/app/analytics.py",
+   "pinned_sha": "523104aee27207c48d56e5471fe8d081401f5009",
+   "default_branch": "main",
+   "module_sha256": "e847f41ecf40f83a4b59d17df2d1602f069f4f776777cf96143e6f859ff59b3e",
+   "first_commit_date": "2026-10-07T21:29:36+08:00",
+   "first_commit_sha": "0d839d4a0cec2dd8a60c3ca0e56a4c334bcf9310",
+   "first_commit_date_path_only": "2026-10-12T09:59:06+08:00",
+   "last_change_date": "2026-10-16T20:04:26+08:00",
+   "last_change_sha": "6a721bcd88e138154c1b3713716e92f16be3334a",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 188,
+   "upstream_test": null,
+   "upstream_test_kind": "none",
+   "upstream_tests_all": [],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01",
+    "newer_since_2026-07-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-10-07T21:29:36+08:00",
+   "norm_sha256": "553c0b204e658e7ef39a1c0fd59b82d6cc0fe9fd1906d954d23202d1e8afcc63",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": null,
+   "upstream_test_last_change_date": null,
+   "upstream_test_sha256": null,
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 3,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": true
+   },
+   "primary_set": true,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "Im-Tim-mI/Home-Assistant_Budget-Book:budget_book/rootfs/app/const.py",
+   "repo_url": "https://github.com/Im-Tim-mI/Home-Assistant_Budget-Book",
+   "path": "budget_book/rootfs/app/const.py",
+   "pinned_sha": "523104aee27207c48d56e5471fe8d081401f5009",
+   "default_branch": "main",
+   "module_sha256": "947e1f8670efcaa9d33803c3151652696b8b33fade25e4e76713bffb19d30d2c",
+   "first_commit_date": "2026-10-07T21:29:36+08:00",
+   "first_commit_sha": "0d839d4a0cec2dd8a60c3ca0e56a4c334bcf9310",
+   "first_commit_date_path_only": "2026-10-12T09:59:06+08:00",
+   "last_change_date": "2026-10-12T09:59:06+08:00",
+   "last_change_sha": "4829423fc0b3c9a5ca36f0810a46780e16c61039",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 54,
+   "upstream_test": null,
+   "upstream_test_kind": "none",
+   "upstream_tests_all": [],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01",
+    "newer_since_2026-07-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-10-07T21:29:36+08:00",
+   "norm_sha256": "dd35980f3f785b9e5a78c2882dfc54848871f7c999b296873a90248f39bd37a8",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": null,
+   "upstream_test_last_change_date": null,
+   "upstream_test_sha256": null,
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 3,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": true
+   },
+   "primary_set": true,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "Jimmyjoe13/synaptiq:packages/core/synaptiq_core/belief_guard.py",
+   "repo_url": "https://github.com/Jimmyjoe13/synaptiq",
+   "path": "packages/core/synaptiq_core/belief_guard.py",
+   "pinned_sha": "e31f3d57284b9d664503b724ff97aad41d3bc3cb",
+   "default_branch": "main",
+   "module_sha256": "695c25f8a8417ecaf8c3b7fc4a5798b0128d82773c56d618e96003249b507917",
+   "first_commit_date": "2026-09-26T16:03:02+02:00",
+   "first_commit_sha": "b97bbf3fcfceb5c164038e545bd21afa890b298a",
+   "first_commit_date_path_only": "2026-09-26T16:03:02+02:00",
+   "last_change_date": "2026-09-26T16:03:02+02:00",
+   "last_change_sha": "b97bbf3fcfceb5c164038e545bd21afa890b298a",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 105,
+   "upstream_test": "tests/unit/test_belief_guard.py",
+   "upstream_test_kind": "direct",
+   "upstream_tests_all": [
+    "tests/unit/test_belief_guard.py"
+   ],
+   "upstream_tests_direct": [
+    "tests/unit/test_belief_guard.py"
+   ],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01",
+    "newer_since_2026-07-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-07-13T22:15:11+02:00",
+   "norm_sha256": "fe49ee3eed1f9346b5f1852218806859732dff56564a8826f542d80634585db7",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": "b97bbf3fcfceb5c164038e545bd21afa890b298a",
+   "upstream_test_last_change_date": "2026-09-26T16:03:02+02:00",
+   "upstream_test_sha256": "d0a11cc05ee2e822abc3e8c19b70bb7ed52d718ee4469bbdbecdd1d25b9c09ef",
+   "baseline_human_certain": false,
+   "ai_trace": true,
+   "ai_trace_files": [
+    "AGENTS.md"
+   ],
+   "ai_trace_commits": [
+    {
+     "sha": "b97bbf3fcfceb5c164038e545bd21afa890b298a",
+     "path": "packages/core/synaptiq_core/belief_guard.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    }
+   ],
+   "ai_trace_commits_scanned": 1,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": true
+   },
+   "primary_set": true,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "Jimmyjoe13/synaptiq:packages/core/synaptiq_core/retrieval.py",
+   "repo_url": "https://github.com/Jimmyjoe13/synaptiq",
+   "path": "packages/core/synaptiq_core/retrieval.py",
+   "pinned_sha": "e31f3d57284b9d664503b724ff97aad41d3bc3cb",
+   "default_branch": "main",
+   "module_sha256": "1a8d517b2d21c4d865a6c8f66f0501982d617abaa011d05d7e368ab919db9f8a",
+   "first_commit_date": "2026-07-26T00:01:38+02:00",
+   "first_commit_sha": "04d1c9fb4fe99c705093e5074cb75de0c13f9014",
+   "first_commit_date_path_only": "2026-07-26T00:01:38+02:00",
+   "last_change_date": "2026-07-29T11:57:19+02:00",
+   "last_change_sha": "c5d2516355e58ff93b61b69257f4014dd5726ab4",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 83,
+   "upstream_test": "tests/unit/test_retrieval.py",
+   "upstream_test_kind": "direct",
+   "upstream_tests_all": [
+    "tests/unit/test_entanglement.py",
+    "tests/unit/test_hashing.py",
+    "tests/unit/test_qem.py",
+    "tests/unit/test_retrieval.py"
+   ],
+   "upstream_tests_direct": [
+    "tests/unit/test_retrieval.py"
+   ],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01",
+    "newer_since_2026-07-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-07-13T22:15:11+02:00",
+   "norm_sha256": "a0676e4bc94acbc1ec05dfe31ba2d599fae57c5ebf733bd8c10b7b544b265d2c",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": "04d1c9fb4fe99c705093e5074cb75de0c13f9014",
+   "upstream_test_last_change_date": "2026-07-26T00:01:38+02:00",
+   "upstream_test_sha256": "e69ddbba42104765d0754281894009c486f80d0d9371c6ec59c1b5b2275d9fab",
+   "baseline_human_certain": false,
+   "ai_trace": true,
+   "ai_trace_files": [
+    "AGENTS.md"
+   ],
+   "ai_trace_commits": [
+    {
+     "sha": "c5d2516355e58ff93b61b69257f4014dd5726ab4",
+     "path": "packages/core/synaptiq_core/retrieval.py",
+     "match": "Co-Authored-By: Claude Opus 5 <noreply@anthropic"
+    },
+    {
+     "sha": "04d1c9fb4fe99c705093e5074cb75de0c13f9014",
+     "path": "packages/core/synaptiq_core/retrieval.py",
+     "match": "Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic"
+    },
+    {
+     "sha": "b97bbf3fcfceb5c164038e545bd21afa890b298a",
+     "path": "tests/unit/test_qem.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "9c35e64cb6b87f385610920b835e3847732b08bc",
+     "path": "tests/unit/test_qem.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "0b1dd8563d1d1a2448866791a3645935ee0f36c3",
+     "path": "tests/unit/test_qem.py",
+     "match": "Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic"
+    },
+    {
+     "sha": "34de0d1d9e403619273bf6350a4b1411d65b1a16",
+     "path": "tests/unit/test_qem.py",
+     "match": "Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic"
+    }
+   ],
+   "ai_trace_commits_scanned": 11,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": true
+   },
+   "primary_set": true,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "Kangbeomgyu/Reaction-QM:utils/am.py",
+   "repo_url": "https://github.com/Kangbeomgyu/Reaction-QM",
+   "path": "utils/am.py",
+   "pinned_sha": "3a553bf1562356a4f978ab5daa39778e434a9310",
+   "default_branch": "main",
+   "module_sha256": "2b6c8ef3ff8a7bb9b956b1e5e406455d84b5b60e83911e58283fe458fec7b7d7",
+   "first_commit_date": "2025-10-17T15:25:37+09:00",
+   "first_commit_sha": "76b3504d0d81752ce31c4ad5923753be96bc990e",
+   "first_commit_date_path_only": "2025-10-17T15:25:37+09:00",
+   "last_change_date": "2025-10-17T15:25:37+09:00",
+   "last_change_sha": "76b3504d0d81752ce31c4ad5923753be96bc990e",
+   "licence": "BSD-3-Clause",
+   "licence_file": "LICENSE",
+   "lines": 260,
+   "upstream_test": null,
+   "upstream_test_kind": "none",
+   "upstream_tests_all": [],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2025-10-08T20:12:04+09:00",
+   "norm_sha256": "2acb422cbec5b404052475ac0c4e3a655939a1f012528f174e51edc4106ce1f7",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": null,
+   "upstream_test_last_change_date": null,
+   "upstream_test_sha256": null,
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 1,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": false,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "LosCV29/polyvoice:custom_components/polyvoice/utils/helpers.py",
+   "repo_url": "https://github.com/LosCV29/polyvoice",
+   "path": "custom_components/polyvoice/utils/helpers.py",
+   "pinned_sha": "70baf6f41f3bd5f6858f515ccc4df7e9382d22fd",
+   "default_branch": "main",
+   "module_sha256": "3b96d119ca9f382e56c31b216d0b224ff5d8b967ef7b9bbc0dadba364d672c46",
+   "first_commit_date": "2026-01-07T07:35:10+00:00",
+   "first_commit_sha": "71d5e97f1b18b0fb7e880e74503022ebd65345e9",
+   "first_commit_date_path_only": "2026-01-07T07:35:10+00:00",
+   "last_change_date": "2026-01-07T07:35:10+00:00",
+   "last_change_sha": "71d5e97f1b18b0fb7e880e74503022ebd65345e9",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 66,
+   "upstream_test": null,
+   "upstream_test_kind": "none",
+   "upstream_tests_all": [],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2025-12-29T23:55:53-05:00",
+   "norm_sha256": "078b67fcca4e379eb84bd49ec4eeb23b573e5e04548714fe60ea285b145b672a",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": null,
+   "upstream_test_last_change_date": null,
+   "upstream_test_sha256": null,
+   "baseline_human_certain": false,
+   "ai_trace": true,
+   "ai_trace_files": [],
+   "ai_trace_commits": [
+    {
+     "sha": "71d5e97f1b18b0fb7e880e74503022ebd65345e9",
+     "path": "custom_components/polyvoice/utils/helpers.py",
+     "match": "identity:Claude"
+    }
+   ],
+   "ai_trace_commits_scanned": 1,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": false,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "Madhav0414/role-aware-financial-agent:src/agent/sanitize.py",
+   "repo_url": "https://github.com/Madhav0414/role-aware-financial-agent",
+   "path": "src/agent/sanitize.py",
+   "pinned_sha": "b1c73a3359ce571412caae2aabb02535608e16d6",
+   "default_branch": "temp",
+   "module_sha256": "6ac77014d3ea5a6bc0c810f7923e6dbb08d5ff1c1df46d9e75a9926175c794a4",
+   "first_commit_date": "2026-08-11T01:08:21+05:30",
+   "first_commit_sha": "19dff3bf7c728dcd9bf87b4af1746c6e7b50f29d",
+   "first_commit_date_path_only": "2026-08-11T01:08:21+05:30",
+   "last_change_date": "2026-08-11T08:05:57+05:30",
+   "last_change_sha": "51754dc52e105f9692a160a1264051dfc94400a9",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 148,
+   "upstream_test": "tests/test_injection.py",
+   "upstream_test_kind": "direct",
+   "upstream_tests_all": [
+    "tests/test_injection.py"
+   ],
+   "upstream_tests_direct": [
+    "tests/test_injection.py"
+   ],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01",
+    "newer_since_2026-07-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-08-10T23:56:08+05:30",
+   "norm_sha256": "0dc4cba4f8d99bbca946db6432c2b71450bdc79d952c3116ee6e6e966efab28b",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": "51754dc52e105f9692a160a1264051dfc94400a9",
+   "upstream_test_last_change_date": "2026-08-11T08:05:57+05:30",
+   "upstream_test_sha256": "de6c45dd9d6501ac3cb802dd676780dadf7990c603ce6142ad6c19bc1cc7ee99",
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 2,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": true
+   },
+   "primary_set": true,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "MalloyTheDev/chaos-desktop-pet:src/chaos_pet/stats.py",
+   "repo_url": "https://github.com/MalloyTheDev/chaos-desktop-pet",
+   "path": "src/chaos_pet/stats.py",
+   "pinned_sha": "b10866629fa88c3fa5be73d205c1f49b853ff63d",
+   "default_branch": "main",
+   "module_sha256": "ccee2ce4d504d813670958b7f6622d8ff1269b8f737b6739208e401230d0353d",
+   "first_commit_date": "2026-06-15T21:49:13-04:00",
+   "first_commit_sha": "85fc2604481295ce50e1193732b357f69dcdbb42",
+   "first_commit_date_path_only": "2026-06-15T21:49:13-04:00",
+   "last_change_date": "2026-06-15T22:29:16-04:00",
+   "last_change_sha": "abf91418ccccc14b128eabae6a4c2ba3e74d4f9f",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 147,
+   "upstream_test": null,
+   "upstream_test_kind": "none",
+   "upstream_tests_all": [],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-06-15T21:49:13-04:00",
+   "norm_sha256": "867e5df72da1a5a191df339f7bcb6c60c862393652fd73d9e684023676ab57b9",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": null,
+   "upstream_test_last_change_date": null,
+   "upstream_test_sha256": null,
+   "baseline_human_certain": false,
+   "ai_trace": true,
+   "ai_trace_files": [],
+   "ai_trace_commits": [
+    {
+     "sha": "85fc2604481295ce50e1193732b357f69dcdbb42",
+     "path": "src/chaos_pet/stats.py",
+     "match": "Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic"
+    }
+   ],
+   "ai_trace_commits_scanned": 6,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "Maximophone/obsidian_ai:obsidian/parser/tag_parser.py",
+   "repo_url": "https://github.com/Maximophone/obsidian_ai",
+   "path": "obsidian/parser/tag_parser.py",
+   "pinned_sha": "a6384d4bc3f45ae092ab66993917f54b9f23bde4",
+   "default_branch": "main",
+   "module_sha256": "45701a72632842a744316d3a5f01e5fc4fd9bf627920e918ed6a3d3e3bcf07a9",
+   "first_commit_date": "2025-11-28T22:44:07+00:00",
+   "first_commit_sha": "fa94132b4b1d4ebd752293b5f18d094bafc724f6",
+   "first_commit_date_path_only": "2025-11-28T22:44:07+00:00",
+   "last_change_date": "2025-11-28T22:44:07+00:00",
+   "last_change_sha": "fa94132b4b1d4ebd752293b5f18d094bafc724f6",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 113,
+   "upstream_test": "obsidian/parser/test_tag_parser.py",
+   "upstream_test_kind": "direct",
+   "upstream_tests_all": [
+    "obsidian/parser/test_tag_parser.py"
+   ],
+   "upstream_tests_direct": [
+    "obsidian/parser/test_tag_parser.py"
+   ],
+   "buckets": [
+    "newer_since_2025-09-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2025-11-28T22:44:07+00:00",
+   "norm_sha256": "01a7670968d91d70d38c6b5fba855acfa01101df730e1de95ef76fc1c8f89bc5",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": "fa94132b4b1d4ebd752293b5f18d094bafc724f6",
+   "upstream_test_last_change_date": "2025-11-28T22:44:07+00:00",
+   "upstream_test_sha256": "d38f5bca512b6fe5e2bd186c94fd85176ae9a2d5c0e4b11b0efe5665478fad58",
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 1,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": false,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "Mhmda1998/CodeBots-Arena:sdk/codebots/bot.py",
+   "repo_url": "https://github.com/Mhmda1998/CodeBots-Arena",
+   "path": "sdk/codebots/bot.py",
+   "pinned_sha": "06b4f6c24fc18bf898e379ca8cdda149d186ba95",
+   "default_branch": "main",
+   "module_sha256": "87ab980b3c9201a141df45632a256cc8a8c99e58d1b72d7c565b673f57bfe476",
+   "first_commit_date": "2026-08-11T03:46:22+03:00",
+   "first_commit_sha": "00e7ba75339ddb8650e4dc9e4321cc20a3e92ce0",
+   "first_commit_date_path_only": "2026-08-11T03:46:22+03:00",
+   "last_change_date": "2026-08-17T22:29:48+00:00",
+   "last_change_sha": "b7bf8e2133ebca4e73841843247edfd76eccbe34",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 79,
+   "upstream_test": "tests/test_engine.py",
+   "upstream_test_kind": "indirect",
+   "upstream_tests_all": [
+    "tests/test_engine.py"
+   ],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01",
+    "newer_since_2026-07-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-08-11T03:44:56+03:00",
+   "norm_sha256": "1aa70952c12b2c5213efe0f0db488e0adc676af9edc756d1de6a5134e4509849",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": "edf669eb8870f6860d61ebee7596219ba5fa89bb",
+   "upstream_test_last_change_date": "2026-08-11T03:50:09+03:00",
+   "upstream_test_sha256": "ccb5442ecf95ba0a41b48e852915b5461c7236da0898314f27223a3c8b3b85cf",
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 3,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": true
+   },
+   "primary_set": true,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "Mhmda1998/CodeBots-Arena:server/matchmaking/elo.py",
+   "repo_url": "https://github.com/Mhmda1998/CodeBots-Arena",
+   "path": "server/matchmaking/elo.py",
+   "pinned_sha": "06b4f6c24fc18bf898e379ca8cdda149d186ba95",
+   "default_branch": "main",
+   "module_sha256": "d36454959e2b12e42101c8d394eceb3d923aafc69cd2f222166152e2de004f85",
+   "first_commit_date": "2026-08-17T22:29:48+00:00",
+   "first_commit_sha": "b7bf8e2133ebca4e73841843247edfd76eccbe34",
+   "first_commit_date_path_only": "2026-08-17T22:29:48+00:00",
+   "last_change_date": "2026-08-17T22:29:48+00:00",
+   "last_change_sha": "b7bf8e2133ebca4e73841843247edfd76eccbe34",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 52,
+   "upstream_test": "tests/test_elo.py",
+   "upstream_test_kind": "direct",
+   "upstream_tests_all": [
+    "tests/test_elo.py"
+   ],
+   "upstream_tests_direct": [
+    "tests/test_elo.py"
+   ],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01",
+    "newer_since_2026-07-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-08-11T03:44:56+03:00",
+   "norm_sha256": "f4799848437f8877cbc65c4424ce59fef5851fae35e6ec4307da6591272eb2a0",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": "944add0ab0c65917a38c50fd79a3bd546034f761",
+   "upstream_test_last_change_date": "2026-08-11T03:50:05+03:00",
+   "upstream_test_sha256": "1e137cede35593f34f9d0a969e386d844f6afd0273ebcb7226f1cbf1a6ad8eb8",
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 2,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": true
+   },
+   "primary_set": true,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "Paparusi/legal-ai-agent:src/services/diff_utils.py",
+   "repo_url": "https://github.com/Paparusi/legal-ai-agent",
+   "path": "src/services/diff_utils.py",
+   "pinned_sha": "7d6de9580ccb1e4ac27bea4315ba6f77fdd349ed",
+   "default_branch": "main",
+   "module_sha256": "64f55f16396be66e61e0d6a14ce4fa0b909070006dca0cc4899ac37d33f01e30",
+   "first_commit_date": "2026-03-20T13:11:57+07:00",
+   "first_commit_sha": "631005c53b84399153b3c78a9afaa32b3ea8e13e",
+   "first_commit_date_path_only": "2026-03-20T13:11:57+07:00",
+   "last_change_date": "2026-03-20T13:11:57+07:00",
+   "last_change_sha": "631005c53b84399153b3c78a9afaa32b3ea8e13e",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 160,
+   "upstream_test": "test_diff.py",
+   "upstream_test_kind": "direct",
+   "upstream_tests_all": [
+    "test_diff.py"
+   ],
+   "upstream_tests_direct": [
+    "test_diff.py"
+   ],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-03-15T09:42:27+07:00",
+   "norm_sha256": "c5d76991025fd7795bfb2c900f50e5e57868e3b6d063cba25ca629dfd5049f76",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": "631005c53b84399153b3c78a9afaa32b3ea8e13e",
+   "upstream_test_last_change_date": "2026-03-20T13:11:57+07:00",
+   "upstream_test_sha256": "efff593c7f43a39831655d9dc72d03b0077e05cd9f0e76abd32975dfa83eff17",
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 1,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "Saya2810/ai-video-generator:aivs/safety.py",
+   "repo_url": "https://github.com/Saya2810/ai-video-generator",
+   "path": "aivs/safety.py",
+   "pinned_sha": "9ede20b44e184ea143f7671598b7736cfabffaf4",
+   "default_branch": "main",
+   "module_sha256": "67edc818085dd4d8fa67deaed2f8d8ff738b4b857c59010c5b1be06780448183",
+   "first_commit_date": "2026-11-16T12:07:20+01:00",
+   "first_commit_sha": "02460ff5dfad4c805aa307b62bf73ef751067b71",
+   "first_commit_date_path_only": "2026-11-16T12:07:20+01:00",
+   "last_change_date": "2026-11-16T12:07:20+01:00",
+   "last_change_sha": "02460ff5dfad4c805aa307b62bf73ef751067b71",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 50,
+   "upstream_test": "tests/test_dialogue.py",
+   "upstream_test_kind": "direct",
+   "upstream_tests_all": [
+    "tests/test_dialogue.py"
+   ],
+   "upstream_tests_direct": [
+    "tests/test_dialogue.py"
+   ],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01",
+    "newer_since_2026-07-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-11-16T12:07:20+01:00",
+   "norm_sha256": "fe72e4dfd5a61a4132e2fbdb19b4c75d94f80a5140b80709cbd76df38853da45",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": "02460ff5dfad4c805aa307b62bf73ef751067b71",
+   "upstream_test_last_change_date": "2026-11-16T12:07:20+01:00",
+   "upstream_test_sha256": "f59553ae9451392f61c4af3ace00226dc354aec842b866fe2fa208c8b12703d9",
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 1,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": true
+   },
+   "primary_set": true,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "Saya2810/ai-video-generator:aivs/text.py",
+   "repo_url": "https://github.com/Saya2810/ai-video-generator",
+   "path": "aivs/text.py",
+   "pinned_sha": "9ede20b44e184ea143f7671598b7736cfabffaf4",
+   "default_branch": "main",
+   "module_sha256": "41a95e29d016708b91559c3cf954ec6fa39be5c2a5794df6b886701e8c29ffec",
+   "first_commit_date": "2026-11-16T12:07:20+01:00",
+   "first_commit_sha": "02460ff5dfad4c805aa307b62bf73ef751067b71",
+   "first_commit_date_path_only": "2026-11-16T12:07:20+01:00",
+   "last_change_date": "2026-11-16T12:07:20+01:00",
+   "last_change_sha": "02460ff5dfad4c805aa307b62bf73ef751067b71",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 187,
+   "upstream_test": null,
+   "upstream_test_kind": "none",
+   "upstream_tests_all": [],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01",
+    "newer_since_2026-07-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-11-16T12:07:20+01:00",
+   "norm_sha256": "c84682741541fb002a5f275f8e1ec8e194e1ca322018a0b41b760b2c232a0983",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": null,
+   "upstream_test_last_change_date": null,
+   "upstream_test_sha256": null,
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 1,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": true
+   },
+   "primary_set": true,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "StonewarP/WTFTD-War_Thunder_Full_Test_Drive:wtftd/blk.py",
+   "repo_url": "https://github.com/StonewarP/WTFTD-War_Thunder_Full_Test_Drive",
+   "path": "wtftd/blk.py",
+   "pinned_sha": "896c77edd142f65cde71125e892564ad4c9b085f",
+   "default_branch": "main",
+   "module_sha256": "ad9c86b2df78fbf3fc77ff8ed5289eb31edf48f1513dc03978b1b8eed881e41d",
+   "first_commit_date": "2026-10-07T23:39:42+02:00",
+   "first_commit_sha": "30686d23c690b0326e81c81dbe830a79fe934b57",
+   "first_commit_date_path_only": "2026-10-07T23:39:42+02:00",
+   "last_change_date": "2026-11-15T23:02:48+01:00",
+   "last_change_sha": "5fdd379960590ded5eae6cb9f590704108b31366",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 239,
+   "upstream_test": "tests/test_blk.py",
+   "upstream_test_kind": "direct",
+   "upstream_tests_all": [
+    "tests/test_alarms.py",
+    "tests/test_blk.py",
+    "tests/test_challenges.py",
+    "tests/test_difficulty.py",
+    "tests/test_game_data.py",
+    "tests/test_imports.py",
+    "tests/test_mods.py",
+    "tests/test_routes_waves.py",
+    "tests/test_template_units.py"
+   ],
+   "upstream_tests_direct": [
+    "tests/test_alarms.py",
+    "tests/test_blk.py",
+    "tests/test_challenges.py",
+    "tests/test_difficulty.py",
+    "tests/test_game_data.py",
+    "tests/test_imports.py",
+    "tests/test_mods.py",
+    "tests/test_routes_waves.py",
+    "tests/test_template_units.py"
+   ],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01",
+    "newer_since_2026-07-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-10-07T23:39:42+02:00",
+   "norm_sha256": "f79f588a2ae016b0f87b8d0dc4814ce3e98b919f47788fe0e7cc0dcfc540c9db",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": "5fdd379960590ded5eae6cb9f590704108b31366",
+   "upstream_test_last_change_date": "2026-11-15T23:02:48+01:00",
+   "upstream_test_sha256": "494d268ff1bfdce4f0daf6c7b2973d8d576cfd31283255496e0752405e261870",
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 57,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": true
+   },
+   "primary_set": true,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "StonewarP/WTFTD-War_Thunder_Full_Test_Drive:wtftd/minimap.py",
+   "repo_url": "https://github.com/StonewarP/WTFTD-War_Thunder_Full_Test_Drive",
+   "path": "wtftd/minimap.py",
+   "pinned_sha": "896c77edd142f65cde71125e892564ad4c9b085f",
+   "default_branch": "main",
+   "module_sha256": "0c7123055b2f5c79fabb61b8b0d1a1f955019f6943b39b3700deb43121fd8ab8",
+   "first_commit_date": "2026-11-04T22:09:09+01:00",
+   "first_commit_sha": "2c732de16bbaf65bb634bb44b9bd42474781467b",
+   "first_commit_date_path_only": "2026-11-04T22:09:09+01:00",
+   "last_change_date": "2026-11-05T00:11:36+01:00",
+   "last_change_sha": "810c4e1246006ab54a8d2e6e1b63b2119a17a021",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 181,
+   "upstream_test": "tests/test_minimap.py",
+   "upstream_test_kind": "direct",
+   "upstream_tests_all": [
+    "tests/test_minimap.py",
+    "tests/test_platform.py"
+   ],
+   "upstream_tests_direct": [
+    "tests/test_minimap.py",
+    "tests/test_platform.py"
+   ],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01",
+    "newer_since_2026-07-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-10-07T23:39:42+02:00",
+   "norm_sha256": "a8bfc9382287a5290fa4b917b42bcf0745a5d123966532e8b300fd153e89c31a",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": "79014d94f201c209f0e6b44942528017db65d2c2",
+   "upstream_test_last_change_date": "2026-11-12T01:05:51+01:00",
+   "upstream_test_sha256": "803d0a939aa297fc884d5cac47c203ac621960cd44fab811c44c5ab08ed9cfc4",
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 23,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": true
+   },
+   "primary_set": true,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "SudarshanSuryaprakash/voice-assistant:jupiter_voice/state_machine.py",
+   "repo_url": "https://github.com/SudarshanSuryaprakash/voice-assistant",
+   "path": "jupiter_voice/state_machine.py",
+   "pinned_sha": "ceef752b69d0af85792ff1f8a56497c9e8ffa4c4",
+   "default_branch": "main",
+   "module_sha256": "276beb975ef58d22c262a0e6cb4dba0be59632e3094404fe62a7e13c8a7905d6",
+   "first_commit_date": "2026-02-07T20:48:38+00:00",
+   "first_commit_sha": "d62d17a707f07c07ad718df8f4812886cdb8daef",
+   "first_commit_date_path_only": "2026-02-07T20:48:38+00:00",
+   "last_change_date": "2026-02-07T20:48:38+00:00",
+   "last_change_sha": "d62d17a707f07c07ad718df8f4812886cdb8daef",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 84,
+   "upstream_test": "tests/test_state_machine.py",
+   "upstream_test_kind": "direct",
+   "upstream_tests_all": [
+    "tests/test_state_machine.py"
+   ],
+   "upstream_tests_direct": [
+    "tests/test_state_machine.py"
+   ],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-02-07T20:48:38+00:00",
+   "norm_sha256": "b887bd0cbfb5fcd56f0693b849eee341bdf289dd152ed45002e64d62900b3645",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": "d62d17a707f07c07ad718df8f4812886cdb8daef",
+   "upstream_test_last_change_date": "2026-02-07T20:48:38+00:00",
+   "upstream_test_sha256": "15f6fca8dbe9d2b865114f787e84d80d65a9d994dde1670c1fd914e80b9d4cc2",
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 1,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "SudarshanSuryaprakash/voice-assistant:jupiter_voice/stt/close_phrase.py",
+   "repo_url": "https://github.com/SudarshanSuryaprakash/voice-assistant",
+   "path": "jupiter_voice/stt/close_phrase.py",
+   "pinned_sha": "ceef752b69d0af85792ff1f8a56497c9e8ffa4c4",
+   "default_branch": "main",
+   "module_sha256": "9d39d0176df61ce4adb4101f332adad9b20467020384ccadf4121180662d0700",
+   "first_commit_date": "2026-02-07T20:48:38+00:00",
+   "first_commit_sha": "d62d17a707f07c07ad718df8f4812886cdb8daef",
+   "first_commit_date_path_only": "2026-02-07T20:48:38+00:00",
+   "last_change_date": "2026-02-10T12:19:13-05:00",
+   "last_change_sha": "39218057bd988a45f8532081c4b7568f379e1505",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 71,
+   "upstream_test": "tests/test_close_phrase.py",
+   "upstream_test_kind": "direct",
+   "upstream_tests_all": [
+    "tests/test_close_phrase.py"
+   ],
+   "upstream_tests_direct": [
+    "tests/test_close_phrase.py"
+   ],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-02-07T20:48:38+00:00",
+   "norm_sha256": "d5997503160c2107e6affb6004415081a198557b281fbefb3904b61676a44e7f",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": "d62d17a707f07c07ad718df8f4812886cdb8daef",
+   "upstream_test_last_change_date": "2026-02-07T20:48:38+00:00",
+   "upstream_test_sha256": "a2e912571c8451bdd20bc326f5739474cd13db9000a24a0885038fc0d81f4721",
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 2,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "TangciuYueng/AMemGuard:EhrAgent/ehragent/prompts_eicu.py",
+   "repo_url": "https://github.com/TangciuYueng/AMemGuard",
+   "path": "EhrAgent/ehragent/prompts_eicu.py",
+   "pinned_sha": "dd92f7ff21b9a904a703141be3d5b80170e57228",
+   "default_branch": "main",
+   "module_sha256": "2ecc78061cbf2e2e9768e3c6d061d16e91ed212cd8324f9d235e5885b15a02d5",
+   "first_commit_date": "2025-10-12T16:35:15+08:00",
+   "first_commit_sha": "52af44b33002e9d67644059de7d7913f0a416b8a",
+   "first_commit_date_path_only": "2025-10-12T16:35:15+08:00",
+   "last_change_date": "2025-10-12T16:35:15+08:00",
+   "last_change_sha": "52af44b33002e9d67644059de7d7913f0a416b8a",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 203,
+   "upstream_test": null,
+   "upstream_test_kind": "none",
+   "upstream_tests_all": [],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2025-09-28T16:29:16+08:00",
+   "norm_sha256": "eff7b9045f841461dec8174460ebd729ce828de163928f1dcee09e165cfdbc59",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": null,
+   "upstream_test_last_change_date": null,
+   "upstream_test_sha256": null,
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 1,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": false,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "TangciuYueng/AMemGuard:EhrAgent/ehragent/prompts_mimic.py",
+   "repo_url": "https://github.com/TangciuYueng/AMemGuard",
+   "path": "EhrAgent/ehragent/prompts_mimic.py",
+   "pinned_sha": "dd92f7ff21b9a904a703141be3d5b80170e57228",
+   "default_branch": "main",
+   "module_sha256": "5b34b5e160be74c685f36a79000485be0f165bc3ce5961ff8ee4332fc05b26d2",
+   "first_commit_date": "2025-10-12T16:35:15+08:00",
+   "first_commit_sha": "52af44b33002e9d67644059de7d7913f0a416b8a",
+   "first_commit_date_path_only": "2025-10-12T16:35:15+08:00",
+   "last_change_date": "2025-10-12T16:35:15+08:00",
+   "last_change_sha": "52af44b33002e9d67644059de7d7913f0a416b8a",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 205,
+   "upstream_test": null,
+   "upstream_test_kind": "none",
+   "upstream_tests_all": [],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2025-09-28T16:29:16+08:00",
+   "norm_sha256": "16c69d06d040fa1df35681376555bae07d70c450b29eedeac908ae0949eee71f",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": null,
+   "upstream_test_last_change_date": null,
+   "upstream_test_sha256": null,
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 1,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": false,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "UniUni2000/wechat-chat-analyzer:wechat-chat-analyzer/scripts/user_guidance.py",
+   "repo_url": "https://github.com/UniUni2000/wechat-chat-analyzer",
+   "path": "wechat-chat-analyzer/scripts/user_guidance.py",
+   "pinned_sha": "0bd27551ca686104d10e1ec7f296c9d7895eb4e0",
+   "default_branch": "main",
+   "module_sha256": "559b0121e544b20626764e826ddf992b38225598a05752dd2bf08021b4d68cc4",
+   "first_commit_date": "2026-03-15T17:27:28+08:00",
+   "first_commit_sha": "03dec3a20d997dbd299edf68891a1a6e17cf8b0d",
+   "first_commit_date_path_only": "2026-03-15T17:27:28+08:00",
+   "last_change_date": "2026-03-15T17:27:28+08:00",
+   "last_change_sha": "03dec3a20d997dbd299edf68891a1a6e17cf8b0d",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 50,
+   "upstream_test": null,
+   "upstream_test_kind": "none",
+   "upstream_tests_all": [],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-03-15T17:27:28+08:00",
+   "norm_sha256": "df5bb6f2dcf614f39c35315db0d3d8ed39c021378d8d3833e41bf946299f59a2",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": null,
+   "upstream_test_last_change_date": null,
+   "upstream_test_sha256": null,
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 1,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "acristoffers/moirai:moirai/abstract_process_handler.py",
+   "repo_url": "https://github.com/acristoffers/moirai",
+   "path": "moirai/abstract_process_handler.py",
+   "pinned_sha": "ee6051509c022699898a8ad8194c74990fa5dc0a",
+   "default_branch": "main",
+   "module_sha256": "d0d9dd72765954d0f8e9524dc2aa5aab16f395ec3e475e8dc48892a099ac09d2",
+   "first_commit_date": "2016-10-01T14:59:16-03:00",
+   "first_commit_sha": "0feb44e43544a3687bfef86223c79f92c2c44cff",
+   "first_commit_date_path_only": "2016-10-01T14:59:16-03:00",
+   "last_change_date": "2023-03-01T13:50:57+01:00",
+   "last_change_sha": "f225f8c6f6f8100c2bc6515362fedfb0de3fc18d",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 171,
+   "upstream_test": "tests/conftest.py",
+   "upstream_test_kind": "indirect",
+   "upstream_tests_all": [
+    "tests/conftest.py",
+    "tests/test_pid_logic.py",
+    "tests/test_simulation.py"
+   ],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "older"
+   ],
+   "sample_frame": "older",
+   "repo_root_commit_date": "2016-10-01T14:59:16-03:00",
+   "norm_sha256": "7d9194417e24f1009905932c640a256188e640860947456077a0c2ddd5bc6db2",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": "eb896dc76972c22659f83b99539e8930447f9190",
+   "upstream_test_last_change_date": "2026-04-04T13:18:50+02:00",
+   "upstream_test_sha256": "2d3afbe1518c64ab3ff67ae757da0e86f445435a779974964bf2dca27299154c",
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 15,
+   "windows": {
+    "newer_since_2025-09-01": false,
+    "newer_since_2026-02-01": false,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": true,
+   "seed_set": false
+  },
+  {
+   "id": "aivrar/portable-hermes-agent:gui/inline_markdown.py",
+   "repo_url": "https://github.com/aivrar/portable-hermes-agent",
+   "path": "gui/inline_markdown.py",
+   "pinned_sha": "9dc727dd08f199d8dd9c17fdd74b5da6e097483a",
+   "default_branch": "main",
+   "module_sha256": "6f23db2d5dfadf49ff80545f51f8d8be235e20dd2630855ee09b814883d01972",
+   "first_commit_date": "2026-11-18T14:11:15-07:00",
+   "first_commit_sha": "4599c62a6cdd62925d0e8bfecaeb58c4b9dfde7f",
+   "first_commit_date_path_only": "2026-11-18T14:11:15-07:00",
+   "last_change_date": "2026-11-18T14:11:15-07:00",
+   "last_change_sha": "4599c62a6cdd62925d0e8bfecaeb58c4b9dfde7f",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 159,
+   "upstream_test": "tests/gui/test_inline_markdown.py",
+   "upstream_test_kind": "direct",
+   "upstream_tests_all": [
+    "tests/gui/test_inline_markdown.py",
+    "tests/test_portable_gui.py"
+   ],
+   "upstream_tests_direct": [
+    "tests/gui/test_inline_markdown.py",
+    "tests/test_portable_gui.py"
+   ],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01",
+    "newer_since_2026-07-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2025-07-22T18:32:44-07:00",
+   "norm_sha256": "a24965b89c27d9e8f9e220aa1d59bcf91f57981244d2bb2f2ed22d6f7385929a",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": "4599c62a6cdd62925d0e8bfecaeb58c4b9dfde7f",
+   "upstream_test_last_change_date": "2026-11-18T14:11:15-07:00",
+   "upstream_test_sha256": "d1485255683205fd1679dcb7e7fa7fa1e552510675ae38946f79de5d659c9acc",
+   "baseline_human_certain": false,
+   "ai_trace": true,
+   "ai_trace_files": [],
+   "ai_trace_commits": [
+    {
+     "sha": "4599c62a6cdd62925d0e8bfecaeb58c4b9dfde7f",
+     "path": "gui/inline_markdown.py",
+     "match": "Co-Authored-By: Claude Fable 5.2 <noreply@anthropic"
+    },
+    {
+     "sha": "83e2a5e6d3b17f43510a79220af8a079f2b834a2",
+     "path": "tests/test_portable_gui.py",
+     "match": "Co-Authored-By: Claude Fable 5.2 <noreply@anthropic"
+    },
+    {
+     "sha": "0b8a89c8bd33f8e6eec9ed8fc1566e014e150970",
+     "path": "tests/test_portable_gui.py",
+     "match": "Co-Authored-By: Claude Fable 5.2 <noreply@anthropic"
+    },
+    {
+     "sha": "2db514d192fe6b38fe1070c1bf1a26b1041786d6",
+     "path": "tests/test_portable_gui.py",
+     "match": "Co-Authored-By: Claude Fable 5.2 <noreply@anthropic"
+    },
+    {
+     "sha": "b5cbc50891788d2a9ef234434b843c4f66a18f1e",
+     "path": "tests/test_portable_gui.py",
+     "match": "Co-Authored-By: Claude Fable 5.2 <noreply@anthropic"
+    },
+    {
+     "sha": "1ba405a61da7c29aa46ac1cebe748c37104c5dd7",
+     "path": "tests/test_portable_gui.py",
+     "match": "Co-Authored-By: Claude Fable 5.2 <noreply@anthropic"
+    }
+   ],
+   "ai_trace_commits_scanned": 11,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": true
+   },
+   "primary_set": true,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "alfredofdlv/Amazon-Refill-Planner:database/models.py",
+   "repo_url": "https://github.com/alfredofdlv/Amazon-Refill-Planner",
+   "path": "database/models.py",
+   "pinned_sha": "f32cace11322bdaf5109748bdc9831940a0d5ab2",
+   "default_branch": "main",
+   "module_sha256": "fb343130095cbb14c3bace594bfcb2d926644807248232d1ba5b9fdeb18086a2",
+   "first_commit_date": "2025-10-13T15:40:53+02:00",
+   "first_commit_sha": "4f3ff76740185fe3f0d2cb6163e1634aa964b24b",
+   "first_commit_date_path_only": "2025-10-13T15:40:53+02:00",
+   "last_change_date": "2025-10-13T15:40:53+02:00",
+   "last_change_sha": "4f3ff76740185fe3f0d2cb6163e1634aa964b24b",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 180,
+   "upstream_test": "tests/test_database_performance.py",
+   "upstream_test_kind": "indirect",
+   "upstream_tests_all": [
+    "tests/test_database_performance.py"
+   ],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2025-10-09T20:39:41+02:00",
+   "norm_sha256": "115a99bb59c3fa0430944bbf2bb812f057cb382ac24b12c95608bddb8ad2ce14",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": "4f3ff76740185fe3f0d2cb6163e1634aa964b24b",
+   "upstream_test_last_change_date": "2025-10-13T15:40:53+02:00",
+   "upstream_test_sha256": "a255b39aed54c5c84b11a083dc8f4eb1a6e6012be8011886c95d2768a95726b5",
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 1,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": false,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "beshu-tech/deltaglider:src/deltaglider/client_models.py",
+   "repo_url": "https://github.com/beshu-tech/deltaglider",
+   "path": "src/deltaglider/client_models.py",
+   "pinned_sha": "f4e2aa137e0d140c84ed100a9978b3fd486eb030",
+   "default_branch": "main",
+   "module_sha256": "94e6b83c5f41e99a47554f0db97fb36a6592e26824aa0abeddaddff8c26b5f43",
+   "first_commit_date": "2025-10-07T23:00:23+02:00",
+   "first_commit_sha": "4217535e8c00d055bf29f3a8e304d5c7b8a03dca",
+   "first_commit_date_path_only": "2025-10-07T23:00:23+02:00",
+   "last_change_date": "2025-10-16T11:17:13+02:00",
+   "last_change_sha": "c32d5265d9ca4892b7463c59392e9c57372a6cfa",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 100,
+   "upstream_test": "tests/integration/test_bucket_management.py",
+   "upstream_test_kind": "direct",
+   "upstream_tests_all": [
+    "tests/conftest.py",
+    "tests/e2e/test_localstack.py",
+    "tests/integration/test_aws_cli_commands.py",
+    "tests/integration/test_bucket_management.py",
+    "tests/integration/test_client.py",
+    "tests/integration/test_delete_objects_recursive.py",
+    "tests/integration/test_filtering_and_cleanup.py",
+    "tests/integration/test_full_workflow.py",
+    "tests/integration/test_recursive_delete_reference_cleanup.py",
+    "tests/integration/test_s3_migration.py",
+    "tests/integration/test_stats_command.py",
+    "tests/integration/test_xdelta.py",
+    "tests/unit/test_adapters.py",
+    "tests/unit/test_cache_encrypted.py",
+    "tests/unit/test_cache_memory.py",
+    "tests/unit/test_core_service.py",
+    "tests/unit/test_delta_extensions.py",
+    "tests/unit/test_metadata_aliases.py",
+    "tests/unit/test_object_listing.py",
+    "tests/unit/test_s3_compat.py",
+    "tests/unit/test_s3_uri.py",
+    "tests/unit/test_stats_algorithm.py",
+    "tests/unit/test_stats_caching.py"
+   ],
+   "upstream_tests_direct": [
+    "tests/integration/test_bucket_management.py",
+    "tests/integration/test_stats_command.py",
+    "tests/unit/test_stats_caching.py"
+   ],
+   "buckets": [
+    "newer_since_2025-09-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2025-09-22T15:49:31+02:00",
+   "norm_sha256": "1ab896935cb31ae6569320d28b4db1b17d073041f5660026c0f075a8ba57cc25",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": "9bfe121f44ad97d8c255e0641f40f133ec52aa63",
+   "upstream_test_last_change_date": "2026-02-07T16:02:40+01:00",
+   "upstream_test_sha256": "95eecc30fba85936c841ed5046f0ba42f824fc45c506b6a6b4780f7a6be2b22a",
+   "baseline_human_certain": false,
+   "ai_trace": true,
+   "ai_trace_files": [
+    "CLAUDE.md"
+   ],
+   "ai_trace_commits": [
+    {
+     "sha": "4217535e8c00d055bf29f3a8e304d5c7b8a03dca",
+     "path": "src/deltaglider/client_models.py",
+     "match": "Generated with [Claude"
+    },
+    {
+     "sha": "3b580a4070e3c6e095b4455693ce3bbb6a7c0e32",
+     "path": "tests/integration/test_aws_cli_commands.py",
+     "match": "Generated with [Claude"
+    },
+    {
+     "sha": "9bfe121f44ad97d8c255e0641f40f133ec52aa63",
+     "path": "tests/integration/test_bucket_management.py",
+     "match": "Co-Authored-By: Claude Opus 4.6 <noreply@anthropic"
+    },
+    {
+     "sha": "6b3245266ec313325161f24be6b3f42142e0393d",
+     "path": "tests/integration/test_bucket_management.py",
+     "match": "Co-Authored-By: Claude Opus 4.6 <noreply@anthropic"
+    },
+    {
+     "sha": "3d04a407c02c13ce5aa640bd835647f9cfe080d9",
+     "path": "tests/integration/test_bucket_management.py",
+     "match": "Generated with [Claude"
+    },
+    {
+     "sha": "03106b76a81168030e645e6f9aa19f52771ec97e",
+     "path": "tests/integration/test_bucket_management.py",
+     "match": "Generated with [Claude"
+    },
+    {
+     "sha": "69ed9056d23b9f23ac3a7b6f29f9a85a1069c1c8",
+     "path": "tests/integration/test_client.py",
+     "match": "Generated with [Claude"
+    },
+    {
+     "sha": "0064d7e74b92b06cd461eae960a76f47b57b37c6",
+     "path": "tests/integration/test_client.py",
+     "match": "Generated with [Claude"
+    },
+    {
+     "sha": "9c1659a1f12162d534881464db33965fcc8fcf14",
+     "path": "tests/integration/test_client.py",
+     "match": "Generated with [Claude"
+    },
+    {
+     "sha": "2efa760785812a5dcd6257ad85cbafc5cc1b7511",
+     "path": "tests/integration/test_client.py",
+     "match": "Generated with [Claude"
+    },
+    {
+     "sha": "87f425734fc33e99cab57515f3aaaef277200aeb",
+     "path": "tests/integration/test_delete_objects_recursive.py",
+     "match": "Co-Authored-By: Claude Opus 4.6 <noreply@anthropic"
+    },
+    {
+     "sha": "20053acb5fe0fcca8b721d9c22958e11a5eb0c76",
+     "path": "tests/integration/test_filtering_and_cleanup.py",
+     "match": "Co-Authored-By: Claude Opus 4.6 <noreply@anthropic"
+    },
+    {
+     "sha": "fb3ad0e07613985d8a93d04f393823aa187ff575",
+     "path": "tests/integration/test_full_workflow.py",
+     "match": "Generated with [Claude"
+    },
+    {
+     "sha": "a7ec85b064a8b13ecc85351c17aa42a5dcbce051",
+     "path": "tests/integration/test_recursive_delete_reference_cleanup.py",
+     "match": "Generated with [Claude"
+    },
+    {
+     "sha": "0699283ca207306beb70a3583f8b8060b57bcd3f",
+     "path": "tests/integration/test_recursive_delete_reference_cleanup.py",
+     "match": "Generated with [Claude"
+    },
+    {
+     "sha": "626e28eaf6f75ea084eec9584b9120504a16a7bb",
+     "path": "tests/unit/test_cache_encrypted.py",
+     "match": "Generated with [Claude"
+    },
+    {
+     "sha": "d81240be80da34f335f89698d2c0e722e6991173",
+     "path": "tests/unit/test_core_service.py",
+     "match": "Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic"
+    },
+    {
+     "sha": "db7d14f8a8ac064ae9ab12a6e6a578f97b2cfa03",
+     "path": "tests/unit/test_core_service.py",
+     "match": "Generated with [Claude"
+    },
+    {
+     "sha": "b0699f952a15f21a68ba66b86c23bcb5446494a9",
+     "path": "tests/unit/test_s3_compat.py",
+     "match": "Co-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic"
+    },
+    {
+     "sha": "3753212f9648f892014166558ae7a74eb2ee5c58",
+     "path": "tests/unit/test_stats_algorithm.py",
+     "match": "Generated with [Claude"
+    }
+   ],
+   "ai_trace_commits_scanned": 51,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": false,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "beshu-tech/deltaglider:src/deltaglider/client_operations/bucket.py",
+   "repo_url": "https://github.com/beshu-tech/deltaglider",
+   "path": "src/deltaglider/client_operations/bucket.py",
+   "pinned_sha": "f4e2aa137e0d140c84ed100a9978b3fd486eb030",
+   "default_branch": "main",
+   "module_sha256": "793026e6709a4b5e71037cb942a13565a5d6430b518530c2bae04494c27d3909",
+   "first_commit_date": "2025-10-08T22:27:32+02:00",
+   "first_commit_sha": "88fd1f51cd0f9e5ac14e95f69b7c9af4662288b5",
+   "first_commit_date_path_only": "2025-10-08T22:27:32+02:00",
+   "last_change_date": "2026-02-07T15:53:33+01:00",
+   "last_change_sha": "6b3245266ec313325161f24be6b3f42142e0393d",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 275,
+   "upstream_test": "tests/unit/test_stats_algorithm.py",
+   "upstream_test_kind": "indirect",
+   "upstream_tests_all": [
+    "tests/unit/test_stats_algorithm.py",
+    "tests/unit/test_stats_caching.py"
+   ],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2025-09-22T15:49:31+02:00",
+   "norm_sha256": "42f4c41c51de98ce7e22bad811bcb69ae3087dae78b2742148e87e375d734c12",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": "3753212f9648f892014166558ae7a74eb2ee5c58",
+   "upstream_test_last_change_date": "2025-10-15T11:22:00+02:00",
+   "upstream_test_sha256": "4de88bba18655e2021bff12cdd950dbee445b72673eadb98d40806f14d470046",
+   "baseline_human_certain": false,
+   "ai_trace": true,
+   "ai_trace_files": [
+    "CLAUDE.md"
+   ],
+   "ai_trace_commits": [
+    {
+     "sha": "6b3245266ec313325161f24be6b3f42142e0393d",
+     "path": "src/deltaglider/client_operations/bucket.py",
+     "match": "Co-Authored-By: Claude Opus 4.6 <noreply@anthropic"
+    },
+    {
+     "sha": "3d04a407c02c13ce5aa640bd835647f9cfe080d9",
+     "path": "src/deltaglider/client_operations/bucket.py",
+     "match": "Generated with [Claude"
+    },
+    {
+     "sha": "3753212f9648f892014166558ae7a74eb2ee5c58",
+     "path": "tests/unit/test_stats_algorithm.py",
+     "match": "Generated with [Claude"
+    },
+    {
+     "sha": "db7d14f8a8ac064ae9ab12a6e6a578f97b2cfa03",
+     "path": "tests/unit/test_stats_algorithm.py",
+     "match": "Generated with [Claude"
+    }
+   ],
+   "ai_trace_commits_scanned": 10,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": false,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "bluesky/databroker:databroker/pivot.py",
+   "repo_url": "https://github.com/bluesky/databroker",
+   "path": "databroker/pivot.py",
+   "pinned_sha": "e4a3964126228d774b919ea0d0ef381163f268fa",
+   "default_branch": "main",
+   "module_sha256": "788774c567dbe6489aac55e3a3bec328d8a0c0e03d2239cbe3eb2006fce31611",
+   "first_commit_date": "2015-11-03T23:31:21-05:00",
+   "first_commit_sha": "276331ea0530d599401c97ce8210f991133fd4f1",
+   "first_commit_date_path_only": "2015-11-03T23:31:21-05:00",
+   "last_change_date": "2015-11-18T15:24:42-05:00",
+   "last_change_sha": "23a462a0a516ca6d8691a87b29597d91f139d20e",
+   "licence": "BSD-3-Clause",
+   "licence_file": "LICENSE",
+   "lines": 203,
+   "upstream_test": "databroker/tests/test_pivot.py",
+   "upstream_test_kind": "direct",
+   "upstream_tests_all": [
+    "databroker/tests/test_pivot.py"
+   ],
+   "upstream_tests_direct": [
+    "databroker/tests/test_pivot.py"
+   ],
+   "buckets": [
+    "older"
+   ],
+   "sample_frame": "older",
+   "repo_root_commit_date": "2014-10-02T08:34:01-04:00",
+   "norm_sha256": "d864d2c3cc35ffa159b7f7cf73d0e650ce5d775c1a4e5947028fb5aa44c13c42",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": "2ae699a08af55637a2a93c1b5e4e8f10038a6553",
+   "upstream_test_last_change_date": "2016-06-10T10:23:22-04:00",
+   "upstream_test_sha256": "37fe7cd3c4c857b6874c0fff70d03d9577beb3e3b97ed88f019f5bea11eaea69",
+   "baseline_human_certain": true,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 12,
+   "windows": {
+    "newer_since_2025-09-01": false,
+    "newer_since_2026-02-01": false,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": true,
+   "seed_set": false
+  },
+  {
+   "id": "churnast/hermes-telegram-stickers:schemas.py",
+   "repo_url": "https://github.com/churnast/hermes-telegram-stickers",
+   "path": "schemas.py",
+   "pinned_sha": "210ce860a06ed24b87f34d9c418f544d2afde4f0",
+   "default_branch": "main",
+   "module_sha256": "0659b05b21bc96798b23338200930dd57be4af65df6b94dd8c33604720ebd67e",
+   "first_commit_date": "2026-10-07T18:29:06+07:00",
+   "first_commit_sha": "f8db51a31b0d454283f806d0246ed2ea5201b804",
+   "first_commit_date_path_only": "2026-10-07T18:29:06+07:00",
+   "last_change_date": "2026-10-08T13:34:28+07:00",
+   "last_change_sha": "bcb1742c05ee6272cab63d309349372ba612abe1",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 107,
+   "upstream_test": null,
+   "upstream_test_kind": "none",
+   "upstream_tests_all": [],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01",
+    "newer_since_2026-07-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-10-07T18:29:06+07:00",
+   "norm_sha256": "3e2fa2875a189957688eeaa77e5b42669a26a2bc79b0cd5fdda327fa0e3dce22",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": null,
+   "upstream_test_last_change_date": null,
+   "upstream_test_sha256": null,
+   "baseline_human_certain": false,
+   "ai_trace": true,
+   "ai_trace_files": [],
+   "ai_trace_commits": [
+    {
+     "sha": "bcb1742c05ee6272cab63d309349372ba612abe1",
+     "path": "schemas.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "f8db51a31b0d454283f806d0246ed2ea5201b804",
+     "path": "schemas.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    }
+   ],
+   "ai_trace_commits_scanned": 2,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": true
+   },
+   "primary_set": true,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "davidmercer0620-ai/bossalign:bossalign/schema.py",
+   "repo_url": "https://github.com/davidmercer0620-ai/bossalign",
+   "path": "bossalign/schema.py",
+   "pinned_sha": "64f2707c3531cb8d3f70366afc818e4edc6b9127",
+   "default_branch": "main",
+   "module_sha256": "03da8c2d22977c1ced7ce27e030b3ac953651086ea82b0740fe79b039aff0f4e",
+   "first_commit_date": "2026-10-12T16:38:06+08:00",
+   "first_commit_sha": "25ee6b4dc8947639841f51d8f4efa39c1dbb28c5",
+   "first_commit_date_path_only": "2026-10-12T16:38:06+08:00",
+   "last_change_date": "2026-10-21T12:58:58+08:00",
+   "last_change_sha": "af8f7774f8abe49524eed7a57aafe3dd9959980d",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 298,
+   "upstream_test": "tests/test_calibration.py",
+   "upstream_test_kind": "direct",
+   "upstream_tests_all": [
+    "tests/test_calibration.py",
+    "tests/test_cli.py",
+    "tests/test_conflict_resolver.py",
+    "tests/test_core.py",
+    "tests/test_event_store.py",
+    "tests/test_human_feedback_alignment.py",
+    "tests/test_lifecycle.py",
+    "tests/test_privacy_export.py",
+    "tests/test_provider.py",
+    "tests/test_replay.py",
+    "tests/test_retrieval.py",
+    "tests/test_sdk.py"
+   ],
+   "upstream_tests_direct": [
+    "tests/test_calibration.py",
+    "tests/test_conflict_resolver.py",
+    "tests/test_core.py",
+    "tests/test_event_store.py",
+    "tests/test_human_feedback_alignment.py",
+    "tests/test_lifecycle.py",
+    "tests/test_privacy_export.py",
+    "tests/test_provider.py",
+    "tests/test_sdk.py"
+   ],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01",
+    "newer_since_2026-07-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-10-12T16:38:06+08:00",
+   "norm_sha256": "b7b4f5b8ef59c2f5ce991cdaf8ba388ca43caba08effe1f4d7bb4d38ff7a8bc6",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": "471d643db7f1bf061728565ae2a9b3fc4bd8b5ea",
+   "upstream_test_last_change_date": "2026-10-21T12:59:07+08:00",
+   "upstream_test_sha256": "d6214faf86bd3ff980f0f12714cdaea150db3bc1c5510655ce3ad453bbc68dd0",
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 7,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": true
+   },
+   "primary_set": true,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "djzoom/AURORA:src/aurora/speech/metrics.py",
+   "repo_url": "https://github.com/djzoom/AURORA",
+   "path": "src/aurora/speech/metrics.py",
+   "pinned_sha": "2ccf60859e8b396d351a0a83fdd354a5e05d6ba4",
+   "default_branch": "main",
+   "module_sha256": "c585c3343772733ec3d10e25d1bbb4659fc74ebd1201357eb6ad577914f18b1f",
+   "first_commit_date": "2026-06-29T23:28:18+07:00",
+   "first_commit_sha": "b913c187aac594db1a735bd0e3fe181e61b03d98",
+   "first_commit_date_path_only": "2026-06-29T23:28:18+07:00",
+   "last_change_date": "2026-06-30T17:42:08+07:00",
+   "last_change_sha": "9d6e0a8802ffa14e2452fe9610528fcda9971d1f",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 83,
+   "upstream_test": "tests/speech/test_metrics.py",
+   "upstream_test_kind": "indirect",
+   "upstream_tests_all": [
+    "tests/speech/test_metrics.py"
+   ],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-06-03T10:43:29+08:00",
+   "norm_sha256": "ecb42dc15e348812006c6d2f4824f1afb485010a9a7b6fe1a05cbf5052fd706f",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": "476c9ebe7b416ce5012ac97992a270474c4aa7fd",
+   "upstream_test_last_change_date": "2026-11-04T20:27:22+07:00",
+   "upstream_test_sha256": "9e4b4a9441e0440fc2a43f89d1902d0565e86b88d45ac419467b65bd5c613a58",
+   "baseline_human_certain": false,
+   "ai_trace": true,
+   "ai_trace_files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+   ],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 3,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "dozybot001/Intent:src/intent_cli/hub/changes.py",
+   "repo_url": "https://github.com/dozybot001/Intent",
+   "path": "src/intent_cli/hub/changes.py",
+   "pinned_sha": "3d4985688ded065632cb8357275a4dc18f155c17",
+   "default_branch": "main",
+   "module_sha256": "d717e2fb978ba727cad4dab3e7eddef6c3386eb039fc1ad5b7d64f21d47802cb",
+   "first_commit_date": "2026-10-30T16:40:15+08:00",
+   "first_commit_sha": "e7aa1d3188454b4880e93eb2728541358b8e7c45",
+   "first_commit_date_path_only": "2026-10-30T16:40:15+08:00",
+   "last_change_date": "2026-10-30T16:40:15+08:00",
+   "last_change_sha": "e7aa1d3188454b4880e93eb2728541358b8e7c45",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 50,
+   "upstream_test": "tests/test_identity.py",
+   "upstream_test_kind": "direct",
+   "upstream_tests_all": [
+    "tests/test_identity.py"
+   ],
+   "upstream_tests_direct": [
+    "tests/test_identity.py"
+   ],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01",
+    "newer_since_2026-07-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-03-15T23:36:04+08:00",
+   "norm_sha256": "a24e574d0697b5c437e099ee336a26f388675ed9b26b54f01d969bf05ee34694",
+   "possible_copy": true,
+   "possible_copy_signals": [
+    "licence_file:copyright_holder:Changsha Tenon Artificial Intelligence Technology Co., Ltd."
+   ],
+   "upstream_test_last_change_sha": "62703a2c0f0a2c63d08a91b494152f6d30dea531",
+   "upstream_test_last_change_date": "2026-11-02T21:51:01+08:00",
+   "upstream_test_sha256": "01dda0694113632939eb2b5d233c1c2598911572e7aed10453be6382eb0987b8",
+   "baseline_human_certain": false,
+   "ai_trace": true,
+   "ai_trace_files": [
+    "AGENTS.md"
+   ],
+   "ai_trace_commits": [
+    {
+     "sha": "e7aa1d3188454b4880e93eb2728541358b8e7c45",
+     "path": "src/intent_cli/hub/changes.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "62703a2c0f0a2c63d08a91b494152f6d30dea531",
+     "path": "tests/test_identity.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "c67ae274580c74096610507f0162ecc7a1d4ec8f",
+     "path": "tests/test_identity.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    }
+   ],
+   "ai_trace_commits_scanned": 3,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": true
+   },
+   "primary_set": true,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "dozybot001/Intent:src/intent_cli/relations.py",
+   "repo_url": "https://github.com/dozybot001/Intent",
+   "path": "src/intent_cli/relations.py",
+   "pinned_sha": "3d4985688ded065632cb8357275a4dc18f155c17",
+   "default_branch": "main",
+   "module_sha256": "839ae3333ecd184900b7fd653a1b56bcf012be1d71076559db4a67131e5119ed",
+   "first_commit_date": "2026-10-30T11:19:50+08:00",
+   "first_commit_sha": "feb725efe0403c997e55ae38a6a3677df218c5fd",
+   "first_commit_date_path_only": "2026-10-30T11:19:50+08:00",
+   "last_change_date": "2026-10-30T11:19:50+08:00",
+   "last_change_sha": "feb725efe0403c997e55ae38a6a3677df218c5fd",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 140,
+   "upstream_test": "tests/test_relations.py",
+   "upstream_test_kind": "direct",
+   "upstream_tests_all": [
+    "tests/test_inthub_web_ui.py",
+    "tests/test_relations.py"
+   ],
+   "upstream_tests_direct": [
+    "tests/test_inthub_web_ui.py",
+    "tests/test_relations.py"
+   ],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01",
+    "newer_since_2026-07-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-03-15T23:36:04+08:00",
+   "norm_sha256": "dbb231ee47e080bfebeedf93268b380a89d83ddb668b18d8615648fef51d5624",
+   "possible_copy": true,
+   "possible_copy_signals": [
+    "licence_file:copyright_holder:Changsha Tenon Artificial Intelligence Technology Co., Ltd."
+   ],
+   "upstream_test_last_change_sha": "feb725efe0403c997e55ae38a6a3677df218c5fd",
+   "upstream_test_last_change_date": "2026-10-30T11:19:50+08:00",
+   "upstream_test_sha256": "0252e5e3b72fb3a9d717c7962eacc5f8fe02a1db41ac39899a6040df80ebf716",
+   "baseline_human_certain": false,
+   "ai_trace": true,
+   "ai_trace_files": [
+    "AGENTS.md"
+   ],
+   "ai_trace_commits": [
+    {
+     "sha": "feb725efe0403c997e55ae38a6a3677df218c5fd",
+     "path": "src/intent_cli/relations.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "0435441206743d5b11b670ac77f73c9e1651163f",
+     "path": "tests/test_inthub_web_ui.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "2096b4d7e7535b62a13309f85448c12f00804d80",
+     "path": "tests/test_inthub_web_ui.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "1a8c80096418a275222077801273d44356d5f22d",
+     "path": "tests/test_inthub_web_ui.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "7d7480227e88114a4797f6ddd9eaa286d0b96420",
+     "path": "tests/test_inthub_web_ui.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "686c8fa3df4d49ba16c1a6ab8d8cc54a88593cf0",
+     "path": "tests/test_inthub_web_ui.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "05e269048401659a0715451f68f6fc8c794406ed",
+     "path": "tests/test_inthub_web_ui.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "e4d9596ef82f659f64f0e9fb8d45e3f5e1670ee3",
+     "path": "tests/test_inthub_web_ui.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "ff5d6478a7c62cba0aae52651e6fe5fb7091250e",
+     "path": "tests/test_inthub_web_ui.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "26e569c7a394329d2f879728e01f28866a7f9882",
+     "path": "tests/test_inthub_web_ui.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "83aa76eeabb5536edd3f3b82ee820e80b5ec6b5d",
+     "path": "tests/test_inthub_web_ui.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "7a233eaf444f8d4bed2f892cab1339e87300b7a4",
+     "path": "tests/test_inthub_web_ui.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "186d54ad8333b5e56940804150075a8d60faf8ee",
+     "path": "tests/test_inthub_web_ui.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "33ac47f301023ff5e5949976b6ccc07393af9500",
+     "path": "tests/test_inthub_web_ui.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "e2866cec29ccf64940cdcba64a425a9c1feb751d",
+     "path": "tests/test_inthub_web_ui.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "566accc1c413f3867277bae4a40602403c963b52",
+     "path": "tests/test_inthub_web_ui.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "f88a24feedc11860554ac0694f3a8f712559820b",
+     "path": "tests/test_inthub_web_ui.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "5679fe3d68a016418f5a185b7eeb6d701d3b70cb",
+     "path": "tests/test_inthub_web_ui.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "706fc15a41504f23b364f4e5faddd901b2822b63",
+     "path": "tests/test_inthub_web_ui.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "7531bc6c181694dd9b630ac31b59c6959dcd7738",
+     "path": "tests/test_inthub_web_ui.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "f8e0a39fda1b4efa01345dca1d46a9883663cad7",
+     "path": "tests/test_inthub_web_ui.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "f51f802b3dc714a2de756841e372f0f47387c313",
+     "path": "tests/test_inthub_web_ui.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "e7aa1d3188454b4880e93eb2728541358b8e7c45",
+     "path": "tests/test_inthub_web_ui.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "b36fdf5af1f13724d1bf20f0f19d2001d9a4ae34",
+     "path": "tests/test_inthub_web_ui.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "4b996b6aafd518b959ca36da84e7d4eb17aef0e3",
+     "path": "tests/test_inthub_web_ui.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "e0a623569127a5369d47635de0b4c596c0f5ba8e",
+     "path": "tests/test_inthub_web_ui.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "31203b6117c4de58c4e60b009afc57151f3d45aa",
+     "path": "tests/test_inthub_web_ui.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "31be53415d25de80c981f19422b9a8b0129e5f2b",
+     "path": "tests/test_inthub_web_ui.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "8d3535e53ca74dec40eb2800e3034263276dcde2",
+     "path": "tests/test_inthub_web_ui.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "92201f06923df67d2d34eca191624f3943f2b8ef",
+     "path": "tests/test_inthub_web_ui.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "55a598fbdd2a2ed49607d8b1d9fe0b6709ed6cf3",
+     "path": "tests/test_inthub_web_ui.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "0570ebfec8497cff7830fa890334d947cb66cb34",
+     "path": "tests/test_inthub_web_ui.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "3d7ab353f1a6da2c378523c6b24244a9393e31f5",
+     "path": "tests/test_inthub_web_ui.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    }
+   ],
+   "ai_trace_commits_scanned": 54,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": true
+   },
+   "primary_set": true,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "huawei-bayerlab/marigold-v2:marigoldv2/core/registry.py",
+   "repo_url": "https://github.com/huawei-bayerlab/marigold-v2",
+   "path": "marigoldv2/core/registry.py",
+   "pinned_sha": "9926d93b0780de5f64bee20895b25a56a98ffbf8",
+   "default_branch": "main",
+   "module_sha256": "a537892e62f061beae37c9b569e4c33ef94d7272cba2b9c4c9103d67b6193b11",
+   "first_commit_date": "2026-09-08T03:16:58+02:00",
+   "first_commit_sha": "141ac51e175e05a008a92931f133ea032542d07c",
+   "first_commit_date_path_only": "2026-09-08T03:16:58+02:00",
+   "last_change_date": "2026-09-08T03:16:58+02:00",
+   "last_change_sha": "141ac51e175e05a008a92931f133ea032542d07c",
+   "licence": "Apache-2.0",
+   "licence_file": "LICENSE",
+   "lines": 71,
+   "upstream_test": null,
+   "upstream_test_kind": "none",
+   "upstream_tests_all": [],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01",
+    "newer_since_2026-07-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-09-08T03:16:58+02:00",
+   "norm_sha256": "bbb7a4da4578d701dd831c6efd9e58c3bc4a4e4a2ef31773200b424d01f0bedf",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": null,
+   "upstream_test_last_change_date": null,
+   "upstream_test_sha256": null,
+   "baseline_human_certain": false,
+   "ai_trace": true,
+   "ai_trace_files": [
+    "AGENTS.md"
+   ],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 1,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": true
+   },
+   "primary_set": true,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "jacksonjp0311-gif/Ice-Crawler:ui/animations/sequencing/handoff_badge.py",
+   "repo_url": "https://github.com/jacksonjp0311-gif/Ice-Crawler",
+   "path": "ui/animations/sequencing/handoff_badge.py",
+   "pinned_sha": "eee3ca3a3c358b15716cfe50abf3c84d1f69b9a1",
+   "default_branch": "main",
+   "module_sha256": "b495dc4a27cf5e3eaf29fb1606e362737db0d72430b28bc22a1f3a487bd9c077",
+   "first_commit_date": "2026-02-09T02:46:31-05:00",
+   "first_commit_sha": "23963526777678b5d316d0e33eb676a5d8a23230",
+   "first_commit_date_path_only": "2026-02-09T02:46:31-05:00",
+   "last_change_date": "2026-02-09T02:46:31-05:00",
+   "last_change_sha": "23963526777678b5d316d0e33eb676a5d8a23230",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 81,
+   "upstream_test": null,
+   "upstream_test_kind": "none",
+   "upstream_tests_all": [],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-02-02T08:27:24-05:00",
+   "norm_sha256": "6ed31d0c1d4c8b74fbdf3210808604f0b2831e256a9233dee41fa5c0a0e4614c",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": null,
+   "upstream_test_last_change_date": null,
+   "upstream_test_sha256": null,
+   "baseline_human_certain": false,
+   "ai_trace": true,
+   "ai_trace_files": [
+    "AGENTS.md"
+   ],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 1,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "jacksonjp0311-gif/Ice-Crawler:ui/animations/sequencing/ladder.py",
+   "repo_url": "https://github.com/jacksonjp0311-gif/Ice-Crawler",
+   "path": "ui/animations/sequencing/ladder.py",
+   "pinned_sha": "eee3ca3a3c358b15716cfe50abf3c84d1f69b9a1",
+   "default_branch": "main",
+   "module_sha256": "42da44facb145210be8a0400b5a3b515c2fe79cb1a097bc956187974416c40a2",
+   "first_commit_date": "2026-02-07T14:51:45-05:00",
+   "first_commit_sha": "2126585d33e4b046a5955523da2df6b5d407322c",
+   "first_commit_date_path_only": "2026-02-07T14:51:45-05:00",
+   "last_change_date": "2026-02-07T14:51:45-05:00",
+   "last_change_sha": "2126585d33e4b046a5955523da2df6b5d407322c",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 104,
+   "upstream_test": null,
+   "upstream_test_kind": "none",
+   "upstream_tests_all": [],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-02-02T08:27:24-05:00",
+   "norm_sha256": "45574632340db95518c39808926bb17d5781f74681986328c0217d9287774884",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": null,
+   "upstream_test_last_change_date": null,
+   "upstream_test_sha256": null,
+   "baseline_human_certain": false,
+   "ai_trace": true,
+   "ai_trace_files": [
+    "AGENTS.md"
+   ],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 7,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "jununfly/ZAgentic:skills/codebase-docs/zj-roadmap-driven/viz/doi.py",
+   "repo_url": "https://github.com/jununfly/ZAgentic",
+   "path": "skills/codebase-docs/zj-roadmap-driven/viz/doi.py",
+   "pinned_sha": "c70dac2f5b2eb7666f4ac35d555bf8aa83ac77c4",
+   "default_branch": "main",
+   "module_sha256": "83f3d7027e7c7e22cd18a43f97657897ab44d0f53b1b2068240f2b99a2e132a3",
+   "first_commit_date": "2026-11-11T15:38:29+08:00",
+   "first_commit_sha": "d0cbf3838598b972c8b5eae97bf317eab0dd7827",
+   "first_commit_date_path_only": "2026-11-11T15:38:29+08:00",
+   "last_change_date": "2026-11-12T11:48:38+08:00",
+   "last_change_sha": "7d8fdec2658cf4a35f6b56f899bb24d3ed980733",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 236,
+   "upstream_test": "skills/codebase-docs/zj-roadmap-driven/viz/tests/test_review_contracts.py",
+   "upstream_test_kind": "direct",
+   "upstream_tests_all": [
+    "skills/codebase-docs/zj-roadmap-driven/viz/tests/test_issue260.py",
+    "skills/codebase-docs/zj-roadmap-driven/viz/tests/test_review_contracts.py",
+    "skills/codebase-docs/zj-roadmap-driven/viz/tests/test_s1.py",
+    "skills/codebase-docs/zj-roadmap-driven/viz/tests/test_s1b.py",
+    "skills/codebase-docs/zj-roadmap-driven/viz/tests/test_s3_s4.py",
+    "skills/codebase-docs/zj-roadmap-driven/viz/tests/test_viz.py"
+   ],
+   "upstream_tests_direct": [
+    "skills/codebase-docs/zj-roadmap-driven/viz/tests/test_review_contracts.py",
+    "skills/codebase-docs/zj-roadmap-driven/viz/tests/test_s1.py",
+    "skills/codebase-docs/zj-roadmap-driven/viz/tests/test_viz.py"
+   ],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01",
+    "newer_since_2026-07-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-06-03T22:48:44+08:00",
+   "norm_sha256": "ced4432c24a7a0b142df98a30e435f088e250d2e007ac16ab36d6bda93a5201c",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": "21ca3ea96a0e44ddb22a53c7d3a8725d102c87d6",
+   "upstream_test_last_change_date": "2026-11-12T18:07:42+08:00",
+   "upstream_test_sha256": "6c3fea5e13faac53b32709a87ea9ed314d1a5bb5238cea6fbe95d2f0e0904ee1",
+   "baseline_human_certain": false,
+   "ai_trace": true,
+   "ai_trace_files": [
+    "AGENTS.md",
+    "CLAUDE.md",
+    "skills/codebase-docs/zj-docs-ontology/tests/fixtures/conflicting-authority/AGENTS.md",
+    "skills/codebase-docs/zj-docs-ontology/tests/fixtures/existing-map/AGENTS.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-1-routine-dev-sync/workspace/CLAUDE.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-1-routine-dev-sync/workspace/taskflow/AGENTS.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-1-routine-dev-sync/workspace/taskflow/CLAUDE.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-11-unknown-platform/project/AGENTS.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-2-memory-conflict/workspace/CLAUDE.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-2-memory-conflict/workspace/notesapp/AGENTS.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-2-memory-conflict/workspace/notesapp/CLAUDE.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-3-cold-start/workspace/CLAUDE.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-4-cross-project/workspace/CLAUDE.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-4-cross-project/workspace/auth-center/AGENTS.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-4-cross-project/workspace/auth-center/CLAUDE.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-4-cross-project/workspace/skills-hub/AGENTS.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-4-cross-project/workspace/skills-hub/CLAUDE.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-5-governance/workspace/CLAUDE.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-5-governance/workspace/pdf-tools/AGENTS.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-5-governance/workspace/pdf-tools/CLAUDE.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-6-scope-boundary/workspace/CLAUDE.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-6-scope-boundary/workspace/current-app/AGENTS.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-6-scope-boundary/workspace/current-app/CLAUDE.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-7-release-terminal/project/CLAUDE.md"
+   ],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 8,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": true
+   },
+   "primary_set": true,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "jununfly/ZAgentic:skills/codebase-docs/zj-roadmap-driven/viz/ir_schema.py",
+   "repo_url": "https://github.com/jununfly/ZAgentic",
+   "path": "skills/codebase-docs/zj-roadmap-driven/viz/ir_schema.py",
+   "pinned_sha": "c70dac2f5b2eb7666f4ac35d555bf8aa83ac77c4",
+   "default_branch": "main",
+   "module_sha256": "d12efeb3edb6e6b9a04f18ed7f155694041349c4c27e6940115eeade4dace7ac",
+   "first_commit_date": "2026-11-12T02:25:20+08:00",
+   "first_commit_sha": "3e3125d9a7714734a41bda5468c49035d5a77572",
+   "first_commit_date_path_only": "2026-11-12T02:25:20+08:00",
+   "last_change_date": "2026-11-12T02:25:20+08:00",
+   "last_change_sha": "3e3125d9a7714734a41bda5468c49035d5a77572",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 55,
+   "upstream_test": "skills/codebase-docs/zj-roadmap-driven/viz/tests/test_s1.py",
+   "upstream_test_kind": "direct",
+   "upstream_tests_all": [
+    "skills/codebase-docs/zj-roadmap-driven/viz/tests/test_s1.py"
+   ],
+   "upstream_tests_direct": [
+    "skills/codebase-docs/zj-roadmap-driven/viz/tests/test_s1.py"
+   ],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01",
+    "newer_since_2026-07-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-06-03T22:48:44+08:00",
+   "norm_sha256": "6e19455446cfe9ccfca2f57f92fdae8535ee333a5f0fcb66efed26e2a4ff89f3",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": "3e3125d9a7714734a41bda5468c49035d5a77572",
+   "upstream_test_last_change_date": "2026-11-12T02:25:20+08:00",
+   "upstream_test_sha256": "177a56b6436ba9e67e5ecd1584972f50749714d7db3dc59ded608de7cbe29f57",
+   "baseline_human_certain": false,
+   "ai_trace": true,
+   "ai_trace_files": [
+    "AGENTS.md",
+    "CLAUDE.md",
+    "skills/codebase-docs/zj-docs-ontology/tests/fixtures/conflicting-authority/AGENTS.md",
+    "skills/codebase-docs/zj-docs-ontology/tests/fixtures/existing-map/AGENTS.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-1-routine-dev-sync/workspace/CLAUDE.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-1-routine-dev-sync/workspace/taskflow/AGENTS.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-1-routine-dev-sync/workspace/taskflow/CLAUDE.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-11-unknown-platform/project/AGENTS.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-2-memory-conflict/workspace/CLAUDE.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-2-memory-conflict/workspace/notesapp/AGENTS.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-2-memory-conflict/workspace/notesapp/CLAUDE.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-3-cold-start/workspace/CLAUDE.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-4-cross-project/workspace/CLAUDE.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-4-cross-project/workspace/auth-center/AGENTS.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-4-cross-project/workspace/auth-center/CLAUDE.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-4-cross-project/workspace/skills-hub/AGENTS.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-4-cross-project/workspace/skills-hub/CLAUDE.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-5-governance/workspace/CLAUDE.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-5-governance/workspace/pdf-tools/AGENTS.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-5-governance/workspace/pdf-tools/CLAUDE.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-6-scope-boundary/workspace/CLAUDE.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-6-scope-boundary/workspace/current-app/AGENTS.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-6-scope-boundary/workspace/current-app/CLAUDE.md",
+    "skills/codebase-docs/zj-neat-freak/evals/fixtures/eval-7-release-terminal/project/CLAUDE.md"
+   ],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 1,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": true
+   },
+   "primary_set": true,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "krrome/docling-hierarchical-pdf:hierarchical/parsers.py",
+   "repo_url": "https://github.com/krrome/docling-hierarchical-pdf",
+   "path": "hierarchical/parsers.py",
+   "pinned_sha": "27b7bccfbfaf6bc1010642c72222632b35939870",
+   "default_branch": "main",
+   "module_sha256": "3a0b3fee8a94b3210061c00147de223e870de6d2b1f0140015f1ac18e879dbe8",
+   "first_commit_date": "2025-09-22T13:29:26+02:00",
+   "first_commit_sha": "ec5dec8f1e3afd3eb00595c3b7ebaefee3702c91",
+   "first_commit_date_path_only": "2025-09-22T13:29:26+02:00",
+   "last_change_date": "2025-10-20T19:52:24+02:00",
+   "last_change_sha": "e0f4597c27deafb93507935d28dee5a84149fa3a",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 118,
+   "upstream_test": null,
+   "upstream_test_kind": "none",
+   "upstream_tests_all": [],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2025-09-22T13:29:26+02:00",
+   "norm_sha256": "5d9389afe11e2ec6375886a30a479c587e9d17d2b11eb7d7f1ad89923020cfab",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": null,
+   "upstream_test_last_change_date": null,
+   "upstream_test_sha256": null,
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 4,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": false,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "libenxier-beep/codex-memories:scripts/agent_memory_system/redaction.py",
+   "repo_url": "https://github.com/libenxier-beep/codex-memories",
+   "path": "scripts/agent_memory_system/redaction.py",
+   "pinned_sha": "9e497d0794258f679c7212a32022d6f6d637f1c0",
+   "default_branch": "main",
+   "module_sha256": "46a140132adefec46e13e43bea07285579a2aacb404d9e5fbb9cbdf6a2f08b7a",
+   "first_commit_date": "2026-08-27T14:33:46+08:00",
+   "first_commit_sha": "03469eca092f241448f9a803e41c8c785ccebf50",
+   "first_commit_date_path_only": "2026-08-27T14:33:46+08:00",
+   "last_change_date": "2026-08-27T14:33:46+08:00",
+   "last_change_sha": "03469eca092f241448f9a803e41c8c785ccebf50",
+   "licence": "Apache-2.0",
+   "licence_file": "LICENSE",
+   "lines": 232,
+   "upstream_test": "tests/test_agent_memory_candidates.py",
+   "upstream_test_kind": "indirect",
+   "upstream_tests_all": [
+    "tests/test_agent_memory_candidates.py",
+    "tests/test_agent_memory_capture.py",
+    "tests/test_agent_memory_lifecycle.py",
+    "tests/test_agent_memory_reliability.py"
+   ],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01",
+    "newer_since_2026-07-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-08-27T14:33:46+08:00",
+   "norm_sha256": "7b4e943f4e1ce3a694d86c2c68271b2552d5002f97f259e0a2406044a72c97b1",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": "03469eca092f241448f9a803e41c8c785ccebf50",
+   "upstream_test_last_change_date": "2026-08-27T14:33:46+08:00",
+   "upstream_test_sha256": "083b0762addc89a50d08f027e8bd45fc3817bdbacb9f7e72d8de9c9a89ca277f",
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 1,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": true
+   },
+   "primary_set": true,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "libenxier-beep/codex-memories:scripts/retrieval/query.py",
+   "repo_url": "https://github.com/libenxier-beep/codex-memories",
+   "path": "scripts/retrieval/query.py",
+   "pinned_sha": "9e497d0794258f679c7212a32022d6f6d637f1c0",
+   "default_branch": "main",
+   "module_sha256": "0e56837810985585f00fdf4ebcf55fb0b5488e03a7c8f898fac2db531f7126e7",
+   "first_commit_date": "2026-08-27T14:33:46+08:00",
+   "first_commit_sha": "03469eca092f241448f9a803e41c8c785ccebf50",
+   "first_commit_date_path_only": "2026-08-27T14:33:46+08:00",
+   "last_change_date": "2026-08-27T14:33:46+08:00",
+   "last_change_sha": "03469eca092f241448f9a803e41c8c785ccebf50",
+   "licence": "Apache-2.0",
+   "licence_file": "LICENSE",
+   "lines": 256,
+   "upstream_test": null,
+   "upstream_test_kind": "none",
+   "upstream_tests_all": [],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01",
+    "newer_since_2026-07-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-08-27T14:33:46+08:00",
+   "norm_sha256": "79ee19753ea7719743516d4b1136116e5c36bd492ae6ff2591c472c534dbc2aa",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": null,
+   "upstream_test_last_change_date": null,
+   "upstream_test_sha256": null,
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 1,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": true
+   },
+   "primary_set": true,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "lucasjinreal/d3:projects/DensePose/densepose/data/video/frame_selector.py",
+   "repo_url": "https://github.com/lucasjinreal/d3",
+   "path": "projects/DensePose/densepose/data/video/frame_selector.py",
+   "pinned_sha": "977a19a2a84458981906573c20890ccdd32d5d51",
+   "default_branch": "main",
+   "module_sha256": "592a1c864df9b7b6c1994a14453b8b9af9aebc071d1c7fd0a84d828a2e7d6dc7",
+   "first_commit_date": "2020-06-04T13:19:45-07:00",
+   "first_commit_sha": "e06a94c7af747dd6875bb19975b1ebd1f6a09872",
+   "first_commit_date_path_only": "2020-06-04T13:19:45-07:00",
+   "last_change_date": "2021-03-15T15:53:04-07:00",
+   "last_change_sha": "d970fe93b4d1861db180069acc89ebe0ecb675c8",
+   "licence": "Apache-2.0",
+   "licence_file": "LICENSE",
+   "lines": 87,
+   "upstream_test": "projects/DensePose/tests/test_frame_selector.py",
+   "upstream_test_kind": "indirect",
+   "upstream_tests_all": [
+    "projects/DensePose/tests/test_frame_selector.py",
+    "projects/DensePose/tests/test_video_keyframe_dataset.py"
+   ],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "older"
+   ],
+   "sample_frame": "older",
+   "repo_root_commit_date": "2019-10-10T09:03:55-07:00",
+   "norm_sha256": "7dd7baaf0cb8ecf38c0f77f21d2bac6a2b6ba70b82049c6856750c5aa7f93062",
+   "possible_copy": true,
+   "possible_copy_signals": [
+    "copyright_holder:Facebook, Inc. and its affiliates."
+   ],
+   "upstream_test_last_change_sha": "60d7a1fd33cc48e58968659cd3301f3300b2786b",
+   "upstream_test_last_change_date": "2020-11-05T01:07:10-08:00",
+   "upstream_test_sha256": "4be94716b0a203d3fe0679e1a345515a7f8ca7ff2a9658353b9b0f77e9d9102f",
+   "baseline_human_certain": true,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 8,
+   "windows": {
+    "newer_since_2025-09-01": false,
+    "newer_since_2026-02-01": false,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": true,
+   "seed_set": false
+  },
+  {
+   "id": "marcostolosa/OCRack:pdf_translate/chunker.py",
+   "repo_url": "https://github.com/marcostolosa/OCRack",
+   "path": "pdf_translate/chunker.py",
+   "pinned_sha": "0874ea41e51e6da08270c260b1d0ed8feadcd995",
+   "default_branch": "main",
+   "module_sha256": "2cbfc7be0bcbf69534b2dfc2e91f840e1574d6bad99d96eccbd8445297bc1968",
+   "first_commit_date": "2025-09-05T18:58:35-03:00",
+   "first_commit_sha": "4562a691444ff71dce46a65e704c2d39245dd327",
+   "first_commit_date_path_only": "2025-09-05T18:58:35-03:00",
+   "last_change_date": "2025-09-05T18:58:35-03:00",
+   "last_change_sha": "4562a691444ff71dce46a65e704c2d39245dd327",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 290,
+   "upstream_test": null,
+   "upstream_test_kind": "none",
+   "upstream_tests_all": [],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2025-09-05T18:58:35-03:00",
+   "norm_sha256": "0d1a692e02ea203c1a7b93dfb4717096d2eeffcb4bc407f8c166a6e8baa56d34",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": null,
+   "upstream_test_last_change_date": null,
+   "upstream_test_sha256": null,
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 1,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": false,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "markolofsen/django-cfg:django_cfg/modules/django_mcp/tools/results.py",
+   "repo_url": "https://github.com/markolofsen/django-cfg",
+   "path": "django_cfg/modules/django_mcp/tools/results.py",
+   "pinned_sha": "acacfab99ac6b502febcf0ba75f37adf0c0e8342",
+   "default_branch": "main",
+   "module_sha256": "d6bc059db43342344e23db4e90eb7a89b66c77eabcdfcb7dece4de0798ef215c",
+   "first_commit_date": "2026-11-01T15:23:02+08:00",
+   "first_commit_sha": "0ff3a87a7f82674fb73474d91b2bfbe1d5f590cd",
+   "first_commit_date_path_only": "2026-11-01T15:23:02+08:00",
+   "last_change_date": "2026-11-01T15:23:02+08:00",
+   "last_change_sha": "0ff3a87a7f82674fb73474d91b2bfbe1d5f590cd",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 58,
+   "upstream_test": "django_cfg/apps/api/endpoints/endpoints_status/tests.py",
+   "upstream_test_kind": "indirect",
+   "upstream_tests_all": [
+    "django_cfg/apps/api/endpoints/endpoints_status/tests.py",
+    "django_cfg/apps/payments/testing/__init__.py",
+    "django_cfg/apps/system/accounts/management/commands/otp_test.py",
+    "django_cfg/apps/system/mailer/tests.py",
+    "django_cfg/core/decorators/rate_limit_test.py",
+    "django_cfg/management/commands/test_db.py",
+    "django_cfg/management/commands/test_email.py",
+    "django_cfg/management/commands/test_telegram.py",
+    "django_cfg/modules/django_email/management/commands/test_email.py",
+    "django_cfg/modules/django_telegram/management/commands/test_telegram.py",
+    "django_cfg/testing/__init__.py",
+    "django_cfg/testing/pytest_plugin.py",
+    "django_cfg/testing/runners/__init__.py",
+    "django_cfg/testing/runners/fast.py",
+    "django_cfg/testing/runners/smart.py",
+    "django_cfg/testing/runners/utils.py",
+    "solution/projects/django/extensions/.archive/newsletter/management/commands/test_newsletter.py",
+    "solution/projects/django/extensions/.archive/newsletter/tests/run_tests.py",
+    "solution/projects/django/extensions/.archive/newsletter/tests/test_email_tracking.py"
+   ],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01",
+    "newer_since_2026-07-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2025-10-05T04:45:19+08:00",
+   "norm_sha256": "c2e7be2f2b8b3c5eb494bc83f40730f64a66cd4daa176bccb81a4d471454613c",
+   "possible_copy": true,
+   "possible_copy_signals": [
+    "licence_file:copyright_holder:ReformsAI Team"
+   ],
+   "upstream_test_last_change_sha": "a1e314400584884687bbf379d486d1e58c5e62a7",
+   "upstream_test_last_change_date": "2026-09-09T16:08:20+08:00",
+   "upstream_test_sha256": "9ada45302d89d97431d3cb425f8a4b5b0e983dec4fdd218572ae34a13bf28c37",
+   "baseline_human_certain": false,
+   "ai_trace": true,
+   "ai_trace_files": [
+    "solution/projects/django/CLAUDE.md",
+    "solution/projects/frontend/apps/admin/CLAUDE.md"
+   ],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 16,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": true
+   },
+   "primary_set": true,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "markolofsen/django-cfg:django_cfg/modules/django_sitemap/cursors.py",
+   "repo_url": "https://github.com/markolofsen/django-cfg",
+   "path": "django_cfg/modules/django_sitemap/cursors.py",
+   "pinned_sha": "acacfab99ac6b502febcf0ba75f37adf0c0e8342",
+   "default_branch": "main",
+   "module_sha256": "2640f8f652940b8c57d2bb0a39931b20cbd97e8c59be9ae4cede357f03068fde",
+   "first_commit_date": "2026-05-19T10:24:46+08:00",
+   "first_commit_sha": "5be6bb3260f2201f03671840cacb81339f521308",
+   "first_commit_date_path_only": "2026-05-19T10:24:46+08:00",
+   "last_change_date": "2026-06-16T04:33:27+00:00",
+   "last_change_sha": "e62d890947922789d6783633f6a5f880f71e860d",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 51,
+   "upstream_test": null,
+   "upstream_test_kind": "none",
+   "upstream_tests_all": [],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2025-10-05T04:45:19+08:00",
+   "norm_sha256": "6df5db58d5435c9648063c3ec3a3b0089c6c701ad442b6c67d531f794adbc240",
+   "possible_copy": true,
+   "possible_copy_signals": [
+    "licence_file:copyright_holder:ReformsAI Team"
+   ],
+   "upstream_test_last_change_sha": null,
+   "upstream_test_last_change_date": null,
+   "upstream_test_sha256": null,
+   "baseline_human_certain": false,
+   "ai_trace": true,
+   "ai_trace_files": [
+    "solution/projects/django/CLAUDE.md",
+    "solution/projects/frontend/apps/admin/CLAUDE.md"
+   ],
+   "ai_trace_commits": [
+    {
+     "sha": "e62d890947922789d6783633f6a5f880f71e860d",
+     "path": "django_cfg/modules/django_sitemap/cursors.py",
+     "match": "Co-Authored-By: Claude Opus 4.7 <noreply@anthropic"
+    }
+   ],
+   "ai_trace_commits_scanned": 2,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "nhdandz/RRI:src/llm/prompts/analysis.py",
+   "repo_url": "https://github.com/nhdandz/RRI",
+   "path": "src/llm/prompts/analysis.py",
+   "pinned_sha": "ffe0b28feef664cb3b01c8aa6c226387c41617ed",
+   "default_branch": "main",
+   "module_sha256": "4e1196a33b7652cc7b4fb0c9779f5788285c8f9050f2b0f95832cad9812d3fb3",
+   "first_commit_date": "2026-02-07T15:33:20+07:00",
+   "first_commit_sha": "bfde420769c108961d9311fcd1b3cede1bb68c4c",
+   "first_commit_date_path_only": "2026-02-07T15:33:20+07:00",
+   "last_change_date": "2026-02-09T16:57:00+07:00",
+   "last_change_sha": "049f87b5ae1e9316b60b03a2296ae9c071873032",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 60,
+   "upstream_test": null,
+   "upstream_test_kind": "none",
+   "upstream_tests_all": [],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-02-07T15:33:20+07:00",
+   "norm_sha256": "993ec826f20c3fd7f7f0171c5636803408d1080415c881fa5798d68ff10c8f39",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": null,
+   "upstream_test_last_change_date": null,
+   "upstream_test_sha256": null,
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 2,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "oren-blackmamba/blackmamba---open-source-robot-ai-code:energy/power_estimator.py",
+   "repo_url": "https://github.com/oren-blackmamba/blackmamba---open-source-robot-ai-code",
+   "path": "energy/power_estimator.py",
+   "pinned_sha": "8b57b547c32507f2eac6929f30e2f601e5b74eba",
+   "default_branch": "main",
+   "module_sha256": "5cd7cefdc77ddb22a1a10a6853b4fa96122f5319f83882b4fe1e45a277400324",
+   "first_commit_date": "2026-10-15T22:28:59+03:00",
+   "first_commit_sha": "05c16915696bfae78e144095fcc0c9e2545d0c59",
+   "first_commit_date_path_only": "2026-10-15T22:28:59+03:00",
+   "last_change_date": "2026-10-15T22:28:59+03:00",
+   "last_change_sha": "05c16915696bfae78e144095fcc0c9e2545d0c59",
+   "licence": "Apache-2.0",
+   "licence_file": "LICENSE",
+   "lines": 64,
+   "upstream_test": "tests/test_energy.py",
+   "upstream_test_kind": "direct",
+   "upstream_tests_all": [
+    "tests/test_energy.py",
+    "tests/test_motion.py"
+   ],
+   "upstream_tests_direct": [
+    "tests/test_energy.py",
+    "tests/test_motion.py"
+   ],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01",
+    "newer_since_2026-07-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-01-01T21:09:10+02:00",
+   "norm_sha256": "2c4fe078e82eb641553fa0fc65cade63edcf59d890ab33d0789b0ab31aeddc66",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": "05c16915696bfae78e144095fcc0c9e2545d0c59",
+   "upstream_test_last_change_date": "2026-10-15T22:28:59+03:00",
+   "upstream_test_sha256": "5a24f6c9974c9cfd58c319c65fe53a9ba07de9f7c279c658cd6eb7a88f5ec059",
+   "baseline_human_certain": false,
+   "ai_trace": true,
+   "ai_trace_files": [],
+   "ai_trace_commits": [
+    {
+     "sha": "05c16915696bfae78e144095fcc0c9e2545d0c59",
+     "path": "energy/power_estimator.py",
+     "match": "Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "3800e65504c67bac2df12111a9518a5b7b7b66cd",
+     "path": "tests/test_motion.py",
+     "match": "Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic"
+    }
+   ],
+   "ai_trace_commits_scanned": 2,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": true
+   },
+   "primary_set": true,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "oren-blackmamba/blackmamba---open-source-robot-ai-code:perception/vision.py",
+   "repo_url": "https://github.com/oren-blackmamba/blackmamba---open-source-robot-ai-code",
+   "path": "perception/vision.py",
+   "pinned_sha": "8b57b547c32507f2eac6929f30e2f601e5b74eba",
+   "default_branch": "main",
+   "module_sha256": "6618482974c267999116abe35878ba59b56d45c7c1ca90d05b40a0df4d74aeb9",
+   "first_commit_date": "2026-10-15T22:28:59+03:00",
+   "first_commit_sha": "05c16915696bfae78e144095fcc0c9e2545d0c59",
+   "first_commit_date_path_only": "2026-10-15T22:28:59+03:00",
+   "last_change_date": "2026-10-15T22:36:00+03:00",
+   "last_change_sha": "3800e65504c67bac2df12111a9518a5b7b7b66cd",
+   "licence": "Apache-2.0",
+   "licence_file": "LICENSE",
+   "lines": 66,
+   "upstream_test": "tests/test_perception.py",
+   "upstream_test_kind": "direct",
+   "upstream_tests_all": [
+    "tests/test_perception.py"
+   ],
+   "upstream_tests_direct": [
+    "tests/test_perception.py"
+   ],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01",
+    "newer_since_2026-07-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-01-01T21:09:10+02:00",
+   "norm_sha256": "31b53008efe1777f59e245a91c0fa2afe979a56942bb899bcf80c6dd6cbadca2",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": "05c16915696bfae78e144095fcc0c9e2545d0c59",
+   "upstream_test_last_change_date": "2026-10-15T22:28:59+03:00",
+   "upstream_test_sha256": "c370e3524e21d188e804cf5e8b52d957582dbb9ebe7164445720af0368e9bb39",
+   "baseline_human_certain": false,
+   "ai_trace": true,
+   "ai_trace_files": [],
+   "ai_trace_commits": [
+    {
+     "sha": "3800e65504c67bac2df12111a9518a5b7b7b66cd",
+     "path": "perception/vision.py",
+     "match": "Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "05c16915696bfae78e144095fcc0c9e2545d0c59",
+     "path": "perception/vision.py",
+     "match": "Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic"
+    }
+   ],
+   "ai_trace_commits_scanned": 2,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": true
+   },
+   "primary_set": true,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "qhykwsw/hangzhou-mahjong-ai:projects/personal/firstprinciples/records/rl/attempts/fp-rl-157/recipe/value.py",
+   "repo_url": "https://github.com/qhykwsw/hangzhou-mahjong-ai",
+   "path": "projects/personal/firstprinciples/records/rl/attempts/fp-rl-157/recipe/value.py",
+   "pinned_sha": "e6a14d67d3abde410769c27b2f52d193bbb0cf8a",
+   "default_branch": "main",
+   "module_sha256": "81aac86dbe9ea2f5164b3a2a6c005e3fd2676471442607b12f7d163665da6fa8",
+   "first_commit_date": "2026-10-12T17:56:23+08:00",
+   "first_commit_sha": "e6a14d67d3abde410769c27b2f52d193bbb0cf8a",
+   "first_commit_date_path_only": "2026-10-12T17:56:23+08:00",
+   "last_change_date": "2026-10-12T17:56:23+08:00",
+   "last_change_sha": "e6a14d67d3abde410769c27b2f52d193bbb0cf8a",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 57,
+   "upstream_test": null,
+   "upstream_test_kind": "none",
+   "upstream_tests_all": [],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01",
+    "newer_since_2026-07-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-09-09T12:19:06+08:00",
+   "norm_sha256": "1a3772f40f31037973954b717c3bde53a2344782f836a9b1576fea524f9294b9",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": null,
+   "upstream_test_last_change_date": null,
+   "upstream_test_sha256": null,
+   "baseline_human_certain": false,
+   "ai_trace": true,
+   "ai_trace_files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+   ],
+   "ai_trace_commits": [
+    {
+     "sha": "e6a14d67d3abde410769c27b2f52d193bbb0cf8a",
+     "path": "projects/personal/firstprinciples/records/rl/attempts/fp-rl-157/recipe/value.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic"
+    }
+   ],
+   "ai_trace_commits_scanned": 1,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": true
+   },
+   "primary_set": true,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "qhykwsw/hangzhou-mahjong-ai:projects/personal/selfplay/guided/config.py",
+   "repo_url": "https://github.com/qhykwsw/hangzhou-mahjong-ai",
+   "path": "projects/personal/selfplay/guided/config.py",
+   "pinned_sha": "e6a14d67d3abde410769c27b2f52d193bbb0cf8a",
+   "default_branch": "main",
+   "module_sha256": "87a694b9382103693a1d2f4a792553375cf77d486267b32fc4ca96a658b3028e",
+   "first_commit_date": "2026-09-21T16:00:26+08:00",
+   "first_commit_sha": "bfcf95f3abfeb0f25275c9e77a75932cf9631c8f",
+   "first_commit_date_path_only": "2026-09-21T16:00:26+08:00",
+   "last_change_date": "2026-09-21T17:23:21+08:00",
+   "last_change_sha": "ebe0a7fa97dae6d8634685c87f611eb75d65265b",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 53,
+   "upstream_test": "projects/personal/selfplay/tests/test_guided_branch_collection.py",
+   "upstream_test_kind": "direct",
+   "upstream_tests_all": [
+    "projects/personal/selfplay/tests/test_guided_branch_collection.py",
+    "projects/personal/selfplay/tests/test_guided_model_teacher.py",
+    "projects/personal/selfplay/tests/test_guided_oracle.py",
+    "projects/personal/selfplay/tests/test_guided_run.py",
+    "projects/personal/selfplay/tests/test_guided_search.py",
+    "tests/test_guided_branches.py",
+    "tests/test_guided_encoding_v4.py",
+    "tests/test_guided_environment.py",
+    "tests/test_guided_fastgame.py",
+    "tests/test_guided_opponents.py",
+    "tests/test_guided_oracle_parity.py",
+    "tests/test_guided_race_luck.py",
+    "tests/test_guided_rule131.py",
+    "tests/test_guided_stage.py"
+   ],
+   "upstream_tests_direct": [
+    "projects/personal/selfplay/tests/test_guided_branch_collection.py",
+    "projects/personal/selfplay/tests/test_guided_model_teacher.py",
+    "projects/personal/selfplay/tests/test_guided_oracle.py",
+    "projects/personal/selfplay/tests/test_guided_run.py",
+    "projects/personal/selfplay/tests/test_guided_search.py",
+    "tests/test_guided_branches.py",
+    "tests/test_guided_encoding_v4.py",
+    "tests/test_guided_environment.py",
+    "tests/test_guided_fastgame.py",
+    "tests/test_guided_opponents.py",
+    "tests/test_guided_oracle_parity.py",
+    "tests/test_guided_race_luck.py",
+    "tests/test_guided_rule131.py",
+    "tests/test_guided_stage.py"
+   ],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01",
+    "newer_since_2026-07-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-09-09T12:19:06+08:00",
+   "norm_sha256": "85584ce14cfa401cdd6ff78a7f245a2ed2603d78af46dfa2815bd5eae1578797",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": "ce14adea35d4b3d73a59184ee0e4e9c4eab2cc57",
+   "upstream_test_last_change_date": "2026-10-07T15:39:37+08:00",
+   "upstream_test_sha256": "4d73b237741d46dba2f452e2449455b26ca2303a56a863eb40ac1f2ef8536e12",
+   "baseline_human_certain": false,
+   "ai_trace": true,
+   "ai_trace_files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+   ],
+   "ai_trace_commits": [
+    {
+     "sha": "ebe0a7fa97dae6d8634685c87f611eb75d65265b",
+     "path": "projects/personal/selfplay/guided/config.py",
+     "match": "Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic"
+    },
+    {
+     "sha": "bfcf95f3abfeb0f25275c9e77a75932cf9631c8f",
+     "path": "projects/personal/selfplay/guided/config.py",
+     "match": "Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic"
+    },
+    {
+     "sha": "ce14adea35d4b3d73a59184ee0e4e9c4eab2cc57",
+     "path": "projects/personal/selfplay/tests/test_guided_branch_collection.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic"
+    },
+    {
+     "sha": "f8923e8b5fa9e5c9c9be576cf2017ec23969328f",
+     "path": "projects/personal/selfplay/tests/test_guided_branch_collection.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic"
+    },
+    {
+     "sha": "14d03b4c04cfc29ed7f17d7658c116f25ffe6cd5",
+     "path": "projects/personal/selfplay/tests/test_guided_branch_collection.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic"
+    },
+    {
+     "sha": "aec46e810f45adc517f058eac8c2e1dbd6e132fe",
+     "path": "projects/personal/selfplay/tests/test_guided_model_teacher.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic"
+    },
+    {
+     "sha": "61540f3bd800bfc6f9be37f117124e43c4a53f49",
+     "path": "projects/personal/selfplay/tests/test_guided_oracle.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic"
+    },
+    {
+     "sha": "4e833e9906398e3ed7017c81bb47a14e6ccf0663",
+     "path": "projects/personal/selfplay/tests/test_guided_oracle.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic"
+    },
+    {
+     "sha": "1b381837a752ff928b6282ed7261d12173a6a678",
+     "path": "projects/personal/selfplay/tests/test_guided_run.py",
+     "match": "Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic"
+    },
+    {
+     "sha": "7e195863fa3d8d2f6dec508a66486dbc588f7ddc",
+     "path": "projects/personal/selfplay/tests/test_guided_search.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic"
+    },
+    {
+     "sha": "980eecd573c03e0614939db361762b28c5eaee8a",
+     "path": "projects/personal/selfplay/tests/test_guided_search.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic"
+    },
+    {
+     "sha": "3f24e1cb15d90989a07a1cbd28d26d4f2631bcfa",
+     "path": "tests/test_guided_branches.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic"
+    },
+    {
+     "sha": "2284d7feab56005c424988a66821ec76c5086733",
+     "path": "tests/test_guided_branches.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic"
+    },
+    {
+     "sha": "0b402041fcb5dcbcbc3c51cf906a1a2762734914",
+     "path": "tests/test_guided_encoding_v4.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic"
+    },
+    {
+     "sha": "0af6389bb49d44bf9a34278aaa639bf089648895",
+     "path": "tests/test_guided_encoding_v4.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic"
+    },
+    {
+     "sha": "dec8d4c655960caf6ed5969eb83be788eb8694cd",
+     "path": "tests/test_guided_environment.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic"
+    },
+    {
+     "sha": "0ba29c1e9fcf26c816325269e4709e02b5e0b090",
+     "path": "tests/test_guided_environment.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic"
+    },
+    {
+     "sha": "4444c044bd13be9db103c6c7ff868ec37d94e8e7",
+     "path": "tests/test_guided_environment.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic"
+    },
+    {
+     "sha": "269941b67ce447f2cef4aa5d8ee2e15294873be5",
+     "path": "tests/test_guided_fastgame.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic"
+    },
+    {
+     "sha": "f282b7a7d5439dfaa1d53596638726f9fd310716",
+     "path": "tests/test_guided_fastgame.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic"
+    },
+    {
+     "sha": "08b8be2142aa7420f4dc7a7f3c9f1d2062b6bc48",
+     "path": "tests/test_guided_fastgame.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic"
+    },
+    {
+     "sha": "f90160ac97b04e4fd57d27bffaff3a4f7969c5b0",
+     "path": "tests/test_guided_fastgame.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic"
+    },
+    {
+     "sha": "fc1bb00764fb2724e34133d5a152ee5e7237caec",
+     "path": "tests/test_guided_fastgame.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic"
+    },
+    {
+     "sha": "ad6e1e8eeac5ad33866cabda49cb94f50450dcbe",
+     "path": "tests/test_guided_fastgame.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic"
+    },
+    {
+     "sha": "ac218406f4cc684e5d1184b80123c0c6d8551c10",
+     "path": "tests/test_guided_fastgame.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic"
+    },
+    {
+     "sha": "3814f846544b7ae3546d67f7be49a356ab499863",
+     "path": "tests/test_guided_fastgame.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic"
+    },
+    {
+     "sha": "31f022917fc9db14b83c2fcdb8c460b74fd0d8a9",
+     "path": "tests/test_guided_fastgame.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic"
+    },
+    {
+     "sha": "0e885f2ceb7af85f03364deed084928876fb3f67",
+     "path": "tests/test_guided_fastgame.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic"
+    },
+    {
+     "sha": "8fcca2c27ef57d7844efeb1d95f6aee870302157",
+     "path": "tests/test_guided_fastgame.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic"
+    },
+    {
+     "sha": "2f04e80748820c45136aa134c4288f5933fbbfb3",
+     "path": "tests/test_guided_opponents.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic"
+    },
+    {
+     "sha": "115ce8a2652eb300eeebdef225de199b67c2a29c",
+     "path": "tests/test_guided_rule131.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic"
+    },
+    {
+     "sha": "dc1a2f14e3aea85298aeea24091115183296a763",
+     "path": "tests/test_guided_rule131.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic"
+    },
+    {
+     "sha": "dbd983257435e29ec55df2eff86953a9e38535a1",
+     "path": "tests/test_guided_stage.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic"
+    },
+    {
+     "sha": "808d7cc507caa4c69a67945344f1af4e95cdd647",
+     "path": "tests/test_guided_stage.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic"
+    }
+   ],
+   "ai_trace_commits_scanned": 36,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": true
+   },
+   "primary_set": true,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "rmarinbe/argsfuzz:examples/custom_generators.py",
+   "repo_url": "https://github.com/rmarinbe/argsfuzz",
+   "path": "examples/custom_generators.py",
+   "pinned_sha": "f96a9e3459567237c31440c86ed279424eaee98f",
+   "default_branch": "main",
+   "module_sha256": "d0485ae222b23b5dbbc7a7f84ba901b6819de2ce6042dfef45d9b6821ba1ea17",
+   "first_commit_date": "2025-12-30T21:00:50-06:00",
+   "first_commit_sha": "90055009acad92d5799c9120db5d6e6855c37426",
+   "first_commit_date_path_only": "2025-12-30T21:00:50-06:00",
+   "last_change_date": "2025-12-30T21:00:50-06:00",
+   "last_change_sha": "90055009acad92d5799c9120db5d6e6855c37426",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 141,
+   "upstream_test": null,
+   "upstream_test_kind": "none",
+   "upstream_tests_all": [],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2025-12-30T21:00:50-06:00",
+   "norm_sha256": "e18c4de79f015833993d667cef45c038686875c452d4e345ab72e21a2a69f704",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": null,
+   "upstream_test_last_change_date": null,
+   "upstream_test_sha256": null,
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 1,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": false,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "sigilante/SKIjack:python/skijack/ast.py",
+   "repo_url": "https://github.com/sigilante/SKIjack",
+   "path": "python/skijack/ast.py",
+   "pinned_sha": "f608f3b027ecdf7b55475ae20737b9cdaa43b23b",
+   "default_branch": "master",
+   "module_sha256": "95419b631c753e2365dd38b18fdb7317fbc8860c4402008abfb38190955a7fbc",
+   "first_commit_date": "2026-09-16T19:44:18-10:00",
+   "first_commit_sha": "8f7e7214c1165ca533f7e01f849568598eb8da81",
+   "first_commit_date_path_only": "2026-09-16T19:44:18-10:00",
+   "last_change_date": "2026-10-21T11:07:30+13:00",
+   "last_change_sha": "bd9420206e14134e6fed4c87ad5c6578c4772ed5",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 196,
+   "upstream_test": "python/tests/test_dictionary.py",
+   "upstream_test_kind": "direct",
+   "upstream_tests_all": [
+    "python/tests/conftest.py",
+    "python/tests/test_avon.py",
+    "python/tests/test_check.py",
+    "python/tests/test_cli.py",
+    "python/tests/test_dictionary.py",
+    "python/tests/test_drivers.py",
+    "python/tests/test_examples.py",
+    "python/tests/test_expand.py",
+    "python/tests/test_front0.py",
+    "python/tests/test_front1.py",
+    "python/tests/test_generate.py",
+    "python/tests/test_inline.py",
+    "python/tests/test_level1.py",
+    "python/tests/test_list.py",
+    "python/tests/test_literals.py",
+    "python/tests/test_nat.py",
+    "python/tests/test_parser.py",
+    "python/tests/test_scry.py",
+    "python/tests/test_spec0.py",
+    "python/tests/test_templates.py",
+    "python/tests/test_types.py"
+   ],
+   "upstream_tests_direct": [
+    "python/tests/test_dictionary.py",
+    "python/tests/test_generate.py",
+    "python/tests/test_inline.py",
+    "python/tests/test_literals.py",
+    "python/tests/test_parser.py",
+    "python/tests/test_scry.py"
+   ],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01",
+    "newer_since_2026-07-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-09-16T10:50:31-10:00",
+   "norm_sha256": "753d62ea052213712205d6705d8ff594b9d792af1979b4678a950512ff0769d4",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": "72150ea6c44f78d43d54bf344a6168023a296ef0",
+   "upstream_test_last_change_date": "2026-10-21T17:43:51+13:00",
+   "upstream_test_sha256": "9a4c5f057a4534480566069d7d3b5cf2ed6a301add08735bc0a83a31a1072d95",
+   "baseline_human_certain": false,
+   "ai_trace": true,
+   "ai_trace_files": [],
+   "ai_trace_commits": [
+    {
+     "sha": "bd9420206e14134e6fed4c87ad5c6578c4772ed5",
+     "path": "python/skijack/ast.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "0422a06d69d61355672c72c77c8fb5c8be75f2c9",
+     "path": "python/skijack/ast.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "2e185675f3666d315a0941ca285501d07fc0db92",
+     "path": "python/skijack/ast.py",
+     "match": "Co-Authored-By: Claude Opus 5 <noreply@anthropic"
+    },
+    {
+     "sha": "3196bceef215db031bed29db9ceb69b0643dc15c",
+     "path": "python/tests/conftest.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "6269431f40d674406ba6707f9a821d5fe1335cae",
+     "path": "python/tests/conftest.py",
+     "match": "Co-Authored-By: Claude Fable 5.1 <noreply@anthropic"
+    },
+    {
+     "sha": "1c40129bd46402b365f59084aeb1b8fc141b56f6",
+     "path": "python/tests/conftest.py",
+     "match": "Co-Authored-By: Claude Fable 5.1 <noreply@anthropic"
+    },
+    {
+     "sha": "baa2902053883c2c60895a1a799ed6dde7b03356",
+     "path": "python/tests/conftest.py",
+     "match": "Co-Authored-By: Claude Opus 5 <noreply@anthropic"
+    },
+    {
+     "sha": "6ddad0663715ff03db5ba18ece72b8658397079d",
+     "path": "python/tests/test_avon.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "2b9e9729291fdc9234314f3c12f6491f78e4723b",
+     "path": "python/tests/test_avon.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "0e6f22ee623dc44303fde5a8206a0b35acb2c828",
+     "path": "python/tests/test_check.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "ade21d1bc66444ab65bbc822bb819958d8be7db0",
+     "path": "python/tests/test_check.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "09cfc316231b828a51de3f60fb1058d297be7c7b",
+     "path": "python/tests/test_check.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "0c834dc8888b3a867cfa51c8767ff753a411a7a8",
+     "path": "python/tests/test_check.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "465fd8c7256ae335097b38a2054d13522b515c58",
+     "path": "python/tests/test_check.py",
+     "match": "Co-Authored-By: Claude Fable 5.1 <noreply@anthropic"
+    },
+    {
+     "sha": "dcef9c8920915788f0f5c8a27277e7d761f050d4",
+     "path": "python/tests/test_cli.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "f1df4f0d173f7157d16a066d271906bda460425f",
+     "path": "python/tests/test_cli.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "72150ea6c44f78d43d54bf344a6168023a296ef0",
+     "path": "python/tests/test_dictionary.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "2c717303773dca042e4b3f302fcdf2bb44ee1a75",
+     "path": "python/tests/test_dictionary.py",
+     "match": "Co-Authored-By: Claude Fable 5.1 <noreply@anthropic"
+    },
+    {
+     "sha": "6f6867c4dbd6018aba45af80b89523076c09384c",
+     "path": "python/tests/test_drivers.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "1d2a4acc80911252ae1bb03a568b7403a5256d5b",
+     "path": "python/tests/test_drivers.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "5d335c09e8a52c81dd88ceebb4a65f00a61f5c6c",
+     "path": "python/tests/test_examples.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "03b26e8870446df9613b616d8f03df3e72a257e4",
+     "path": "python/tests/test_expand.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "d1daa0de638715efb6eeb3d27371e26e075ff9ae",
+     "path": "python/tests/test_expand.py",
+     "match": "Co-Authored-By: Claude Fable 5.1 <noreply@anthropic"
+    },
+    {
+     "sha": "e706d6e75129104493194ce563d74856303a392f",
+     "path": "python/tests/test_front0.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "711d6c4f0cc0abf30d3db240f652f62aef853a5e",
+     "path": "python/tests/test_front0.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "9c1ceba7f1a47b0995b5fcf9ebbad9c420cdc433",
+     "path": "python/tests/test_front0.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "a333629255aa184445858aafd072784dcbfe37db",
+     "path": "python/tests/test_front0.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "bceec7f8c54cd4b6d6bb8f2d7f83b5447ffedc7e",
+     "path": "python/tests/test_front1.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "f1fdf9e3d896a75992b25f96ca7554214c7c98d1",
+     "path": "python/tests/test_front1.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "b1fb433c620c8e930fd1bd6b1db987d03abd302f",
+     "path": "python/tests/test_front1.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "b61e2c637cfe58d925e44458695a67d158ade08c",
+     "path": "python/tests/test_front1.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "94b5eac11252f16ce9130b26f6a8e78271214893",
+     "path": "python/tests/test_front1.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "21cdef72584996f585552ac7fc057d73b7458915",
+     "path": "python/tests/test_inline.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "9e401fb8680ebfdd5d6b03c89d7bd2bd27408563",
+     "path": "python/tests/test_level1.py",
+     "match": "Co-Authored-By: Claude Opus 5 <noreply@anthropic"
+    },
+    {
+     "sha": "13e6866d97dc0964c9cb9dc0aa126305c68a896b",
+     "path": "python/tests/test_list.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "e564df9a7ccc1bf3617f07f6a4f3bf1cb5b3eaf4",
+     "path": "python/tests/test_list.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "81e409feeece34ea21f8b5877fed7c2886bc0cb1",
+     "path": "python/tests/test_list.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "079d88a375878775a6f8538da74f5dff86f1f7d5",
+     "path": "python/tests/test_literals.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "08517b46cf3f69064d6e7500aa6c279ad28a5bc8",
+     "path": "python/tests/test_nat.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "1b554d66c2fcae0d8cb2ce5a90fa84bbb7b243a2",
+     "path": "python/tests/test_nat.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "8b3452953b08dbeda5794548ccd7866c2b339050",
+     "path": "python/tests/test_nat.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "ed4641675ca6d0464438f0a445c1494d2cb929ff",
+     "path": "python/tests/test_parser.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "a2ea77831993c8b016a5d85a0ceb24fb70f630a0",
+     "path": "python/tests/test_scry.py",
+     "match": "Co-Authored-By: Claude Opus 5 <noreply@anthropic"
+    },
+    {
+     "sha": "24fb0ce905d0147614ea17d8b335fb6efc90829c",
+     "path": "python/tests/test_spec0.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "b29f229bc7b5fe2c37d4a0d7ea747028ec2c3576",
+     "path": "python/tests/test_spec0.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "b7c3ac63d772718e1bf51a5d287a3ee890750800",
+     "path": "python/tests/test_templates.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "5f816873e6662de0e943512b01b107d1fac606e5",
+     "path": "python/tests/test_templates.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "88850ec63adbaced4cc04ca691ce2b861e4981c8",
+     "path": "python/tests/test_types.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "80692406f3905098d4cc49a50d05e2e8ed517f15",
+     "path": "python/tests/test_types.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "7f96cbab1ef66c85ab2a81bcf7a46d9c2270563a",
+     "path": "python/tests/test_types.py",
+     "match": "Co-Authored-By: Claude Fable 5.1 <noreply@anthropic"
+    }
+   ],
+   "ai_trace_commits_scanned": 53,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": true
+   },
+   "primary_set": true,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "srinathgopinath-code/sustainability-score:src/sustainability_score/config.py",
+   "repo_url": "https://github.com/srinathgopinath-code/sustainability-score",
+   "path": "src/sustainability_score/config.py",
+   "pinned_sha": "c3b1590a3d5b9a4e0f2b53021651cc4832ee6756",
+   "default_branch": "main",
+   "module_sha256": "7d03a2929ba798df2d8327550ac7aafe08450aceb2b4dafe107d60753dd97a7b",
+   "first_commit_date": "2026-08-26T22:58:42-04:00",
+   "first_commit_sha": "675b9da4825ba4f5288acd20a92ad521f1b71ed4",
+   "first_commit_date_path_only": "2026-08-26T22:58:42-04:00",
+   "last_change_date": "2026-08-26T22:58:42-04:00",
+   "last_change_sha": "675b9da4825ba4f5288acd20a92ad521f1b71ed4",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 109,
+   "upstream_test": null,
+   "upstream_test_kind": "none",
+   "upstream_tests_all": [],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01",
+    "newer_since_2026-07-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-08-26T22:58:42-04:00",
+   "norm_sha256": "3a1bed7f3a251b8a4c83028b858deb20208d906c93b80f20cba7fd72c3692230",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": null,
+   "upstream_test_last_change_date": null,
+   "upstream_test_sha256": null,
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 1,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": true
+   },
+   "primary_set": true,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "srinathgopinath-code/sustainability-score:src/sustainability_score/model.py",
+   "repo_url": "https://github.com/srinathgopinath-code/sustainability-score",
+   "path": "src/sustainability_score/model.py",
+   "pinned_sha": "c3b1590a3d5b9a4e0f2b53021651cc4832ee6756",
+   "default_branch": "main",
+   "module_sha256": "e015c9b7ce2d8db96504d3dd5fd37b965a9073d2705afd90a98cf2358909da84",
+   "first_commit_date": "2026-08-26T22:58:42-04:00",
+   "first_commit_sha": "675b9da4825ba4f5288acd20a92ad521f1b71ed4",
+   "first_commit_date_path_only": "2026-08-26T22:58:42-04:00",
+   "last_change_date": "2026-08-26T22:58:42-04:00",
+   "last_change_sha": "675b9da4825ba4f5288acd20a92ad521f1b71ed4",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 60,
+   "upstream_test": null,
+   "upstream_test_kind": "none",
+   "upstream_tests_all": [],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01",
+    "newer_since_2026-07-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-08-26T22:58:42-04:00",
+   "norm_sha256": "39fdf96747fdd5fd686606d44be2b2a03d98fb23b9ae81916967080ebfe9e47f",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": null,
+   "upstream_test_last_change_date": null,
+   "upstream_test_sha256": null,
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 1,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": true
+   },
+   "primary_set": true,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "stage0:addict",
+   "repo_url": "https://github.com/mewwts/addict",
+   "path": "addict/addict.py",
+   "pinned_sha": "338936265dd924ec5892aeee9c122d7e4f77680d",
+   "pinned_ref": "v2.4.0",
+   "rules_evaluated_at_sha": "75284f9593dfb929cadd900aff9e35e7c7aec54b",
+   "module_sha256": "49c39f72568033bba0c99a17396d871cbf60097b7f5cf7be8b96d32e263cb9f5",
+   "module_matches_corpus_at_pin": true,
+   "module_matches_corpus_at_head": true,
+   "first_commit_date": "2014-12-10T08:04:09+01:00",
+   "first_commit_sha": "46eb1d19a429248932a3c0e06b71ce361b9adc92",
+   "last_change_date": "2020-11-19T20:01:58+00:00",
+   "last_change_sha": "7e8d23d1615b20e115a543a0fb1972e404d37cd6",
+   "licence": "MIT",
+   "licence_github_spdx": "MIT",
+   "licence_file": "LICENSE",
+   "licence_file_wording": [
+    "MIT"
+   ],
+   "lines": 159,
+   "licence_rule": "pass",
+   "upstream_test": "test_addict.py",
+   "upstream_test_kind": "indirect",
+   "upstream_tests_all": [
+    "test_addict.py"
+   ],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "older"
+   ],
+   "sample_frame": null,
+   "passes_a1b_rules": true,
+   "a1b_rule_failures": [],
+   "stage0_name": "addict",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": "7e8d23d1615b20e115a543a0fb1972e404d37cd6",
+   "upstream_test_last_change_date": "2020-11-19T20:01:58+00:00",
+   "upstream_test_sha256": "175c9238dea0a952ca84968b25b87b9331ecbb49a9abad764b4588d5c484c28f",
+   "baseline_human_certain": true,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 97,
+   "windows": {
+    "newer_since_2025-09-01": false,
+    "newer_since_2026-02-01": false,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": true,
+   "seed_set": true
+  },
+  {
+   "id": "stage0:heapdict",
+   "repo_url": "https://github.com/DanielStutzbach/heapdict",
+   "path": "heapdict.py",
+   "pinned_sha": "9691bab2ff952bfbbd52a9c70300972933022971",
+   "pinned_ref": null,
+   "rules_evaluated_at_sha": "9691bab2ff952bfbbd52a9c70300972933022971",
+   "module_sha256": "a433ee2f086c43223841b33de4f6e19b3eaff00ea41996484c46b3362ccc22b3",
+   "module_matches_corpus_at_pin": true,
+   "module_matches_corpus_at_head": true,
+   "first_commit_date": "2009-10-16T09:19:49-05:00",
+   "first_commit_sha": "eb419a096a30e8f19822a55924562c03ca3dd0d3",
+   "last_change_date": "2019-09-09T10:41:20-07:00",
+   "last_change_sha": "61bd3031df81f2bb445de56d0c7c22512d7c4190",
+   "licence": "BSD-3-Clause",
+   "licence_github_spdx": "NOASSERTION",
+   "licence_file": "LICENSE",
+   "licence_file_wording": [
+    "BSD-3-Clause"
+   ],
+   "lines": 115,
+   "licence_rule": "fail: GitHub SPDX NOASSERTION",
+   "upstream_test": "test_heap.py",
+   "upstream_test_kind": "direct",
+   "upstream_tests_all": [
+    "test_heap.py"
+   ],
+   "upstream_tests_direct": [
+    "test_heap.py"
+   ],
+   "buckets": [
+    "older"
+   ],
+   "sample_frame": null,
+   "passes_a1b_rules": false,
+   "a1b_rule_failures": [
+    "licence:fail: GitHub SPDX NOASSERTION"
+   ],
+   "stage0_name": "heapdict",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": "a06c02f1080bcd57f0bafac7e4f11829cb16a1ff",
+   "upstream_test_last_change_date": "2019-09-09T10:41:18-07:00",
+   "upstream_test_sha256": "d1608e05193eebce1bee66f95e6945cf52d72c137deb09f4de5c728782e0c9bc",
+   "baseline_human_certain": true,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 15,
+   "windows": {
+    "newer_since_2025-09-01": false,
+    "newer_since_2026-02-01": false,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": true,
+   "seed_set": true
+  },
+  {
+   "id": "stage0:mergedeep",
+   "repo_url": "https://github.com/clarketm/mergedeep",
+   "path": "mergedeep/mergedeep.py",
+   "pinned_sha": "ab871aff9eccb5e1bf0ea237c3cff8f6787ebc56",
+   "pinned_ref": "v1.3.4",
+   "rules_evaluated_at_sha": "b52fae95fb612a75c57182706294a26c81698621",
+   "module_sha256": "2f2b376ed14b7bd848287b23f488173e48b475a8417829cd9882ea3d339c90ae",
+   "module_matches_corpus_at_pin": true,
+   "module_matches_corpus_at_head": true,
+   "first_commit_date": "2019-02-03T17:33:43-08:00",
+   "first_commit_sha": "4ad9f974d7f819cf974acd9e31880bf0718e48f7",
+   "last_change_date": "2021-02-05T10:32:14-08:00",
+   "last_change_sha": "fe997abe8b0cca7bce3dbd18afb7a0f2f477cfac",
+   "licence": "MIT",
+   "licence_github_spdx": "MIT",
+   "licence_file": "LICENSE",
+   "licence_file_wording": [
+    "MIT"
+   ],
+   "lines": 100,
+   "licence_rule": "pass",
+   "upstream_test": "mergedeep/test_mergedeep.py",
+   "upstream_test_kind": "direct",
+   "upstream_tests_all": [
+    "mergedeep/test_mergedeep.py"
+   ],
+   "upstream_tests_direct": [
+    "mergedeep/test_mergedeep.py"
+   ],
+   "buckets": [
+    "older"
+   ],
+   "sample_frame": null,
+   "passes_a1b_rules": true,
+   "a1b_rule_failures": [],
+   "stage0_name": "mergedeep",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": "e7447a76b69c7c9984676369dd80588cd6f91b7e",
+   "upstream_test_last_change_date": "2021-01-07T01:41:47-08:00",
+   "upstream_test_sha256": "47d076198f5990292158a6fa27830442cc9cc8b9d450faa70c2af5ff1ecb24bf",
+   "baseline_human_certain": true,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 14,
+   "windows": {
+    "newer_since_2025-09-01": false,
+    "newer_since_2026-02-01": false,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": true,
+   "seed_set": true
+  },
+  {
+   "id": "stage0:toposort",
+   "repo_url": "https://gitlab.com/ericvsmith/toposort",
+   "path": "src/toposort.py",
+   "pinned_sha": "e67c242ceec5908564837ce6ac2cb661659b0cc8",
+   "pinned_ref": "1.10",
+   "rules_evaluated_at_sha": "9fcd043736d3b670ec47534ef9d6ebdfd846790f",
+   "module_sha256": "54e9d07cb28d940a22b08ef2de176ad12c7cf90a4a4502e56c70ad83e32c570e",
+   "module_matches_corpus_at_pin": true,
+   "module_matches_corpus_at_head": true,
+   "first_commit_date": "2014-02-10T10:14:53-05:00",
+   "first_commit_sha": "ca86084b919df654c030905cb45438bdddf963e3",
+   "last_change_date": "2023-02-25T14:59:30-05:00",
+   "last_change_sha": "e67c242ceec5908564837ce6ac2cb661659b0cc8",
+   "licence": "Apache-2.0",
+   "licence_github_spdx": null,
+   "licence_file": "LICENSE.txt",
+   "licence_file_wording": [
+    "Apache-2.0"
+   ],
+   "lines": 95,
+   "licence_rule": "pass (non-GitHub; licence file text matches Apache-2.0)",
+   "upstream_test": "test/test_toposort.py",
+   "upstream_test_kind": "direct",
+   "upstream_tests_all": [
+    "test/test_toposort.py"
+   ],
+   "upstream_tests_direct": [
+    "test/test_toposort.py"
+   ],
+   "buckets": [
+    "older"
+   ],
+   "sample_frame": null,
+   "passes_a1b_rules": true,
+   "a1b_rule_failures": [],
+   "stage0_name": "toposort",
+   "possible_copy": true,
+   "possible_copy_signals": [
+    "copyright_holder:True Blade Systems, Inc."
+   ],
+   "upstream_test_last_change_sha": "22ebe8e88c77cdd31aba45277bba0b2fe84664a5",
+   "upstream_test_last_change_date": "2023-01-10T10:04:27-05:00",
+   "upstream_test_sha256": "242cedde7df34b3991a805ec2436aa1f0491969537c6d4348a3431fcb7ab045a",
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 18,
+   "windows": {
+    "newer_since_2025-09-01": false,
+    "newer_since_2026-02-01": false,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": true,
+   "seed_set": true
+  },
+  {
+   "id": "suifengwudong/ai-novel-assistant:backend/core/structure/models.py",
+   "repo_url": "https://github.com/suifengwudong/ai-novel-assistant",
+   "path": "backend/core/structure/models.py",
+   "pinned_sha": "5604a7394f161e309811ea48f3d0351151f5d217",
+   "default_branch": "main",
+   "module_sha256": "69b4673856d4919feab1bcdcdd2b1720cea412b8406d8b5f42e25022f235ce80",
+   "first_commit_date": "2026-02-08T21:43:34+08:00",
+   "first_commit_sha": "1b8b8fef1f920486f8f9d6995c48fef3c84933d4",
+   "first_commit_date_path_only": "2026-02-08T21:43:34+08:00",
+   "last_change_date": "2026-02-19T21:58:57+08:00",
+   "last_change_sha": "32c1ae70bf7f238074fd54251e4fd86b8f401f59",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 154,
+   "upstream_test": "test/test_structure_engine.py",
+   "upstream_test_kind": "direct",
+   "upstream_tests_all": [
+    "test/test_structure_engine.py"
+   ],
+   "upstream_tests_direct": [
+    "test/test_structure_engine.py"
+   ],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-02-07T21:47:25+08:00",
+   "norm_sha256": "dd54881b6081ba2b496e1c843c5a158dab98ad9c1e0cb950e2b755ce505a6e57",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": "1e563d40c6e98e445b3c94a960f7ccd63e832c9a",
+   "upstream_test_last_change_date": "2026-02-08T21:44:50+08:00",
+   "upstream_test_sha256": "ac266580a638b7beb66218b4392203f8e25c48885e29036e4553355355b56f27",
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 3,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "sungju/isos:source/kernel_version.py",
+   "repo_url": "https://github.com/sungju/isos",
+   "path": "source/kernel_version.py",
+   "pinned_sha": "f0d4e4a1f8e91cc64aacf1bb5411e638298d6de9",
+   "default_branch": "main",
+   "module_sha256": "dc5cd3ac822bde19e3bcc5285a42a63a6d06d3d1e61b5be01ccf896509819391",
+   "first_commit_date": "2026-10-10T07:09:27+10:00",
+   "first_commit_sha": "9330678476e60cad852f51dcd4a08bd53fbbd2ae",
+   "first_commit_date_path_only": "2026-10-10T07:09:27+10:00",
+   "last_change_date": "2026-10-10T07:09:27+10:00",
+   "last_change_sha": "9330678476e60cad852f51dcd4a08bd53fbbd2ae",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 212,
+   "upstream_test": null,
+   "upstream_test_kind": "none",
+   "upstream_tests_all": [],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01",
+    "newer_since_2026-07-01"
+   ],
+   "sample_frame": "older",
+   "repo_root_commit_date": "2024-07-31T13:22:37+10:00",
+   "norm_sha256": "502f9e39ba2bdf3ef970e124d8952757dd878e630c58938298f5e9489f7241b4",
+   "possible_copy": true,
+   "possible_copy_signals": [
+    "phrase:identical copy"
+   ],
+   "upstream_test_last_change_sha": null,
+   "upstream_test_last_change_date": null,
+   "upstream_test_sha256": null,
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 1,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": true
+   },
+   "primary_set": true,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "syr-cn/ReMemR1:verl/utils/reward_score/math.py",
+   "repo_url": "https://github.com/syr-cn/ReMemR1",
+   "path": "verl/utils/reward_score/math.py",
+   "pinned_sha": "cc514c092ca968a50c52cdcc2e2ba96362fce25a",
+   "default_branch": "main",
+   "module_sha256": "bedd23cf360e1bce8881e61256e74c9b355b6e6d9ae6aaaeb8f7f490c7c0ba8b",
+   "first_commit_date": "2025-09-25T17:40:24+08:00",
+   "first_commit_sha": "293b467f797f4b553993016af89eaf20482f38ef",
+   "first_commit_date_path_only": "2025-09-25T17:40:24+08:00",
+   "last_change_date": "2025-09-25T17:40:24+08:00",
+   "last_change_sha": "293b467f797f4b553993016af89eaf20482f38ef",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 223,
+   "upstream_test": null,
+   "upstream_test_kind": "none",
+   "upstream_tests_all": [],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2025-09-22T15:28:48+08:00",
+   "norm_sha256": "dc2dde6a1dff4811852fc4bfcbbaef3119e1c9930074c5f426731e00c22c07b2",
+   "possible_copy": true,
+   "possible_copy_signals": [
+    "copyright_holder:Bytedance Ltd. and/or its affiliates",
+    "copyright_holder:EleutherAI and the HuggingFace Inc. team. All rights reserved.",
+    "phrase:Adapted from",
+    "url:EleutherAI/lm-evaluation-harness"
+   ],
+   "upstream_test_last_change_sha": null,
+   "upstream_test_last_change_date": null,
+   "upstream_test_sha256": null,
+   "baseline_human_certain": false,
+   "ai_trace": true,
+   "ai_trace_files": [
+    ".claude/CLAUDE.md"
+   ],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 1,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": false,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "syr-cn/ReMemR1:verl/utils/reward_score/prime_math/math_normalize.py",
+   "repo_url": "https://github.com/syr-cn/ReMemR1",
+   "path": "verl/utils/reward_score/prime_math/math_normalize.py",
+   "pinned_sha": "cc514c092ca968a50c52cdcc2e2ba96362fce25a",
+   "default_branch": "main",
+   "module_sha256": "e7db5234bf6d8a2c763c95de3f75d8747a65966ac864dbc0af306ccdcd49b882",
+   "first_commit_date": "2025-09-25T17:40:24+08:00",
+   "first_commit_sha": "293b467f797f4b553993016af89eaf20482f38ef",
+   "first_commit_date_path_only": "2025-09-25T17:40:24+08:00",
+   "last_change_date": "2025-09-25T17:40:24+08:00",
+   "last_change_sha": "293b467f797f4b553993016af89eaf20482f38ef",
+   "licence": "MIT",
+   "licence_file": "LICENSE",
+   "lines": 191,
+   "upstream_test": null,
+   "upstream_test_kind": "none",
+   "upstream_tests_all": [],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2025-09-22T15:28:48+08:00",
+   "norm_sha256": "a67e70ed509d073ccaece0f55bc54d837f038b7d292d9f5e9559d42372aa893e",
+   "possible_copy": true,
+   "possible_copy_signals": [
+    "copyright_holder:Dan Hendrycks",
+    "copyright_holder:PRIME team and/or its affiliates",
+    "phrase:copied from",
+    "url:openai/prm800k"
+   ],
+   "upstream_test_last_change_sha": null,
+   "upstream_test_last_change_date": null,
+   "upstream_test_sha256": null,
+   "baseline_human_certain": false,
+   "ai_trace": true,
+   "ai_trace_files": [
+    ".claude/CLAUDE.md"
+   ],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 1,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": false,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "tetrelsec/depthcharge:python/depthcharge/log.py",
+   "repo_url": "https://github.com/tetrelsec/depthcharge",
+   "path": "python/depthcharge/log.py",
+   "pinned_sha": "f8591f23cb7b216c321bc0405774ad460393bfd9",
+   "default_branch": "main",
+   "module_sha256": "28f7831e817693eb9ede24e780867767b413d2ba469ec34796aefc32351f83ca",
+   "first_commit_date": "2020-07-13T07:47:47-05:00",
+   "first_commit_sha": "64fa22593a5935809e2cf2ad63ae627b8561631a",
+   "first_commit_date_path_only": "2020-07-13T07:47:47-05:00",
+   "last_change_date": "2024-05-24T19:55:28+00:00",
+   "last_change_sha": "8506c1648c14ea1ddc856782bcfbc92e923ec2d2",
+   "licence": "BSD-3-Clause",
+   "licence_file": "LICENSE.txt",
+   "lines": 246,
+   "upstream_test": "python/tests/integration/launch_scripts.py",
+   "upstream_test_kind": "direct",
+   "upstream_tests_all": [
+    "python/tests/integration/launch_scripts.py",
+    "python/tests/integration/memory_test.py",
+    "python/tests/integration/test_utils.py",
+    "python/tests/unit/checker/builtins.py",
+    "python/tests/unit/checker/report.py",
+    "python/tests/unit/checker/security_risk.py",
+    "python/tests/unit/checker/uboot_config.py",
+    "python/tests/unit/checker/uboot_header.py",
+    "python/tests/unit/hunter/constant.py",
+    "python/tests/unit/hunter/cp.py",
+    "python/tests/unit/hunter/env.py",
+    "python/tests/unit/hunter/fdt.py",
+    "python/tests/unit/hunter/hunter.py",
+    "python/tests/unit/hunter/revcrc32.py",
+    "python/tests/unit/hunter/string.py",
+    "python/tests/unit/operation.py",
+    "python/tests/unit/stratagem.py",
+    "python/tests/unit/uboot/env.py",
+    "python/tests/unit/uboot/version.py"
+   ],
+   "upstream_tests_direct": [
+    "python/tests/integration/launch_scripts.py",
+    "python/tests/integration/memory_test.py",
+    "python/tests/integration/test_utils.py"
+   ],
+   "buckets": [
+    "older"
+   ],
+   "sample_frame": "older",
+   "repo_root_commit_date": "2020-07-12T22:58:22-05:00",
+   "norm_sha256": "0694c9874e247d67c39d6e1344a350984764ebd16a61ffba89a4930717e25636",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": "8506c1648c14ea1ddc856782bcfbc92e923ec2d2",
+   "upstream_test_last_change_date": "2024-05-24T19:55:28+00:00",
+   "upstream_test_sha256": "0e33cb23bf1f1248a860ac839e914f9b77ae58803b7cd1ce2351954153381f10",
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 13,
+   "windows": {
+    "newer_since_2025-09-01": false,
+    "newer_since_2026-02-01": false,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": true,
+   "seed_set": false
+  },
+  {
+   "id": "tetrelsec/depthcharge:python/depthcharge/uboot/version.py",
+   "repo_url": "https://github.com/tetrelsec/depthcharge",
+   "path": "python/depthcharge/uboot/version.py",
+   "pinned_sha": "f8591f23cb7b216c321bc0405774ad460393bfd9",
+   "default_branch": "main",
+   "module_sha256": "b993c95891db0bdba62b7c0becf220bc7e8ff59405444f07165169415ee455fc",
+   "first_commit_date": "2020-12-01T01:58:24-06:00",
+   "first_commit_sha": "65103ee426086eef01eccbf759a3946c06ef0756",
+   "first_commit_date_path_only": "2020-12-01T01:58:24-06:00",
+   "last_change_date": "2024-05-24T19:55:28+00:00",
+   "last_change_sha": "8506c1648c14ea1ddc856782bcfbc92e923ec2d2",
+   "licence": "BSD-3-Clause",
+   "licence_file": "LICENSE.txt",
+   "lines": 161,
+   "upstream_test": "python/tests/unit/uboot/version.py",
+   "upstream_test_kind": "indirect",
+   "upstream_tests_all": [
+    "python/tests/integration/launch_scripts.py",
+    "python/tests/integration/memory_test.py",
+    "python/tests/integration/test_utils.py",
+    "python/tests/unit/checker/builtins.py",
+    "python/tests/unit/checker/report.py",
+    "python/tests/unit/checker/security_risk.py",
+    "python/tests/unit/checker/uboot_config.py",
+    "python/tests/unit/checker/uboot_header.py",
+    "python/tests/unit/hunter/constant.py",
+    "python/tests/unit/hunter/cp.py",
+    "python/tests/unit/hunter/env.py",
+    "python/tests/unit/hunter/fdt.py",
+    "python/tests/unit/hunter/hunter.py",
+    "python/tests/unit/hunter/revcrc32.py",
+    "python/tests/unit/hunter/string.py",
+    "python/tests/unit/operation.py",
+    "python/tests/unit/stratagem.py",
+    "python/tests/unit/uboot/env.py",
+    "python/tests/unit/uboot/version.py"
+   ],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "older"
+   ],
+   "sample_frame": "older",
+   "repo_root_commit_date": "2020-07-12T22:58:22-05:00",
+   "norm_sha256": "e3a351fa1dd6847cf02211955c5e92858184e286091d491a257b8640b97b9a8f",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": "8506c1648c14ea1ddc856782bcfbc92e923ec2d2",
+   "upstream_test_last_change_date": "2024-05-24T19:55:28+00:00",
+   "upstream_test_sha256": "5d44cb25981edf98f0b1ec0aab23444a999d8d50b0b40ea16cbfbac2a7b26c96",
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 14,
+   "windows": {
+    "newer_since_2025-09-01": false,
+    "newer_since_2026-02-01": false,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": true,
+   "seed_set": false
+  },
+  {
+   "id": "vishwa-10147/SentinelEdgeAI:common/bounded.py",
+   "repo_url": "https://github.com/vishwa-10147/SentinelEdgeAI",
+   "path": "common/bounded.py",
+   "pinned_sha": "c71e2e1a887040dde23a367177628a3238cc24f2",
+   "default_branch": "main",
+   "module_sha256": "01a51c2ca222cb933a3049288533ca47f78a0d8b78cb13b6733c352520b4f72a",
+   "first_commit_date": "2026-10-31T14:48:42+05:30",
+   "first_commit_sha": "f8b3efcc4c5738794998cc60206d834ace18c0dd",
+   "first_commit_date_path_only": "2026-10-31T14:48:42+05:30",
+   "last_change_date": "2026-10-31T14:48:42+05:30",
+   "last_change_sha": "f8b3efcc4c5738794998cc60206d834ace18c0dd",
+   "licence": "Apache-2.0",
+   "licence_file": "LICENSE",
+   "lines": 58,
+   "upstream_test": "tests/test_flood_safety.py",
+   "upstream_test_kind": "direct",
+   "upstream_tests_all": [
+    "tests/test_flood_safety.py"
+   ],
+   "upstream_tests_direct": [
+    "tests/test_flood_safety.py"
+   ],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01",
+    "newer_since_2026-07-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-02-15T00:06:19+05:30",
+   "norm_sha256": "fd2484b69518ef30130258be48480ae3ed11e92b92685878a545a4a4ee9c5b7e",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": "589a4a39f813c2ad23ddee1f299b59957726c7f2",
+   "upstream_test_last_change_date": "2026-10-31T14:58:07+05:30",
+   "upstream_test_sha256": "9f5fddc878e93cf4ac666aae2f1ee437ff6a18ba9d100311896b0f51184a6d59",
+   "baseline_human_certain": false,
+   "ai_trace": true,
+   "ai_trace_files": [],
+   "ai_trace_commits": [
+    {
+     "sha": "f8b3efcc4c5738794998cc60206d834ace18c0dd",
+     "path": "common/bounded.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    },
+    {
+     "sha": "589a4a39f813c2ad23ddee1f299b59957726c7f2",
+     "path": "tests/test_flood_safety.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    }
+   ],
+   "ai_trace_commits_scanned": 2,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": true
+   },
+   "primary_set": true,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "vishwa-10147/SentinelEdgeAI:reporting/pdf.py",
+   "repo_url": "https://github.com/vishwa-10147/SentinelEdgeAI",
+   "path": "reporting/pdf.py",
+   "pinned_sha": "c71e2e1a887040dde23a367177628a3238cc24f2",
+   "default_branch": "main",
+   "module_sha256": "7b5237e3a005386b70d7efb3f05f27e9494b12a7dc798c267bead621b2fe0cdd",
+   "first_commit_date": "2026-10-31T01:06:07+05:30",
+   "first_commit_sha": "4cb241584f6eb0688e00af5422436e6791a82ac5",
+   "first_commit_date_path_only": "2026-10-31T01:06:07+05:30",
+   "last_change_date": "2026-10-31T01:06:07+05:30",
+   "last_change_sha": "4cb241584f6eb0688e00af5422436e6791a82ac5",
+   "licence": "Apache-2.0",
+   "licence_file": "LICENSE",
+   "lines": 79,
+   "upstream_test": "tests/test_integrations_ops.py",
+   "upstream_test_kind": "direct",
+   "upstream_tests_all": [
+    "tests/test_integrations_ops.py"
+   ],
+   "upstream_tests_direct": [
+    "tests/test_integrations_ops.py"
+   ],
+   "buckets": [
+    "newer_since_2025-09-01",
+    "newer_since_2026-02-01",
+    "newer_since_2026-07-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2026-02-15T00:06:19+05:30",
+   "norm_sha256": "8bdf7656cc6c310970a2b2c9a641d72f57f08129c277db354ef92332454caceb",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": "4cb241584f6eb0688e00af5422436e6791a82ac5",
+   "upstream_test_last_change_date": "2026-10-31T01:06:07+05:30",
+   "upstream_test_sha256": "37fb5ebf32523a458e9d5e9e4dfdbfd2420b86fe42c73b9c4ea4cda55e1bfbcc",
+   "baseline_human_certain": false,
+   "ai_trace": true,
+   "ai_trace_files": [],
+   "ai_trace_commits": [
+    {
+     "sha": "4cb241584f6eb0688e00af5422436e6791a82ac5",
+     "path": "reporting/pdf.py",
+     "match": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic"
+    }
+   ],
+   "ai_trace_commits_scanned": 1,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": true,
+    "newer_since_2026-07-01": true
+   },
+   "primary_set": true,
+   "baseline_set": false,
+   "seed_set": false
+  },
+  {
+   "id": "yashtilala412/frappe-hr-events:hr_events/hooks.py",
+   "repo_url": "https://github.com/yashtilala412/frappe-hr-events",
+   "path": "hr_events/hooks.py",
+   "pinned_sha": "332a6bf9f95dbca4794c7332d38fe4d1a23cefe0",
+   "default_branch": "main",
+   "module_sha256": "0305d5028fdba2ea3bb53a2819a9d562f2a83f406b9b50ab1ef9b75d2d726ea1",
+   "first_commit_date": "2025-10-23T11:03:06+00:00",
+   "first_commit_sha": "274bd09bbf50a5569cd33972b050e264e2375f5a",
+   "first_commit_date_path_only": "2025-10-23T11:03:06+00:00",
+   "last_change_date": "2025-10-24T07:33:45+00:00",
+   "last_change_sha": "9f869056cf4695b91cdf6111c6a94dd618cd53cc",
+   "licence": "MIT",
+   "licence_file": "license.txt",
+   "lines": 232,
+   "upstream_test": null,
+   "upstream_test_kind": "none",
+   "upstream_tests_all": [],
+   "upstream_tests_direct": [],
+   "buckets": [
+    "newer_since_2025-09-01"
+   ],
+   "sample_frame": "newer",
+   "repo_root_commit_date": "2025-10-23T11:03:06+00:00",
+   "norm_sha256": "89652aeef7583c8addb10c728a5e6736c4ce90968a868606677f4bce9076bda6",
+   "possible_copy": false,
+   "possible_copy_signals": [],
+   "upstream_test_last_change_sha": null,
+   "upstream_test_last_change_date": null,
+   "upstream_test_sha256": null,
+   "baseline_human_certain": false,
+   "ai_trace": false,
+   "ai_trace_files": [],
+   "ai_trace_commits": [],
+   "ai_trace_commits_scanned": 2,
+   "windows": {
+    "newer_since_2025-09-01": true,
+    "newer_since_2026-02-01": false,
+    "newer_since_2026-07-01": false
+   },
+   "primary_set": false,
+   "baseline_set": false,
+   "seed_set": false
+  }
+ ],
+ "removed_candidates": [
+  {
+   "repo_url": "https://github.com/ghostmkg/Recipe-Hub",
+   "path": "apps/web/node_modules/flatted/python/flatted.py",
+   "buckets": [
+    "newer_since_2025-09-01"
+   ],
+   "removed_by": "rule5_vendored_path_a1d"
+  }
+ ]
+}

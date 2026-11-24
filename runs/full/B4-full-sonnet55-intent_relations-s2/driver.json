@@ -1,0 +1,1 @@
+{"run_id": "B4-full-sonnet55-intent_relations-s2", "order": 75, "writer_called": true, "writer_subprocess_seconds": 42.7, "writer_wall_seconds": 40.95, "scoring_wall_seconds": 162.6, "total_seconds": 205.3, "scoring_exit": 0, "finished_at": "2026-11-23T07:29:41+00:00"}

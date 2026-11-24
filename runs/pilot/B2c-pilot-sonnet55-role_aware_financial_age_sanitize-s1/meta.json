@@ -1,0 +1,33 @@
+{
+  "run_id": "B2c-pilot-sonnet55-role_aware_financial_age_sanitize-s1",
+  "tag": "pilot",
+  "module": "role_aware_financial_age_sanitize",
+  "model_id": "claude-sonnet-5-5",
+  "effort": "low",
+  "seed": "s1",
+  "prompt_hash": "9c407f6b6e8870edaa6b91607144c1efcd29a0947dc37d79e064fb043c03acc7",
+  "iterations": 2,
+  "stop": "writer_done",
+  "stop_reasons": [
+    "end_turn",
+    "end_turn"
+  ],
+  "tokens_in": 7346,
+  "tokens_out": 1764,
+  "estimated_cost": 0.032332,
+  "wall_seconds": 12.74,
+  "parse_failures": [],
+  "api_error": null,
+  "suite_dir": "runs/pilot/B2c-pilot-sonnet55-role_aware_financial_age_sanitize-s1/suite",
+  "suite_files": [
+    "test_role_aware_financial_age_sanitize.py"
+  ],
+  "caps": {
+    "max_iterations": 3,
+    "max_tokens_per_call": 32000,
+    "run_token_cap": 120000,
+    "run_wall_cap_s": 900,
+    "spend_cap_usd": 2.5
+  },
+  "timestamp": "2026-11-19T22:08:11+00:00"
+}

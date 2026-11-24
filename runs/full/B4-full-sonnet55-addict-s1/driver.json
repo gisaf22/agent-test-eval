@@ -1,0 +1,1 @@
+{"run_id": "B4-full-sonnet55-addict-s1", "order": 86, "writer_called": true, "writer_subprocess_seconds": 34.11, "writer_wall_seconds": 32.4, "scoring_wall_seconds": 52.09, "total_seconds": 86.2, "scoring_exit": 0, "finished_at": "2026-11-23T07:33:30+00:00"}

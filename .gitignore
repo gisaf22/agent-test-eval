@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mutmut-cache
+mutants/
+.coverage
+*.sqlite
+.DS_Store

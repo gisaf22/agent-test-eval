@@ -1,0 +1,104 @@
+{
+  "run_id": "B4-full-sonnet55-wtftd_war_thunder_full_t_blk-s3",
+  "tag": "full",
+  "module": "wtftd_war_thunder_full_t_blk",
+  "model_id": "claude-sonnet-5-5",
+  "effort": "low",
+  "seed": "s3",
+  "prompt_hash": "9c407f6b6e8870edaa6b91607144c1efcd29a0947dc37d79e064fb043c03acc7",
+  "iterations": 3,
+  "stop": "writer_done",
+  "stop_reasons": [
+    "end_turn",
+    "end_turn",
+    "end_turn"
+  ],
+  "tokens_in": 17433,
+  "tokens_out": 4491,
+  "estimated_cost": 0.079776,
+  "wall_seconds": 34.14,
+  "parse_failures": [],
+  "api_error": null,
+  "suite_dir": "runs/full/B4-full-sonnet55-wtftd_war_thunder_full_t_blk-s3/suite",
+  "suite_files": [
+    "test_wtftd_war_thunder_full_t_blk.py"
+  ],
+  "run_started_at": "2026-11-20T06:21:48+00:00",
+  "iterations_used": 3,
+  "suite_iterations": 2,
+  "first_iteration_pass": true,
+  "unparsable_files": [],
+  "unparsable_by_iteration": {},
+  "response_models": [
+    "claude-sonnet-5-5",
+    "claude-sonnet-5-5",
+    "claude-sonnet-5-5"
+  ],
+  "response_model": "claude-sonnet-5-5",
+  "request_ids": [
+    "req_011ChDhSdn3DKaJn6empLfja",
+    "req_011ChDhTWjuPnBdkPzTKgrd1",
+    "req_011ChDhV2jUVZXY2i2ExjuNA"
+  ],
+  "usage_full": [
+    {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "global",
+      "input_tokens": 3443,
+      "output_tokens": 1717,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "service_tier": "standard",
+      "speed": "standard"
+    },
+    {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "global",
+      "input_tokens": 5467,
+      "output_tokens": 2769,
+      "output_tokens_details": {
+        "thinking_tokens": 658
+      },
+      "service_tier": "standard",
+      "speed": "standard"
+    },
+    {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "global",
+      "input_tokens": 8523,
+      "output_tokens": 5,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "service_tier": "standard",
+      "speed": "standard"
+    }
+  ],
+  "peak_input_tokens_per_call": 8523,
+  "retry_count": 0,
+  "api_events": [],
+  "caps": {
+    "max_iterations": 3,
+    "max_tokens_per_call": 32000,
+    "run_token_cap": 120000,
+    "run_wall_cap_s": 900,
+    "spend_cap_usd": 8.0
+  },
+  "timestamp": "2026-11-20T06:22:23+00:00"
+}

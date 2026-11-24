@@ -1,0 +1,10 @@
+{
+  "run_id": "B1-20261119T180914Z-haiku55-toposort",
+  "tag": "dry_run",
+  "module": "toposort",
+  "model_id": "claude-haiku-5-5",
+  "effort": "low",
+  "seed": "s1",
+  "aborted": "writer.py bug: ParsedMessage has no _request_id; reply and usage not saved; not scored",
+  "iterations": 1
+}

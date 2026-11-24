@@ -1,0 +1,1 @@
+{"run_id": "B4-full-sonnet55-heapdict-s3", "order": 62, "writer_called": true, "writer_subprocess_seconds": 16.5, "writer_wall_seconds": 14.82, "scoring_wall_seconds": 139.66, "total_seconds": 156.16, "scoring_exit": 0, "finished_at": "2026-11-23T07:19:30+00:00"}

@@ -1,0 +1,836 @@
+{
+ "tag": "full",
+ "model": "claude-sonnet-5-5",
+ "effort": "low",
+ "plan_seed": 20261120,
+ "seeds": [
+  "s1",
+  "s2",
+  "s3"
+ ],
+ "design_commit": "c530e5168b2d14d1f473ae316039ac9b27d52929",
+ "corpus_final_sha256": "4d57f98e64d7da3587e8f127e8f90f8451fce407ea089ece96d2a094f83f0ccd",
+ "n_runs": 117,
+ "runs": [
+  {
+   "order": 1,
+   "run_id": "B4-full-sonnet55-blackmamba_open_source_r_power_estimator-s3",
+   "module": "blackmamba_open_source_r_power_estimator",
+   "set": "primary",
+   "seed": "s3"
+  },
+  {
+   "order": 2,
+   "run_id": "B4-full-sonnet55-wtftd_war_thunder_full_t_blk-s3",
+   "module": "wtftd_war_thunder_full_t_blk",
+   "set": "primary",
+   "seed": "s3"
+  },
+  {
+   "order": 3,
+   "run_id": "B4-full-sonnet55-zagentic_ir_schema-s3",
+   "module": "zagentic_ir_schema",
+   "set": "primary",
+   "seed": "s3"
+  },
+  {
+   "order": 4,
+   "run_id": "B4-full-sonnet55-addict-s2",
+   "module": "addict",
+   "set": "baseline",
+   "seed": "s2"
+  },
+  {
+   "order": 5,
+   "run_id": "B4-full-sonnet55-skijack_ast-s3",
+   "module": "skijack_ast",
+   "set": "primary",
+   "seed": "s3"
+  },
+  {
+   "order": 6,
+   "run_id": "B4-full-sonnet55-ai_video_generator_safety-s2",
+   "module": "ai_video_generator_safety",
+   "set": "primary",
+   "seed": "s2"
+  },
+  {
+   "order": 7,
+   "run_id": "B4-full-sonnet55-hangzhou_mahjong_ai_value-s2",
+   "module": "hangzhou_mahjong_ai_value",
+   "set": "primary",
+   "seed": "s2"
+  },
+  {
+   "order": 8,
+   "run_id": "B4-full-sonnet55-synaptiq_retrieval-s2",
+   "module": "synaptiq_retrieval",
+   "set": "primary",
+   "seed": "s2"
+  },
+  {
+   "order": 9,
+   "run_id": "B4-full-sonnet55-zagentic_ir_schema-s1",
+   "module": "zagentic_ir_schema",
+   "set": "primary",
+   "seed": "s1"
+  },
+  {
+   "order": 10,
+   "run_id": "B4-full-sonnet55-heapdict-s1",
+   "module": "heapdict",
+   "set": "baseline",
+   "seed": "s1"
+  },
+  {
+   "order": 11,
+   "run_id": "B4-full-sonnet55-home_assistant_budget_bo_analytics-s1",
+   "module": "home_assistant_budget_bo_analytics",
+   "set": "primary",
+   "seed": "s1"
+  },
+  {
+   "order": 12,
+   "run_id": "B4-full-sonnet55-depthcharge_version-s3",
+   "module": "depthcharge_version",
+   "set": "baseline",
+   "seed": "s3"
+  },
+  {
+   "order": 13,
+   "run_id": "B4-full-sonnet55-hangzhou_mahjong_ai_value-s3",
+   "module": "hangzhou_mahjong_ai_value",
+   "set": "primary",
+   "seed": "s3"
+  },
+  {
+   "order": 14,
+   "run_id": "B4-full-sonnet55-codebots_arena_bot-s2",
+   "module": "codebots_arena_bot",
+   "set": "primary",
+   "seed": "s2"
+  },
+  {
+   "order": 15,
+   "run_id": "B4-full-sonnet55-isos_kernel_version-s3",
+   "module": "isos_kernel_version",
+   "set": "primary",
+   "seed": "s3"
+  },
+  {
+   "order": 16,
+   "run_id": "B4-full-sonnet55-angelbot_triage-s1",
+   "module": "angelbot_triage",
+   "set": "primary",
+   "seed": "s1"
+  },
+  {
+   "order": 17,
+   "run_id": "B4-full-sonnet55-ai_video_generator_safety-s3",
+   "module": "ai_video_generator_safety",
+   "set": "primary",
+   "seed": "s3"
+  },
+  {
+   "order": 18,
+   "run_id": "B4-full-sonnet55-databroker_pivot-s2",
+   "module": "databroker_pivot",
+   "set": "baseline",
+   "seed": "s2"
+  },
+  {
+   "order": 19,
+   "run_id": "B4-full-sonnet55-codebots_arena_elo-s3",
+   "module": "codebots_arena_elo",
+   "set": "primary",
+   "seed": "s3"
+  },
+  {
+   "order": 20,
+   "run_id": "B4-full-sonnet55-depthcharge_log-s1",
+   "module": "depthcharge_log",
+   "set": "baseline",
+   "seed": "s1"
+  },
+  {
+   "order": 21,
+   "run_id": "B4-full-sonnet55-role_aware_financial_age_sanitize-s3",
+   "module": "role_aware_financial_age_sanitize",
+   "set": "primary",
+   "seed": "s3"
+  },
+  {
+   "order": 22,
+   "run_id": "B4-full-sonnet55-wtftd_war_thunder_full_t_minimap-s2",
+   "module": "wtftd_war_thunder_full_t_minimap",
+   "set": "primary",
+   "seed": "s2"
+  },
+  {
+   "order": 23,
+   "run_id": "B4-full-sonnet55-bossalign_schema-s3",
+   "module": "bossalign_schema",
+   "set": "primary",
+   "seed": "s3"
+  },
+  {
+   "order": 24,
+   "run_id": "B4-full-sonnet55-wdcnet_scheduler-s2",
+   "module": "wdcnet_scheduler",
+   "set": "primary",
+   "seed": "s2"
+  },
+  {
+   "order": 25,
+   "run_id": "B4-full-sonnet55-trace2task_experience_runtime-s1",
+   "module": "trace2task_experience_runtime",
+   "set": "primary",
+   "seed": "s1"
+  },
+  {
+   "order": 26,
+   "run_id": "B4-full-sonnet55-toposort-s2",
+   "module": "toposort",
+   "set": "baseline",
+   "seed": "s2"
+  },
+  {
+   "order": 27,
+   "run_id": "B4-full-sonnet55-sustainability_score_config-s3",
+   "module": "sustainability_score_config",
+   "set": "primary",
+   "seed": "s3"
+  },
+  {
+   "order": 28,
+   "run_id": "B4-full-sonnet55-databroker_pivot-s1",
+   "module": "databroker_pivot",
+   "set": "baseline",
+   "seed": "s1"
+  },
+  {
+   "order": 29,
+   "run_id": "B4-full-sonnet55-zagentic_doi-s1",
+   "module": "zagentic_doi",
+   "set": "primary",
+   "seed": "s1"
+  },
+  {
+   "order": 30,
+   "run_id": "B4-full-sonnet55-codex_memories_redaction-s2",
+   "module": "codex_memories_redaction",
+   "set": "primary",
+   "seed": "s2"
+  },
+  {
+   "order": 31,
+   "run_id": "B4-full-sonnet55-blackmamba_open_source_r_power_estimator-s1",
+   "module": "blackmamba_open_source_r_power_estimator",
+   "set": "primary",
+   "seed": "s1"
+  },
+  {
+   "order": 32,
+   "run_id": "B4-full-sonnet55-isos_kernel_version-s2",
+   "module": "isos_kernel_version",
+   "set": "primary",
+   "seed": "s2"
+  },
+  {
+   "order": 33,
+   "run_id": "B4-full-sonnet55-isos_kernel_version-s1",
+   "module": "isos_kernel_version",
+   "set": "primary",
+   "seed": "s1"
+  },
+  {
+   "order": 34,
+   "run_id": "B4-full-sonnet55-mergedeep-s1",
+   "module": "mergedeep",
+   "set": "baseline",
+   "seed": "s1"
+  },
+  {
+   "order": 35,
+   "run_id": "B4-full-sonnet55-heapdict-s2",
+   "module": "heapdict",
+   "set": "baseline",
+   "seed": "s2"
+  },
+  {
+   "order": 36,
+   "run_id": "B4-full-sonnet55-codebots_arena_elo-s2",
+   "module": "codebots_arena_elo",
+   "set": "primary",
+   "seed": "s2"
+  },
+  {
+   "order": 37,
+   "run_id": "B4-full-sonnet55-intent_changes-s2",
+   "module": "intent_changes",
+   "set": "primary",
+   "seed": "s2"
+  },
+  {
+   "order": 38,
+   "run_id": "B4-full-sonnet55-hangzhou_mahjong_ai_config-s3",
+   "module": "hangzhou_mahjong_ai_config",
+   "set": "primary",
+   "seed": "s3"
+  },
+  {
+   "order": 39,
+   "run_id": "B4-full-sonnet55-wdcnet_scheduler-s3",
+   "module": "wdcnet_scheduler",
+   "set": "primary",
+   "seed": "s3"
+  },
+  {
+   "order": 40,
+   "run_id": "B4-full-sonnet55-addict-s3",
+   "module": "addict",
+   "set": "baseline",
+   "seed": "s3"
+  },
+  {
+   "order": 41,
+   "run_id": "B4-full-sonnet55-depthcharge_log-s3",
+   "module": "depthcharge_log",
+   "set": "baseline",
+   "seed": "s3"
+  },
+  {
+   "order": 42,
+   "run_id": "B4-full-sonnet55-synaptiq_belief_guard-s1",
+   "module": "synaptiq_belief_guard",
+   "set": "primary",
+   "seed": "s1"
+  },
+  {
+   "order": 43,
+   "run_id": "B4-full-sonnet55-synaptiq_retrieval-s1",
+   "module": "synaptiq_retrieval",
+   "set": "primary",
+   "seed": "s1"
+  },
+  {
+   "order": 44,
+   "run_id": "B4-full-sonnet55-trace2task_experience-s1",
+   "module": "trace2task_experience",
+   "set": "primary",
+   "seed": "s1"
+  },
+  {
+   "order": 45,
+   "run_id": "B4-full-sonnet55-angelbot_triage-s2",
+   "module": "angelbot_triage",
+   "set": "primary",
+   "seed": "s2"
+  },
+  {
+   "order": 46,
+   "run_id": "B4-full-sonnet55-trace2task_experience-s2",
+   "module": "trace2task_experience",
+   "set": "primary",
+   "seed": "s2"
+  },
+  {
+   "order": 47,
+   "run_id": "B4-full-sonnet55-depthcharge_log-s2",
+   "module": "depthcharge_log",
+   "set": "baseline",
+   "seed": "s2"
+  },
+  {
+   "order": 48,
+   "run_id": "B4-full-sonnet55-mergedeep-s2",
+   "module": "mergedeep",
+   "set": "baseline",
+   "seed": "s2"
+  },
+  {
+   "order": 49,
+   "run_id": "B4-full-sonnet55-blackmamba_open_source_r_vision-s1",
+   "module": "blackmamba_open_source_r_vision",
+   "set": "primary",
+   "seed": "s1"
+  },
+  {
+   "order": 50,
+   "run_id": "B4-full-sonnet55-databroker_pivot-s3",
+   "module": "databroker_pivot",
+   "set": "baseline",
+   "seed": "s3"
+  },
+  {
+   "order": 51,
+   "run_id": "B4-full-sonnet55-synaptiq_belief_guard-s2",
+   "module": "synaptiq_belief_guard",
+   "set": "primary",
+   "seed": "s2"
+  },
+  {
+   "order": 52,
+   "run_id": "B4-full-sonnet55-ai_video_generator_safety-s1",
+   "module": "ai_video_generator_safety",
+   "set": "primary",
+   "seed": "s1"
+  },
+  {
+   "order": 53,
+   "run_id": "B4-full-sonnet55-angelbot_context_acl-s3",
+   "module": "angelbot_context_acl",
+   "set": "primary",
+   "seed": "s3"
+  },
+  {
+   "order": 54,
+   "run_id": "B4-full-sonnet55-hangzhou_mahjong_ai_config-s1",
+   "module": "hangzhou_mahjong_ai_config",
+   "set": "primary",
+   "seed": "s1"
+  },
+  {
+   "order": 55,
+   "run_id": "B4-full-sonnet55-skijack_ast-s2",
+   "module": "skijack_ast",
+   "set": "primary",
+   "seed": "s2"
+  },
+  {
+   "order": 56,
+   "run_id": "B4-full-sonnet55-ai_video_generator_text-s1",
+   "module": "ai_video_generator_text",
+   "set": "primary",
+   "seed": "s1"
+  },
+  {
+   "order": 57,
+   "run_id": "B4-full-sonnet55-hangzhou_mahjong_ai_config-s2",
+   "module": "hangzhou_mahjong_ai_config",
+   "set": "primary",
+   "seed": "s2"
+  },
+  {
+   "order": 58,
+   "run_id": "B4-full-sonnet55-angelbot_context_acl-s1",
+   "module": "angelbot_context_acl",
+   "set": "primary",
+   "seed": "s1"
+  },
+  {
+   "order": 59,
+   "run_id": "B4-full-sonnet55-synaptiq_retrieval-s3",
+   "module": "synaptiq_retrieval",
+   "set": "primary",
+   "seed": "s3"
+  },
+  {
+   "order": 60,
+   "run_id": "B4-full-sonnet55-codex_memories_query-s3",
+   "module": "codex_memories_query",
+   "set": "primary",
+   "seed": "s3"
+  },
+  {
+   "order": 61,
+   "run_id": "B4-full-sonnet55-role_aware_financial_age_sanitize-s2",
+   "module": "role_aware_financial_age_sanitize",
+   "set": "primary",
+   "seed": "s2"
+  },
+  {
+   "order": 62,
+   "run_id": "B4-full-sonnet55-heapdict-s3",
+   "module": "heapdict",
+   "set": "baseline",
+   "seed": "s3"
+  },
+  {
+   "order": 63,
+   "run_id": "B4-full-sonnet55-role_aware_financial_age_sanitize-s1",
+   "module": "role_aware_financial_age_sanitize",
+   "set": "primary",
+   "seed": "s1"
+  },
+  {
+   "order": 64,
+   "run_id": "B4-full-sonnet55-codex_memories_redaction-s3",
+   "module": "codex_memories_redaction",
+   "set": "primary",
+   "seed": "s3"
+  },
+  {
+   "order": 65,
+   "run_id": "B4-full-sonnet55-zagentic_doi-s2",
+   "module": "zagentic_doi",
+   "set": "primary",
+   "seed": "s2"
+  },
+  {
+   "order": 66,
+   "run_id": "B4-full-sonnet55-zagentic_ir_schema-s2",
+   "module": "zagentic_ir_schema",
+   "set": "primary",
+   "seed": "s2"
+  },
+  {
+   "order": 67,
+   "run_id": "B4-full-sonnet55-moirai_abstract_process_handler-s3",
+   "module": "moirai_abstract_process_handler",
+   "set": "baseline",
+   "seed": "s3"
+  },
+  {
+   "order": 68,
+   "run_id": "B4-full-sonnet55-codex_memories_query-s2",
+   "module": "codex_memories_query",
+   "set": "primary",
+   "seed": "s2"
+  },
+  {
+   "order": 69,
+   "run_id": "B4-full-sonnet55-depthcharge_version-s1",
+   "module": "depthcharge_version",
+   "set": "baseline",
+   "seed": "s1"
+  },
+  {
+   "order": 70,
+   "run_id": "B4-full-sonnet55-angelbot_triage-s3",
+   "module": "angelbot_triage",
+   "set": "primary",
+   "seed": "s3"
+  },
+  {
+   "order": 71,
+   "run_id": "B4-full-sonnet55-skijack_ast-s1",
+   "module": "skijack_ast",
+   "set": "primary",
+   "seed": "s1"
+  },
+  {
+   "order": 72,
+   "run_id": "B4-full-sonnet55-mergedeep-s3",
+   "module": "mergedeep",
+   "set": "baseline",
+   "seed": "s3"
+  },
+  {
+   "order": 73,
+   "run_id": "B4-full-sonnet55-sentineledgeai_pdf-s1",
+   "module": "sentineledgeai_pdf",
+   "set": "primary",
+   "seed": "s1"
+  },
+  {
+   "order": 74,
+   "run_id": "B4-full-sonnet55-codex_memories_redaction-s1",
+   "module": "codex_memories_redaction",
+   "set": "primary",
+   "seed": "s1"
+  },
+  {
+   "order": 75,
+   "run_id": "B4-full-sonnet55-intent_relations-s2",
+   "module": "intent_relations",
+   "set": "primary",
+   "seed": "s2"
+  },
+  {
+   "order": 76,
+   "run_id": "B4-full-sonnet55-codebots_arena_bot-s3",
+   "module": "codebots_arena_bot",
+   "set": "primary",
+   "seed": "s3"
+  },
+  {
+   "order": 77,
+   "run_id": "B4-full-sonnet55-portable_hermes_agent_inline_markdown-s1",
+   "module": "portable_hermes_agent_inline_markdown",
+   "set": "primary",
+   "seed": "s1"
+  },
+  {
+   "order": 78,
+   "run_id": "B4-full-sonnet55-codebots_arena_elo-s1",
+   "module": "codebots_arena_elo",
+   "set": "primary",
+   "seed": "s1"
+  },
+  {
+   "order": 79,
+   "run_id": "B4-full-sonnet55-hangzhou_mahjong_ai_value-s1",
+   "module": "hangzhou_mahjong_ai_value",
+   "set": "primary",
+   "seed": "s1"
+  },
+  {
+   "order": 80,
+   "run_id": "B4-full-sonnet55-moirai_abstract_process_handler-s2",
+   "module": "moirai_abstract_process_handler",
+   "set": "baseline",
+   "seed": "s2"
+  },
+  {
+   "order": 81,
+   "run_id": "B4-full-sonnet55-angelbot_context_acl-s2",
+   "module": "angelbot_context_acl",
+   "set": "primary",
+   "seed": "s2"
+  },
+  {
+   "order": 82,
+   "run_id": "B4-full-sonnet55-sustainability_score_config-s2",
+   "module": "sustainability_score_config",
+   "set": "primary",
+   "seed": "s2"
+  },
+  {
+   "order": 83,
+   "run_id": "B4-full-sonnet55-portable_hermes_agent_inline_markdown-s2",
+   "module": "portable_hermes_agent_inline_markdown",
+   "set": "primary",
+   "seed": "s2"
+  },
+  {
+   "order": 84,
+   "run_id": "B4-full-sonnet55-bossalign_schema-s1",
+   "module": "bossalign_schema",
+   "set": "primary",
+   "seed": "s1"
+  },
+  {
+   "order": 85,
+   "run_id": "B4-full-sonnet55-wtftd_war_thunder_full_t_blk-s2",
+   "module": "wtftd_war_thunder_full_t_blk",
+   "set": "primary",
+   "seed": "s2"
+  },
+  {
+   "order": 86,
+   "run_id": "B4-full-sonnet55-addict-s1",
+   "module": "addict",
+   "set": "baseline",
+   "seed": "s1"
+  },
+  {
+   "order": 87,
+   "run_id": "B4-full-sonnet55-intent_changes-s1",
+   "module": "intent_changes",
+   "set": "primary",
+   "seed": "s1"
+  },
+  {
+   "order": 88,
+   "run_id": "B4-full-sonnet55-blackmamba_open_source_r_vision-s2",
+   "module": "blackmamba_open_source_r_vision",
+   "set": "primary",
+   "seed": "s2"
+  },
+  {
+   "order": 89,
+   "run_id": "B4-full-sonnet55-wtftd_war_thunder_full_t_minimap-s3",
+   "module": "wtftd_war_thunder_full_t_minimap",
+   "set": "primary",
+   "seed": "s3"
+  },
+  {
+   "order": 90,
+   "run_id": "B4-full-sonnet55-trace2task_experience_runtime-s3",
+   "module": "trace2task_experience_runtime",
+   "set": "primary",
+   "seed": "s3"
+  },
+  {
+   "order": 91,
+   "run_id": "B4-full-sonnet55-wdcnet_scheduler-s1",
+   "module": "wdcnet_scheduler",
+   "set": "primary",
+   "seed": "s1"
+  },
+  {
+   "order": 92,
+   "run_id": "B4-full-sonnet55-moirai_abstract_process_handler-s1",
+   "module": "moirai_abstract_process_handler",
+   "set": "baseline",
+   "seed": "s1"
+  },
+  {
+   "order": 93,
+   "run_id": "B4-full-sonnet55-trace2task_experience-s3",
+   "module": "trace2task_experience",
+   "set": "primary",
+   "seed": "s3"
+  },
+  {
+   "order": 94,
+   "run_id": "B4-full-sonnet55-ai_video_generator_text-s3",
+   "module": "ai_video_generator_text",
+   "set": "primary",
+   "seed": "s3"
+  },
+  {
+   "order": 95,
+   "run_id": "B4-full-sonnet55-blackmamba_open_source_r_power_estimator-s2",
+   "module": "blackmamba_open_source_r_power_estimator",
+   "set": "primary",
+   "seed": "s2"
+  },
+  {
+   "order": 96,
+   "run_id": "B4-full-sonnet55-sustainability_score_config-s1",
+   "module": "sustainability_score_config",
+   "set": "primary",
+   "seed": "s1"
+  },
+  {
+   "order": 97,
+   "run_id": "B4-full-sonnet55-depthcharge_version-s2",
+   "module": "depthcharge_version",
+   "set": "baseline",
+   "seed": "s2"
+  },
+  {
+   "order": 98,
+   "run_id": "B4-full-sonnet55-synaptiq_belief_guard-s3",
+   "module": "synaptiq_belief_guard",
+   "set": "primary",
+   "seed": "s3"
+  },
+  {
+   "order": 99,
+   "run_id": "B4-full-sonnet55-wtftd_war_thunder_full_t_minimap-s1",
+   "module": "wtftd_war_thunder_full_t_minimap",
+   "set": "primary",
+   "seed": "s1"
+  },
+  {
+   "order": 100,
+   "run_id": "B4-full-sonnet55-portable_hermes_agent_inline_markdown-s3",
+   "module": "portable_hermes_agent_inline_markdown",
+   "set": "primary",
+   "seed": "s3"
+  },
+  {
+   "order": 101,
+   "run_id": "B4-full-sonnet55-zagentic_doi-s3",
+   "module": "zagentic_doi",
+   "set": "primary",
+   "seed": "s3"
+  },
+  {
+   "order": 102,
+   "run_id": "B4-full-sonnet55-toposort-s3",
+   "module": "toposort",
+   "set": "baseline",
+   "seed": "s3"
+  },
+  {
+   "order": 103,
+   "run_id": "B4-full-sonnet55-wtftd_war_thunder_full_t_blk-s1",
+   "module": "wtftd_war_thunder_full_t_blk",
+   "set": "primary",
+   "seed": "s1"
+  },
+  {
+   "order": 104,
+   "run_id": "B4-full-sonnet55-home_assistant_budget_bo_analytics-s2",
+   "module": "home_assistant_budget_bo_analytics",
+   "set": "primary",
+   "seed": "s2"
+  },
+  {
+   "order": 105,
+   "run_id": "B4-full-sonnet55-toposort-s1",
+   "module": "toposort",
+   "set": "baseline",
+   "seed": "s1"
+  },
+  {
+   "order": 106,
+   "run_id": "B4-full-sonnet55-intent_relations-s1",
+   "module": "intent_relations",
+   "set": "primary",
+   "seed": "s1"
+  },
+  {
+   "order": 107,
+   "run_id": "B4-full-sonnet55-trace2task_experience_runtime-s2",
+   "module": "trace2task_experience_runtime",
+   "set": "primary",
+   "seed": "s2"
+  },
+  {
+   "order": 108,
+   "run_id": "B4-full-sonnet55-intent_changes-s3",
+   "module": "intent_changes",
+   "set": "primary",
+   "seed": "s3"
+  },
+  {
+   "order": 109,
+   "run_id": "B4-full-sonnet55-home_assistant_budget_bo_analytics-s3",
+   "module": "home_assistant_budget_bo_analytics",
+   "set": "primary",
+   "seed": "s3"
+  },
+  {
+   "order": 110,
+   "run_id": "B4-full-sonnet55-sentineledgeai_pdf-s2",
+   "module": "sentineledgeai_pdf",
+   "set": "primary",
+   "seed": "s2"
+  },
+  {
+   "order": 111,
+   "run_id": "B4-full-sonnet55-codebots_arena_bot-s1",
+   "module": "codebots_arena_bot",
+   "set": "primary",
+   "seed": "s1"
+  },
+  {
+   "order": 112,
+   "run_id": "B4-full-sonnet55-sentineledgeai_pdf-s3",
+   "module": "sentineledgeai_pdf",
+   "set": "primary",
+   "seed": "s3"
+  },
+  {
+   "order": 113,
+   "run_id": "B4-full-sonnet55-ai_video_generator_text-s2",
+   "module": "ai_video_generator_text",
+   "set": "primary",
+   "seed": "s2"
+  },
+  {
+   "order": 114,
+   "run_id": "B4-full-sonnet55-bossalign_schema-s2",
+   "module": "bossalign_schema",
+   "set": "primary",
+   "seed": "s2"
+  },
+  {
+   "order": 115,
+   "run_id": "B4-full-sonnet55-codex_memories_query-s1",
+   "module": "codex_memories_query",
+   "set": "primary",
+   "seed": "s1"
+  },
+  {
+   "order": 116,
+   "run_id": "B4-full-sonnet55-blackmamba_open_source_r_vision-s3",
+   "module": "blackmamba_open_source_r_vision",
+   "set": "primary",
+   "seed": "s3"
+  },
+  {
+   "order": 117,
+   "run_id": "B4-full-sonnet55-intent_relations-s3",
+   "module": "intent_relations",
+   "set": "primary",
+   "seed": "s3"
+  }
+ ],
+ "created_at": "2026-11-20T06:20:01+00:00"
+}

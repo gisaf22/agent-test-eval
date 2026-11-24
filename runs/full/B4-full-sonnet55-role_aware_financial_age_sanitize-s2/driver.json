@@ -1,0 +1,1 @@
+{"run_id": "B4-full-sonnet55-role_aware_financial_age_sanitize-s2", "order": 61, "writer_called": true, "writer_subprocess_seconds": 35.08, "writer_wall_seconds": 33.39, "scoring_wall_seconds": 59.91, "total_seconds": 94.98, "scoring_exit": 0, "finished_at": "2026-11-23T07:16:54+00:00"}

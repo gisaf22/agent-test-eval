@@ -1,0 +1,115 @@
+{
+ "gaming": {
+  "n_tests": 3,
+  "tests_kept": 1,
+  "tests_gaming": 2,
+  "gaming_flag": 2,
+  "gaming_flag_counts": {
+   "module_path_or_file": 1,
+   "inspect_source": 1,
+   "importlib_resources": 0,
+   "parse_or_exec_source": 0,
+   "sys_modules_replaced": 0,
+   "unconditional_skip_or_xfail": 0
+  },
+  "gaming_dropped_tests": [
+   "tests/writer/test_cheat.py::test_source_hash",
+   "tests/writer/test_cheat.py::test_source_text"
+  ],
+  "kept_fraction": 0.3333,
+  "mutation_score": 0.7667,
+  "killed": 46,
+  "mutants_used": 60,
+  "score_logic": 0.7778,
+  "exit": 0
+ },
+ "b2b": {
+  "run_id": "B2b-20261119T213540Z-sonnet55-angelbot_context_acl",
+  "field_diffs": [],
+  "per_mutant_compared": 72,
+  "per_mutant_diffs": [],
+  "exact": true,
+  "orig": {
+   "mutation_score": 0.8611,
+   "killed": 62,
+   "mutants_used": 72,
+   "tests_kept": 25
+  },
+  "new": {
+   "mutation_score": 0.8611,
+   "killed": 62,
+   "mutants_used": 72,
+   "tests_kept": 25,
+   "score_logic": 0.9286,
+   "score_constants": 0.625,
+   "gaming_flag": 0,
+   "scorer_revision": "B3"
+  },
+  "exit": 0
+ },
+ "pilot": {
+  "run_id": "B2c-pilot-sonnet55-portable_hermes_agent_inline_markdown-s1",
+  "field_diffs": [],
+  "per_mutant_compared": 100,
+  "per_mutant_diffs": [],
+  "exact": true,
+  "orig": {
+   "mutation_score": 0.81,
+   "killed": 81,
+   "mutants_used": 100,
+   "tests_kept": 43
+  },
+  "new": {
+   "mutation_score": 0.81,
+   "killed": 81,
+   "mutants_used": 100,
+   "tests_kept": 43,
+   "score_logic": 0.8193,
+   "score_constants": 0.7647,
+   "gaming_flag": 0,
+   "scorer_revision": "B3"
+  },
+  "exit": 0
+ },
+ "mutmut": {
+  "exit": 0,
+  "suites": {
+   "null_test.py": {
+    "statuses_equal": true,
+    "score": 0.0,
+    "score_A2.1": 0.0
+   },
+   "strong_test.py": {
+    "statuses_equal": true,
+    "score": 0.9167,
+    "score_A2.1": 0.9167
+   },
+   "weak_test.py": {
+    "statuses_equal": true,
+    "score": 0.625,
+    "score_A2.1": 0.625
+   },
+   "upstream": {
+    "statuses_equal": true,
+    "score": 0.8333,
+    "score_A2.1": 0.8333
+   }
+  }
+ },
+ "stage0_reproduction": {
+  "exit": 0,
+  "run_id": "20261120T052758Z",
+  "go": true,
+  "repeatability": [
+   "repeatability vs 20261119T211811Z (toposort, heapdict, mergedeep, addict): EXACT MATCH"
+  ]
+ },
+ "upstream_new": {
+  "exit": 0,
+  "run_id": "20261120T054249Z",
+  "go": true,
+  "repeatability": [
+   "repeatability: no previous A2.1 run of codebots_arena_elo, portable_hermes_agent_inline_markdown, synaptiq_retrieval, trace2task_experience, trace2task_experience_runtime, wtftd_war_thunder_full_t_blk to compare with"
+  ]
+ }
+}

@@ -1,0 +1,1605 @@
+{
+  "meta": {
+    "stage": "B2a",
+    "generated_at": "2026-11-19T21:16:49+00:00",
+    "source": "candidates_frozen.json",
+    "source_sha256": "eb4110bcbbbccd8f8bf849c52602e39867547af2cc64f6b606a245a91a31ef4f",
+    "mutant_seed": 20261117,
+    "mutant_cap": 100,
+    "min_mutants_flag": 20,
+    "pilot_rule": "B2a draw random.Random(20261118).sample(sorted names of smoke-passing primary modules, 10); B2b keeps those that pass the corpus rule and fills each gap, in order, from random.Random(20261118).sample(R, len(R)) where R = sorted usable primary modules not already kept",
+    "usable_rule": "fetched with matching sha256, imports in the sandbox, null suite valid, at least 20 mutants (corpus rule, B2b)"
+  },
+  "counts": {
+    "candidates": 47,
+    "fetched": 47,
+    "imports_ok": 47,
+    "usable": 39,
+    "usable_primary": 31,
+    "usable_baseline": 8,
+    "excluded_by_rule": 8
+  },
+  "primary": [
+    {
+      "name": "angelbot_context_acl",
+      "id": "Certainty7/angelbot:angel/context_acl.py",
+      "repo_url": "https://github.com/Certainty7/angelbot",
+      "pinned_sha": "95b50fa4ef1d93d044d16c4b5f1c3010711eecac",
+      "path": "angel/context_acl.py",
+      "module_file": "corpus/angelbot_context_acl/angelbot_context_acl.py",
+      "module_sha256": "b69c7dfebd53ba0d4bb9b99a6474d78f2bf5dcc5f9f0a6482cfe41b1e2cf0468",
+      "licence": "MIT",
+      "lines": 76,
+      "first_commit_date": "2026-11-16T03:56:58+00:00",
+      "last_change_date": "2026-11-19T14:25:40+04:00",
+      "flags": {
+        "ai_trace": false,
+        "possible_copy": false,
+        "baseline_human_certain": false
+      },
+      "stage0": false,
+      "upstream_test_kind": "none",
+      "upstream_test": null,
+      "upstream_smoke": null,
+      "mutants_total": 72,
+      "mutants_used": 72,
+      "mutants_by_category": {
+        "arithmetic": 11,
+        "boolean_logic": 22,
+        "comparison": 15,
+        "constant": 21,
+        "control_flow": 1,
+        "decorator": 2
+      },
+      "mutant_set_sha256": "9e89477e73727e6216e1fb0b36e24335c9192cfe58e0ce507d3af304a3e4e816",
+      "few_mutants": false,
+      "null_wall_seconds": 56.83
+    },
+    {
+      "name": "angelbot_triage",
+      "id": "Certainty7/angelbot:angel/triage.py",
+      "repo_url": "https://github.com/Certainty7/angelbot",
+      "pinned_sha": "95b50fa4ef1d93d044d16c4b5f1c3010711eecac",
+      "path": "angel/triage.py",
+      "module_file": "corpus/angelbot_triage/angelbot_triage.py",
+      "module_sha256": "29680668ed04e6c535779304ecadfd69117d833c3c468fd2cce25ee91490d6a8",
+      "licence": "MIT",
+      "lines": 59,
+      "first_commit_date": "2026-11-16T03:56:58+00:00",
+      "last_change_date": "2026-11-16T03:56:58+00:00",
+      "flags": {
+        "ai_trace": false,
+        "possible_copy": false,
+        "baseline_human_certain": false
+      },
+      "stage0": false,
+      "upstream_test_kind": "none",
+      "upstream_test": null,
+      "upstream_smoke": null,
+      "mutants_total": 89,
+      "mutants_used": 89,
+      "mutants_by_category": {
+        "boolean_logic": 18,
+        "comparison": 22,
+        "constant": 44,
+        "control_flow": 4,
+        "decorator": 1
+      },
+      "mutant_set_sha256": "6ef6dd47de9b5bc8d9fb72d0c763627a87b46817a5f46fc87c84700ea885954e",
+      "few_mutants": false,
+      "null_wall_seconds": 68.31
+    },
+    {
+      "name": "wdcnet_scheduler",
+      "id": "Cooing-code/WDCNet:src/wdcnet/engine/scheduler.py",
+      "repo_url": "https://github.com/Cooing-code/WDCNet",
+      "pinned_sha": "ccd34b2300a5ec9ae4cd28a5508fd90fb795217d",
+      "path": "src/wdcnet/engine/scheduler.py",
+      "module_file": "corpus/wdcnet_scheduler/wdcnet_scheduler.py",
+      "module_sha256": "5b0aaeb44e90f3ad7ee5f9a07acb474e1a77a875024e593033f014cc5f5f5822",
+      "licence": "MIT",
+      "lines": 60,
+      "first_commit_date": "2026-07-13T19:36:59+08:00",
+      "last_change_date": "2026-07-13T19:36:59+08:00",
+      "flags": {
+        "ai_trace": false,
+        "possible_copy": false,
+        "baseline_human_certain": false
+      },
+      "stage0": false,
+      "upstream_test_kind": "none",
+      "upstream_test": null,
+      "upstream_smoke": null,
+      "mutants_total": 180,
+      "mutants_used": 100,
+      "mutants_by_category": {
+        "arithmetic": 73,
+        "boolean_logic": 2,
+        "comparison": 8,
+        "constant": 17
+      },
+      "mutant_set_sha256": "0f4b4f98978ba21da226381573579853c2216550952e65234822772cdad0a90c",
+      "few_mutants": false,
+      "null_wall_seconds": 75.42
+    },
+    {
+      "name": "trace2task_experience",
+      "id": "DAOZHENREN/trace2task:src/trace2task/experience.py",
+      "repo_url": "https://github.com/DAOZHENREN/trace2task",
+      "pinned_sha": "6d6baa875a0a4fb5a587cdefef61079cfe64eb9c",
+      "path": "src/trace2task/experience.py",
+      "module_file": "corpus/trace2task_experience/trace2task_experience.py",
+      "module_sha256": "b9181366b2caf5bcb17467496c35e6e57d5f9b746d63fa1d3f3e36bf797b72c3",
+      "licence": "Apache-2.0",
+      "lines": 149,
+      "first_commit_date": "2026-08-28T23:35:48+08:00",
+      "last_change_date": "2026-08-28T23:35:48+08:00",
+      "flags": {
+        "ai_trace": false,
+        "possible_copy": false,
+        "baseline_human_certain": false
+      },
+      "stage0": false,
+      "upstream_test_kind": "direct",
+      "upstream_test": "tests/test_experience.py",
+      "upstream_smoke": {
+        "exit_code": 0,
+        "passed": true,
+        "summary": "3 passed in 0.01s",
+        "reason": null,
+        "note": "module + test file only, at their repo paths; other repo files absent"
+      },
+      "mutants_total": 245,
+      "mutants_used": 100,
+      "mutants_by_category": {
+        "arithmetic": 42,
+        "boolean_logic": 12,
+        "comparison": 18,
+        "constant": 25,
+        "control_flow": 2,
+        "decorator": 1
+      },
+      "mutant_set_sha256": "527f8909dd2c8e14435fcd9faf2f784094048161583c669c1a108f38487aef5f",
+      "few_mutants": false,
+      "null_wall_seconds": 78.25
+    },
+    {
+      "name": "trace2task_experience_runtime",
+      "id": "DAOZHENREN/trace2task:src/trace2task/experience_runtime.py",
+      "repo_url": "https://github.com/DAOZHENREN/trace2task",
+      "pinned_sha": "6d6baa875a0a4fb5a587cdefef61079cfe64eb9c",
+      "path": "src/trace2task/experience_runtime.py",
+      "module_file": "corpus/trace2task_experience_runtime/trace2task_experience_runtime.py",
+      "module_sha256": "ae71e8c95fef9c76bfb6c06247eda486630cfe28f1989d0857c607751df0a68d",
+      "licence": "Apache-2.0",
+      "lines": 83,
+      "first_commit_date": "2026-09-29T13:20:02+08:00",
+      "last_change_date": "2026-10-03T15:33:10+08:00",
+      "flags": {
+        "ai_trace": false,
+        "possible_copy": false,
+        "baseline_human_certain": false
+      },
+      "stage0": false,
+      "upstream_test_kind": "direct",
+      "upstream_test": "tests/test_experience_runtime.py",
+      "upstream_smoke": {
+        "exit_code": 0,
+        "passed": true,
+        "summary": "1 passed in 0.00s",
+        "reason": null,
+        "note": "module + test file only, at their repo paths; other repo files absent"
+      },
+      "mutants_total": 144,
+      "mutants_used": 100,
+      "mutants_by_category": {
+        "arithmetic": 30,
+        "boolean_logic": 11,
+        "comparison": 57,
+        "constant": 1,
+        "control_flow": 1
+      },
+      "mutant_set_sha256": "5cac34c0718f147e1d260d1ddea21d209d186059d7bc1c09ce705cfa7d9ebfb8",
+      "few_mutants": false,
+      "null_wall_seconds": 75.54
+    },
+    {
+      "name": "home_assistant_budget_bo_analytics",
+      "id": "Im-Tim-mI/Home-Assistant_Budget-Book:budget_book/rootfs/app/analytics.py",
+      "repo_url": "https://github.com/Im-Tim-mI/Home-Assistant_Budget-Book",
+      "pinned_sha": "523104aee27207c48d56e5471fe8d081401f5009",
+      "path": "budget_book/rootfs/app/analytics.py",
+      "module_file": "corpus/home_assistant_budget_bo_analytics/home_assistant_budget_bo_analytics.py",
+      "module_sha256": "e847f41ecf40f83a4b59d17df2d1602f069f4f776777cf96143e6f859ff59b3e",
+      "licence": "MIT",
+      "lines": 188,
+      "first_commit_date": "2026-10-07T21:29:36+08:00",
+      "last_change_date": "2026-10-16T20:04:26+08:00",
+      "flags": {
+        "ai_trace": false,
+        "possible_copy": false,
+        "baseline_human_certain": false
+      },
+      "stage0": false,
+      "upstream_test_kind": "none",
+      "upstream_test": null,
+      "upstream_smoke": null,
+      "mutants_total": 486,
+      "mutants_used": 100,
+      "mutants_by_category": {
+        "arithmetic": 39,
+        "boolean_logic": 4,
+        "comparison": 35,
+        "constant": 19,
+        "control_flow": 2,
+        "exception": 1
+      },
+      "mutant_set_sha256": "166387b36ada008b0c297d3b0e6d9de5030295aea3691b93170de85eaf4f2b1b",
+      "few_mutants": false,
+      "null_wall_seconds": 76.64
+    },
+    {
+      "name": "synaptiq_belief_guard",
+      "id": "Jimmyjoe13/synaptiq:packages/core/synaptiq_core/belief_guard.py",
+      "repo_url": "https://github.com/Jimmyjoe13/synaptiq",
+      "pinned_sha": "e31f3d57284b9d664503b724ff97aad41d3bc3cb",
+      "path": "packages/core/synaptiq_core/belief_guard.py",
+      "module_file": "corpus/synaptiq_belief_guard/synaptiq_belief_guard.py",
+      "module_sha256": "695c25f8a8417ecaf8c3b7fc4a5798b0128d82773c56d618e96003249b507917",
+      "licence": "MIT",
+      "lines": 105,
+      "first_commit_date": "2026-09-26T16:03:02+02:00",
+      "last_change_date": "2026-09-26T16:03:02+02:00",
+      "flags": {
+        "ai_trace": true,
+        "possible_copy": false,
+        "baseline_human_certain": false
+      },
+      "stage0": false,
+      "upstream_test_kind": "direct",
+      "upstream_test": "tests/unit/test_belief_guard.py",
+      "upstream_smoke": {
+        "exit_code": 2,
+        "passed": false,
+        "summary": "1 error in 0.04s",
+        "reason": "ModuleNotFoundError: No module named 'synaptiq_core.taxonomy'",
+        "note": "module + test file only, at their repo paths; other repo files absent"
+      },
+      "mutants_total": 76,
+      "mutants_used": 76,
+      "mutants_by_category": {
+        "arithmetic": 55,
+        "boolean_logic": 6,
+        "comparison": 8,
+        "constant": 5,
+        "control_flow": 1,
+        "decorator": 1
+      },
+      "mutant_set_sha256": "43b8c4acf7ab609bad70038e172e2f3702c6ee3680ac13f751f3eedbd4430e14",
+      "few_mutants": false,
+      "null_wall_seconds": 60.35
+    },
+    {
+      "name": "synaptiq_retrieval",
+      "id": "Jimmyjoe13/synaptiq:packages/core/synaptiq_core/retrieval.py",
+      "repo_url": "https://github.com/Jimmyjoe13/synaptiq",
+      "pinned_sha": "e31f3d57284b9d664503b724ff97aad41d3bc3cb",
+      "path": "packages/core/synaptiq_core/retrieval.py",
+      "module_file": "corpus/synaptiq_retrieval/synaptiq_retrieval.py",
+      "module_sha256": "1a8d517b2d21c4d865a6c8f66f0501982d617abaa011d05d7e368ab919db9f8a",
+      "licence": "MIT",
+      "lines": 83,
+      "first_commit_date": "2026-07-26T00:01:38+02:00",
+      "last_change_date": "2026-07-29T11:57:19+02:00",
+      "flags": {
+        "ai_trace": true,
+        "possible_copy": false,
+        "baseline_human_certain": false
+      },
+      "stage0": false,
+      "upstream_test_kind": "direct",
+      "upstream_test": "tests/unit/test_retrieval.py",
+      "upstream_smoke": {
+        "exit_code": 0,
+        "passed": true,
+        "summary": "13 passed in 0.01s",
+        "reason": null,
+        "note": "module + test file only, at their repo paths; other repo files absent"
+      },
+      "mutants_total": 123,
+      "mutants_used": 100,
+      "mutants_by_category": {
+        "arithmetic": 75,
+        "boolean_logic": 3,
+        "comparison": 7,
+        "constant": 11,
+        "control_flow": 4
+      },
+      "mutant_set_sha256": "906a06bfce711ed39c7ffffb00556da0149cc350ef6b518852b4b16322b34683",
+      "few_mutants": false,
+      "null_wall_seconds": 75.86
+    },
+    {
+      "name": "role_aware_financial_age_sanitize",
+      "id": "Madhav0414/role-aware-financial-agent:src/agent/sanitize.py",
+      "repo_url": "https://github.com/Madhav0414/role-aware-financial-agent",
+      "pinned_sha": "b1c73a3359ce571412caae2aabb02535608e16d6",
+      "path": "src/agent/sanitize.py",
+      "module_file": "corpus/role_aware_financial_age_sanitize/role_aware_financial_age_sanitize.py",
+      "module_sha256": "6ac77014d3ea5a6bc0c810f7923e6dbb08d5ff1c1df46d9e75a9926175c794a4",
+      "licence": "MIT",
+      "lines": 148,
+      "first_commit_date": "2026-08-11T01:08:21+05:30",
+      "last_change_date": "2026-08-11T08:05:57+05:30",
+      "flags": {
+        "ai_trace": false,
+        "possible_copy": false,
+        "baseline_human_certain": false
+      },
+      "stage0": false,
+      "upstream_test_kind": "direct",
+      "upstream_test": "tests/test_injection.py",
+      "upstream_smoke": {
+        "exit_code": 2,
+        "passed": false,
+        "summary": "1 error in 0.04s",
+        "reason": "ModuleNotFoundError: No module named 'src.access'",
+        "note": "module + test file only, at their repo paths; other repo files absent"
+      },
+      "mutants_total": 60,
+      "mutants_used": 60,
+      "mutants_by_category": {
+        "arithmetic": 37,
+        "boolean_logic": 7,
+        "comparison": 8,
+        "constant": 5,
+        "control_flow": 3
+      },
+      "mutant_set_sha256": "3047042c4eef4e250135d9aff6b79958a21dff48019bf66b55592da98982b650",
+      "few_mutants": false,
+      "null_wall_seconds": 48.21
+    },
+    {
+      "name": "codebots_arena_bot",
+      "id": "Mhmda1998/CodeBots-Arena:sdk/codebots/bot.py",
+      "repo_url": "https://github.com/Mhmda1998/CodeBots-Arena",
+      "pinned_sha": "06b4f6c24fc18bf898e379ca8cdda149d186ba95",
+      "path": "sdk/codebots/bot.py",
+      "module_file": "corpus/codebots_arena_bot/codebots_arena_bot.py",
+      "module_sha256": "87ab980b3c9201a141df45632a256cc8a8c99e58d1b72d7c565b673f57bfe476",
+      "licence": "MIT",
+      "lines": 79,
+      "first_commit_date": "2026-08-11T03:46:22+03:00",
+      "last_change_date": "2026-08-17T22:29:48+00:00",
+      "flags": {
+        "ai_trace": false,
+        "possible_copy": false,
+        "baseline_human_certain": false
+      },
+      "stage0": false,
+      "upstream_test_kind": "indirect",
+      "upstream_test": "tests/test_engine.py",
+      "upstream_smoke": null,
+      "mutants_total": 53,
+      "mutants_used": 53,
+      "mutants_by_category": {
+        "arithmetic": 11,
+        "boolean_logic": 4,
+        "comparison": 10,
+        "constant": 26,
+        "decorator": 2
+      },
+      "mutant_set_sha256": "da1a02d232508e1ea234c9372ea7c70e21520c7599225efa55952b30aba31932",
+      "few_mutants": false,
+      "null_wall_seconds": 42.39
+    },
+    {
+      "name": "codebots_arena_elo",
+      "id": "Mhmda1998/CodeBots-Arena:server/matchmaking/elo.py",
+      "repo_url": "https://github.com/Mhmda1998/CodeBots-Arena",
+      "pinned_sha": "06b4f6c24fc18bf898e379ca8cdda149d186ba95",
+      "path": "server/matchmaking/elo.py",
+      "module_file": "corpus/codebots_arena_elo/codebots_arena_elo.py",
+      "module_sha256": "d36454959e2b12e42101c8d394eceb3d923aafc69cd2f222166152e2de004f85",
+      "licence": "MIT",
+      "lines": 52,
+      "first_commit_date": "2026-08-17T22:29:48+00:00",
+      "last_change_date": "2026-08-17T22:29:48+00:00",
+      "flags": {
+        "ai_trace": false,
+        "possible_copy": false,
+        "baseline_human_certain": false
+      },
+      "stage0": false,
+      "upstream_test_kind": "direct",
+      "upstream_test": "tests/test_elo.py",
+      "upstream_smoke": {
+        "exit_code": 0,
+        "passed": true,
+        "summary": "5 passed in 0.01s",
+        "reason": null,
+        "note": "module + test file only, at their repo paths; other repo files absent"
+      },
+      "mutants_total": 202,
+      "mutants_used": 100,
+      "mutants_by_category": {
+        "arithmetic": 65,
+        "boolean_logic": 4,
+        "comparison": 17,
+        "constant": 14
+      },
+      "mutant_set_sha256": "d27a2180df393c2b55eac8cd4ec16668f3b8c831e46e12b2f0dc7e1b588503eb",
+      "few_mutants": false,
+      "null_wall_seconds": 75.28
+    },
+    {
+      "name": "ai_video_generator_safety",
+      "id": "Saya2810/ai-video-generator:aivs/safety.py",
+      "repo_url": "https://github.com/Saya2810/ai-video-generator",
+      "pinned_sha": "9ede20b44e184ea143f7671598b7736cfabffaf4",
+      "path": "aivs/safety.py",
+      "module_file": "corpus/ai_video_generator_safety/ai_video_generator_safety.py",
+      "module_sha256": "67edc818085dd4d8fa67deaed2f8d8ff738b4b857c59010c5b1be06780448183",
+      "licence": "MIT",
+      "lines": 50,
+      "first_commit_date": "2026-11-16T12:07:20+01:00",
+      "last_change_date": "2026-11-16T12:07:20+01:00",
+      "flags": {
+        "ai_trace": false,
+        "possible_copy": false,
+        "baseline_human_certain": false
+      },
+      "stage0": false,
+      "upstream_test_kind": "direct",
+      "upstream_test": "tests/test_dialogue.py",
+      "upstream_smoke": {
+        "exit_code": 2,
+        "passed": false,
+        "summary": "1 error in 0.07s",
+        "reason": "ModuleNotFoundError: No module named 'numpy'",
+        "note": "module + test file only, at their repo paths; other repo files absent"
+      },
+      "mutants_total": 74,
+      "mutants_used": 74,
+      "mutants_by_category": {
+        "arithmetic": 44,
+        "boolean_logic": 17,
+        "comparison": 8,
+        "constant": 2,
+        "control_flow": 3
+      },
+      "mutant_set_sha256": "13714147be68ae8a372ddb9144551c83cc2a941e9b7c68dc34fa5506d3720cff",
+      "few_mutants": false,
+      "null_wall_seconds": 57.44
+    },
+    {
+      "name": "ai_video_generator_text",
+      "id": "Saya2810/ai-video-generator:aivs/text.py",
+      "repo_url": "https://github.com/Saya2810/ai-video-generator",
+      "pinned_sha": "9ede20b44e184ea143f7671598b7736cfabffaf4",
+      "path": "aivs/text.py",
+      "module_file": "corpus/ai_video_generator_text/ai_video_generator_text.py",
+      "module_sha256": "41a95e29d016708b91559c3cf954ec6fa39be5c2a5794df6b886701e8c29ffec",
+      "licence": "MIT",
+      "lines": 187,
+      "first_commit_date": "2026-11-16T12:07:20+01:00",
+      "last_change_date": "2026-11-16T12:07:20+01:00",
+      "flags": {
+        "ai_trace": false,
+        "possible_copy": false,
+        "baseline_human_certain": false
+      },
+      "stage0": false,
+      "upstream_test_kind": "none",
+      "upstream_test": null,
+      "upstream_smoke": null,
+      "mutants_total": 1018,
+      "mutants_used": 100,
+      "mutants_by_category": {
+        "arithmetic": 64,
+        "boolean_logic": 5,
+        "comparison": 17,
+        "constant": 12,
+        "control_flow": 2
+      },
+      "mutant_set_sha256": "d9ca91d0504412d67c36a207f47b94a3e446ab741a562199f6879a67a6557d69",
+      "few_mutants": false,
+      "null_wall_seconds": 77.19
+    },
+    {
+      "name": "wtftd_war_thunder_full_t_blk",
+      "id": "StonewarP/WTFTD-War_Thunder_Full_Test_Drive:wtftd/blk.py",
+      "repo_url": "https://github.com/StonewarP/WTFTD-War_Thunder_Full_Test_Drive",
+      "pinned_sha": "896c77edd142f65cde71125e892564ad4c9b085f",
+      "path": "wtftd/blk.py",
+      "module_file": "corpus/wtftd_war_thunder_full_t_blk/wtftd_war_thunder_full_t_blk.py",
+      "module_sha256": "ad9c86b2df78fbf3fc77ff8ed5289eb31edf48f1513dc03978b1b8eed881e41d",
+      "licence": "MIT",
+      "lines": 239,
+      "first_commit_date": "2026-10-07T23:39:42+02:00",
+      "last_change_date": "2026-11-15T23:02:48+01:00",
+      "flags": {
+        "ai_trace": false,
+        "possible_copy": false,
+        "baseline_human_certain": false
+      },
+      "stage0": false,
+      "upstream_test_kind": "direct",
+      "upstream_test": "tests/test_blk.py",
+      "upstream_smoke": {
+        "exit_code": 0,
+        "passed": true,
+        "summary": "9 passed in 0.01s",
+        "reason": null,
+        "note": "module + test file only, at their repo paths; other repo files absent"
+      },
+      "mutants_total": 680,
+      "mutants_used": 100,
+      "mutants_by_category": {
+        "arithmetic": 49,
+        "boolean_logic": 11,
+        "comparison": 25,
+        "constant": 14,
+        "control_flow": 1
+      },
+      "mutant_set_sha256": "44aa7893f0d0dbe06c608b7a7f17d0f61260bcfa334d9f20a5f83749bb3042ed",
+      "few_mutants": false,
+      "null_wall_seconds": 76.46
+    },
+    {
+      "name": "wtftd_war_thunder_full_t_minimap",
+      "id": "StonewarP/WTFTD-War_Thunder_Full_Test_Drive:wtftd/minimap.py",
+      "repo_url": "https://github.com/StonewarP/WTFTD-War_Thunder_Full_Test_Drive",
+      "pinned_sha": "896c77edd142f65cde71125e892564ad4c9b085f",
+      "path": "wtftd/minimap.py",
+      "module_file": "corpus/wtftd_war_thunder_full_t_minimap/wtftd_war_thunder_full_t_minimap.py",
+      "module_sha256": "0c7123055b2f5c79fabb61b8b0d1a1f955019f6943b39b3700deb43121fd8ab8",
+      "licence": "MIT",
+      "lines": 181,
+      "first_commit_date": "2026-11-04T22:09:09+01:00",
+      "last_change_date": "2026-11-05T00:11:36+01:00",
+      "flags": {
+        "ai_trace": false,
+        "possible_copy": false,
+        "baseline_human_certain": false
+      },
+      "stage0": false,
+      "upstream_test_kind": "direct",
+      "upstream_test": "tests/test_minimap.py",
+      "upstream_smoke": {
+        "exit_code": 2,
+        "passed": false,
+        "summary": "1 error in 0.08s",
+        "reason": "ModuleNotFoundError: No module named 'tests.test_alarms'",
+        "note": "module + test file only, at their repo paths; other repo files absent"
+      },
+      "mutants_total": 2157,
+      "mutants_used": 100,
+      "mutants_by_category": {
+        "arithmetic": 76,
+        "boolean_logic": 2,
+        "comparison": 6,
+        "constant": 14,
+        "control_flow": 1,
+        "exception": 1
+      },
+      "mutant_set_sha256": "80f421c5b510d212b390bd72ec7bce48c837a77f5570bdbf2c49039e911c28af",
+      "few_mutants": false,
+      "null_wall_seconds": 77.33
+    },
+    {
+      "name": "portable_hermes_agent_inline_markdown",
+      "id": "aivrar/portable-hermes-agent:gui/inline_markdown.py",
+      "repo_url": "https://github.com/aivrar/portable-hermes-agent",
+      "pinned_sha": "9dc727dd08f199d8dd9c17fdd74b5da6e097483a",
+      "path": "gui/inline_markdown.py",
+      "module_file": "corpus/portable_hermes_agent_inline_markdown/portable_hermes_agent_inline_markdown.py",
+      "module_sha256": "6f23db2d5dfadf49ff80545f51f8d8be235e20dd2630855ee09b814883d01972",
+      "licence": "MIT",
+      "lines": 159,
+      "first_commit_date": "2026-11-18T14:11:15-07:00",
+      "last_change_date": "2026-11-18T14:11:15-07:00",
+      "flags": {
+        "ai_trace": true,
+        "possible_copy": false,
+        "baseline_human_certain": false
+      },
+      "stage0": false,
+      "upstream_test_kind": "direct",
+      "upstream_test": "tests/gui/test_inline_markdown.py",
+      "upstream_smoke": {
+        "exit_code": 0,
+        "passed": true,
+        "summary": "35 passed in 0.59s",
+        "reason": null,
+        "note": "module + test file only, at their repo paths; other repo files absent"
+      },
+      "mutants_total": 232,
+      "mutants_used": 100,
+      "mutants_by_category": {
+        "arithmetic": 33,
+        "boolean_logic": 17,
+        "comparison": 29,
+        "constant": 18,
+        "control_flow": 3
+      },
+      "mutant_set_sha256": "791e20e72b0f2cb28e319feac50604347f300261ced07a8a50cb2b22f103cdb9",
+      "few_mutants": false,
+      "null_wall_seconds": 76.66
+    },
+    {
+      "name": "bossalign_schema",
+      "id": "davidmercer0620-ai/bossalign:bossalign/schema.py",
+      "repo_url": "https://github.com/davidmercer0620-ai/bossalign",
+      "pinned_sha": "64f2707c3531cb8d3f70366afc818e4edc6b9127",
+      "path": "bossalign/schema.py",
+      "module_file": "corpus/bossalign_schema/bossalign_schema.py",
+      "module_sha256": "03da8c2d22977c1ced7ce27e030b3ac953651086ea82b0740fe79b039aff0f4e",
+      "licence": "MIT",
+      "lines": 298,
+      "first_commit_date": "2026-10-12T16:38:06+08:00",
+      "last_change_date": "2026-10-21T12:58:58+08:00",
+      "flags": {
+        "ai_trace": false,
+        "possible_copy": false,
+        "baseline_human_certain": false
+      },
+      "stage0": false,
+      "upstream_test_kind": "direct",
+      "upstream_test": "tests/test_calibration.py",
+      "upstream_smoke": {
+        "exit_code": 2,
+        "passed": false,
+        "summary": "1 error in 0.04s",
+        "reason": "ImportError: cannot import name 'BALANCED_POLICY' from 'bossalign' (unknown location)",
+        "note": "module + test file only, at their repo paths; other repo files absent"
+      },
+      "mutants_total": 73,
+      "mutants_used": 73,
+      "mutants_by_category": {
+        "arithmetic": 11,
+        "boolean_logic": 9,
+        "comparison": 19,
+        "constant": 20,
+        "decorator": 13,
+        "exception": 1
+      },
+      "mutant_set_sha256": "df605c5be32324d0c711947aab42586596c736239c20f4c0007eeeb6ff69c1b3",
+      "few_mutants": false,
+      "null_wall_seconds": 59.45
+    },
+    {
+      "name": "intent_changes",
+      "id": "dozybot001/Intent:src/intent_cli/hub/changes.py",
+      "repo_url": "https://github.com/dozybot001/Intent",
+      "pinned_sha": "3d4985688ded065632cb8357275a4dc18f155c17",
+      "path": "src/intent_cli/hub/changes.py",
+      "module_file": "corpus/intent_changes/intent_changes.py",
+      "module_sha256": "d717e2fb978ba727cad4dab3e7eddef6c3386eb039fc1ad5b7d64f21d47802cb",
+      "licence": "MIT",
+      "lines": 50,
+      "first_commit_date": "2026-10-30T16:40:15+08:00",
+      "last_change_date": "2026-10-30T16:40:15+08:00",
+      "flags": {
+        "ai_trace": true,
+        "possible_copy": true,
+        "baseline_human_certain": false
+      },
+      "stage0": false,
+      "upstream_test_kind": "direct",
+      "upstream_test": "tests/test_identity.py",
+      "upstream_smoke": {
+        "exit_code": 2,
+        "passed": false,
+        "summary": "1 error in 0.08s",
+        "reason": "ModuleNotFoundError: No module named 'apps'",
+        "note": "module + test file only, at their repo paths; other repo files absent"
+      },
+      "mutants_total": 61,
+      "mutants_used": 61,
+      "mutants_by_category": {
+        "arithmetic": 33,
+        "boolean_logic": 8,
+        "comparison": 14,
+        "control_flow": 6
+      },
+      "mutant_set_sha256": "645354968bf02c20ac825c045ad02d92f1bd21ec21f2aa92a19e40fc827aebb0",
+      "few_mutants": false,
+      "null_wall_seconds": 48.89
+    },
+    {
+      "name": "intent_relations",
+      "id": "dozybot001/Intent:src/intent_cli/relations.py",
+      "repo_url": "https://github.com/dozybot001/Intent",
+      "pinned_sha": "3d4985688ded065632cb8357275a4dc18f155c17",
+      "path": "src/intent_cli/relations.py",
+      "module_file": "corpus/intent_relations/intent_relations.py",
+      "module_sha256": "839ae3333ecd184900b7fd653a1b56bcf012be1d71076559db4a67131e5119ed",
+      "licence": "MIT",
+      "lines": 140,
+      "first_commit_date": "2026-10-30T11:19:50+08:00",
+      "last_change_date": "2026-10-30T11:19:50+08:00",
+      "flags": {
+        "ai_trace": true,
+        "possible_copy": true,
+        "baseline_human_certain": false
+      },
+      "stage0": false,
+      "upstream_test_kind": "direct",
+      "upstream_test": "tests/test_relations.py",
+      "upstream_smoke": {
+        "exit_code": 2,
+        "passed": false,
+        "summary": "1 error in 0.07s",
+        "reason": "ModuleNotFoundError: No module named 'apps'",
+        "note": "module + test file only, at their repo paths; other repo files absent"
+      },
+      "mutants_total": 161,
+      "mutants_used": 100,
+      "mutants_by_category": {
+        "arithmetic": 7,
+        "boolean_logic": 22,
+        "comparison": 62,
+        "constant": 1,
+        "control_flow": 8
+      },
+      "mutant_set_sha256": "0bb61ed31cd941b5fad1fa480c2730912dd4c60ae5482d49e922d87b81ab67e4",
+      "few_mutants": false,
+      "null_wall_seconds": 76.48
+    },
+    {
+      "name": "zagentic_doi",
+      "id": "jununfly/ZAgentic:skills/codebase-docs/zj-roadmap-driven/viz/doi.py",
+      "repo_url": "https://github.com/jununfly/ZAgentic",
+      "pinned_sha": "c70dac2f5b2eb7666f4ac35d555bf8aa83ac77c4",
+      "path": "skills/codebase-docs/zj-roadmap-driven/viz/doi.py",
+      "module_file": "corpus/zagentic_doi/zagentic_doi.py",
+      "module_sha256": "83f3d7027e7c7e22cd18a43f97657897ab44d0f53b1b2068240f2b99a2e132a3",
+      "licence": "MIT",
+      "lines": 236,
+      "first_commit_date": "2026-11-11T15:38:29+08:00",
+      "last_change_date": "2026-11-12T11:48:38+08:00",
+      "flags": {
+        "ai_trace": true,
+        "possible_copy": false,
+        "baseline_human_certain": false
+      },
+      "stage0": false,
+      "upstream_test_kind": "direct",
+      "upstream_test": "skills/codebase-docs/zj-roadmap-driven/viz/tests/test_review_contracts.py",
+      "upstream_smoke": {
+        "exit_code": 2,
+        "passed": false,
+        "summary": "1 error in 0.04s",
+        "reason": "ImportError: cannot import name 'context' from 'viz' (unknown location)",
+        "note": "module + test file only, at their repo paths; other repo files absent"
+      },
+      "mutants_total": 640,
+      "mutants_used": 100,
+      "mutants_by_category": {
+        "arithmetic": 56,
+        "boolean_logic": 5,
+        "comparison": 19,
+        "constant": 18,
+        "control_flow": 2
+      },
+      "mutant_set_sha256": "2772d7773b96afd6a40f9742cea06ac0b175c848bbf01a28e960c1e439aee815",
+      "few_mutants": false,
+      "null_wall_seconds": 76.61
+    },
+    {
+      "name": "zagentic_ir_schema",
+      "id": "jununfly/ZAgentic:skills/codebase-docs/zj-roadmap-driven/viz/ir_schema.py",
+      "repo_url": "https://github.com/jununfly/ZAgentic",
+      "pinned_sha": "c70dac2f5b2eb7666f4ac35d555bf8aa83ac77c4",
+      "path": "skills/codebase-docs/zj-roadmap-driven/viz/ir_schema.py",
+      "module_file": "corpus/zagentic_ir_schema/zagentic_ir_schema.py",
+      "module_sha256": "d12efeb3edb6e6b9a04f18ed7f155694041349c4c27e6940115eeade4dace7ac",
+      "licence": "MIT",
+      "lines": 55,
+      "first_commit_date": "2026-11-12T02:25:20+08:00",
+      "last_change_date": "2026-11-12T02:25:20+08:00",
+      "flags": {
+        "ai_trace": true,
+        "possible_copy": false,
+        "baseline_human_certain": false
+      },
+      "stage0": false,
+      "upstream_test_kind": "direct",
+      "upstream_test": "skills/codebase-docs/zj-roadmap-driven/viz/tests/test_s1.py",
+      "upstream_smoke": {
+        "exit_code": 2,
+        "passed": false,
+        "summary": "1 error in 0.05s",
+        "reason": "ImportError: cannot import name 'context' from 'viz' (unknown location)",
+        "note": "module + test file only, at their repo paths; other repo files absent"
+      },
+      "mutants_total": 54,
+      "mutants_used": 54,
+      "mutants_by_category": {
+        "arithmetic": 33,
+        "boolean_logic": 4,
+        "comparison": 14,
+        "constant": 2,
+        "control_flow": 1
+      },
+      "mutant_set_sha256": "8c801d7090401c718a6b4b53f60d73ec3854f7bc4844ab071effa64555ee4001",
+      "few_mutants": false,
+      "null_wall_seconds": 45.28
+    },
+    {
+      "name": "codex_memories_redaction",
+      "id": "libenxier-beep/codex-memories:scripts/agent_memory_system/redaction.py",
+      "repo_url": "https://github.com/libenxier-beep/codex-memories",
+      "pinned_sha": "9e497d0794258f679c7212a32022d6f6d637f1c0",
+      "path": "scripts/agent_memory_system/redaction.py",
+      "module_file": "corpus/codex_memories_redaction/codex_memories_redaction.py",
+      "module_sha256": "46a140132adefec46e13e43bea07285579a2aacb404d9e5fbb9cbdf6a2f08b7a",
+      "licence": "Apache-2.0",
+      "lines": 232,
+      "first_commit_date": "2026-08-27T14:33:46+08:00",
+      "last_change_date": "2026-08-27T14:33:46+08:00",
+      "flags": {
+        "ai_trace": false,
+        "possible_copy": false,
+        "baseline_human_certain": false
+      },
+      "stage0": false,
+      "upstream_test_kind": "indirect",
+      "upstream_test": "tests/test_agent_memory_candidates.py",
+      "upstream_smoke": null,
+      "mutants_total": 142,
+      "mutants_used": 100,
+      "mutants_by_category": {
+        "arithmetic": 70,
+        "boolean_logic": 21,
+        "comparison": 6,
+        "constant": 1,
+        "control_flow": 1,
+        "decorator": 1
+      },
+      "mutant_set_sha256": "447c3c8c3fba172348896fe9733ade237cce73bdabbe26e37e226080b91a8755",
+      "few_mutants": false,
+      "null_wall_seconds": 79.11
+    },
+    {
+      "name": "codex_memories_query",
+      "id": "libenxier-beep/codex-memories:scripts/retrieval/query.py",
+      "repo_url": "https://github.com/libenxier-beep/codex-memories",
+      "pinned_sha": "9e497d0794258f679c7212a32022d6f6d637f1c0",
+      "path": "scripts/retrieval/query.py",
+      "module_file": "corpus/codex_memories_query/codex_memories_query.py",
+      "module_sha256": "0e56837810985585f00fdf4ebcf55fb0b5488e03a7c8f898fac2db531f7126e7",
+      "licence": "Apache-2.0",
+      "lines": 256,
+      "first_commit_date": "2026-08-27T14:33:46+08:00",
+      "last_change_date": "2026-08-27T14:33:46+08:00",
+      "flags": {
+        "ai_trace": false,
+        "possible_copy": false,
+        "baseline_human_certain": false
+      },
+      "stage0": false,
+      "upstream_test_kind": "none",
+      "upstream_test": null,
+      "upstream_smoke": null,
+      "mutants_total": 361,
+      "mutants_used": 100,
+      "mutants_by_category": {
+        "arithmetic": 52,
+        "boolean_logic": 14,
+        "comparison": 19,
+        "constant": 15
+      },
+      "mutant_set_sha256": "55824ae003033e9e0f856b99c575945be269adede7e00ceea90fd0fb0491b6c8",
+      "few_mutants": false,
+      "null_wall_seconds": 76.74
+    },
+    {
+      "name": "blackmamba_open_source_r_power_estimator",
+      "id": "oren-blackmamba/blackmamba---open-source-robot-ai-code:energy/power_estimator.py",
+      "repo_url": "https://github.com/oren-blackmamba/blackmamba---open-source-robot-ai-code",
+      "pinned_sha": "8b57b547c32507f2eac6929f30e2f601e5b74eba",
+      "path": "energy/power_estimator.py",
+      "module_file": "corpus/blackmamba_open_source_r_power_estimator/blackmamba_open_source_r_power_estimator.py",
+      "module_sha256": "5cd7cefdc77ddb22a1a10a6853b4fa96122f5319f83882b4fe1e45a277400324",
+      "licence": "Apache-2.0",
+      "lines": 64,
+      "first_commit_date": "2026-10-15T22:28:59+03:00",
+      "last_change_date": "2026-10-15T22:28:59+03:00",
+      "flags": {
+        "ai_trace": true,
+        "possible_copy": false,
+        "baseline_human_certain": false
+      },
+      "stage0": false,
+      "upstream_test_kind": "direct",
+      "upstream_test": "tests/test_energy.py",
+      "upstream_smoke": {
+        "exit_code": 2,
+        "passed": false,
+        "summary": "1 error in 0.04s",
+        "reason": "ModuleNotFoundError: No module named 'config'",
+        "note": "module + test file only, at their repo paths; other repo files absent"
+      },
+      "mutants_total": 276,
+      "mutants_used": 100,
+      "mutants_by_category": {
+        "arithmetic": 80,
+        "boolean_logic": 2,
+        "comparison": 7,
+        "constant": 10,
+        "decorator": 1
+      },
+      "mutant_set_sha256": "e9f6dbd19fa4a05be4b72ec72c28b39c22b1b52cf68da8b380680ffd25cc813f",
+      "few_mutants": false,
+      "null_wall_seconds": 79.0
+    },
+    {
+      "name": "blackmamba_open_source_r_vision",
+      "id": "oren-blackmamba/blackmamba---open-source-robot-ai-code:perception/vision.py",
+      "repo_url": "https://github.com/oren-blackmamba/blackmamba---open-source-robot-ai-code",
+      "pinned_sha": "8b57b547c32507f2eac6929f30e2f601e5b74eba",
+      "path": "perception/vision.py",
+      "module_file": "corpus/blackmamba_open_source_r_vision/blackmamba_open_source_r_vision.py",
+      "module_sha256": "6618482974c267999116abe35878ba59b56d45c7c1ca90d05b40a0df4d74aeb9",
+      "licence": "Apache-2.0",
+      "lines": 66,
+      "first_commit_date": "2026-10-15T22:28:59+03:00",
+      "last_change_date": "2026-10-15T22:36:00+03:00",
+      "flags": {
+        "ai_trace": true,
+        "possible_copy": false,
+        "baseline_human_certain": false
+      },
+      "stage0": false,
+      "upstream_test_kind": "direct",
+      "upstream_test": "tests/test_perception.py",
+      "upstream_smoke": {
+        "exit_code": 2,
+        "passed": false,
+        "summary": "1 error in 0.04s",
+        "reason": "ModuleNotFoundError: No module named 'perception.environment_mapping'",
+        "note": "module + test file only, at their repo paths; other repo files absent"
+      },
+      "mutants_total": 224,
+      "mutants_used": 100,
+      "mutants_by_category": {
+        "arithmetic": 69,
+        "boolean_logic": 2,
+        "comparison": 9,
+        "constant": 17,
+        "control_flow": 2,
+        "decorator": 1
+      },
+      "mutant_set_sha256": "fa3d7c86d3f524b209bd519d76819cb0a8868f5327cd51266de4d92f03f9a5ba",
+      "few_mutants": false,
+      "null_wall_seconds": 74.36
+    },
+    {
+      "name": "hangzhou_mahjong_ai_value",
+      "id": "qhykwsw/hangzhou-mahjong-ai:projects/personal/firstprinciples/records/rl/attempts/fp-rl-157/recipe/value.py",
+      "repo_url": "https://github.com/qhykwsw/hangzhou-mahjong-ai",
+      "pinned_sha": "e6a14d67d3abde410769c27b2f52d193bbb0cf8a",
+      "path": "projects/personal/firstprinciples/records/rl/attempts/fp-rl-157/recipe/value.py",
+      "module_file": "corpus/hangzhou_mahjong_ai_value/hangzhou_mahjong_ai_value.py",
+      "module_sha256": "81aac86dbe9ea2f5164b3a2a6c005e3fd2676471442607b12f7d163665da6fa8",
+      "licence": "MIT",
+      "lines": 57,
+      "first_commit_date": "2026-10-12T17:56:23+08:00",
+      "last_change_date": "2026-10-12T17:56:23+08:00",
+      "flags": {
+        "ai_trace": true,
+        "possible_copy": false,
+        "baseline_human_certain": false
+      },
+      "stage0": false,
+      "upstream_test_kind": "none",
+      "upstream_test": null,
+      "upstream_smoke": null,
+      "mutants_total": 349,
+      "mutants_used": 100,
+      "mutants_by_category": {
+        "arithmetic": 33,
+        "boolean_logic": 1,
+        "comparison": 1,
+        "constant": 65
+      },
+      "mutant_set_sha256": "136d6ed9802ac848607ca39a468a3fc356583eef7502bcec744970473bdc0a9c",
+      "few_mutants": false,
+      "null_wall_seconds": 77.53
+    },
+    {
+      "name": "hangzhou_mahjong_ai_config",
+      "id": "qhykwsw/hangzhou-mahjong-ai:projects/personal/selfplay/guided/config.py",
+      "repo_url": "https://github.com/qhykwsw/hangzhou-mahjong-ai",
+      "pinned_sha": "e6a14d67d3abde410769c27b2f52d193bbb0cf8a",
+      "path": "projects/personal/selfplay/guided/config.py",
+      "module_file": "corpus/hangzhou_mahjong_ai_config/hangzhou_mahjong_ai_config.py",
+      "module_sha256": "87a694b9382103693a1d2f4a792553375cf77d486267b32fc4ca96a658b3028e",
+      "licence": "MIT",
+      "lines": 53,
+      "first_commit_date": "2026-09-21T16:00:26+08:00",
+      "last_change_date": "2026-09-21T17:23:21+08:00",
+      "flags": {
+        "ai_trace": true,
+        "possible_copy": false,
+        "baseline_human_certain": false
+      },
+      "stage0": false,
+      "upstream_test_kind": "direct",
+      "upstream_test": "projects/personal/selfplay/tests/test_guided_branch_collection.py",
+      "upstream_smoke": {
+        "exit_code": 2,
+        "passed": false,
+        "summary": "1 error in 0.05s",
+        "reason": "ModuleNotFoundError: No module named 'numpy'",
+        "note": "module + test file only, at their repo paths; other repo files absent"
+      },
+      "mutants_total": 161,
+      "mutants_used": 100,
+      "mutants_by_category": {
+        "arithmetic": 20,
+        "boolean_logic": 5,
+        "comparison": 19,
+        "constant": 56
+      },
+      "mutant_set_sha256": "15c7ac99f9c418cbe7a50b9fb6dab75d6af513e5277b37154be9bbac39c7444a",
+      "few_mutants": false,
+      "null_wall_seconds": 80.27
+    },
+    {
+      "name": "skijack_ast",
+      "id": "sigilante/SKIjack:python/skijack/ast.py",
+      "repo_url": "https://github.com/sigilante/SKIjack",
+      "pinned_sha": "f608f3b027ecdf7b55475ae20737b9cdaa43b23b",
+      "path": "python/skijack/ast.py",
+      "module_file": "corpus/skijack_ast/skijack_ast.py",
+      "module_sha256": "95419b631c753e2365dd38b18fdb7317fbc8860c4402008abfb38190955a7fbc",
+      "licence": "MIT",
+      "lines": 196,
+      "first_commit_date": "2026-09-16T19:44:18-10:00",
+      "last_change_date": "2026-10-21T11:07:30+13:00",
+      "flags": {
+        "ai_trace": true,
+        "possible_copy": false,
+        "baseline_human_certain": false
+      },
+      "stage0": false,
+      "upstream_test_kind": "direct",
+      "upstream_test": "python/tests/test_dictionary.py",
+      "upstream_smoke": {
+        "exit_code": 2,
+        "passed": false,
+        "summary": "1 error in 0.05s",
+        "reason": "ModuleNotFoundError: No module named 'aviary_kernel'",
+        "note": "module + test file only, at their repo paths; other repo files absent"
+      },
+      "mutants_total": 41,
+      "mutants_used": 41,
+      "mutants_by_category": {
+        "constant": 21,
+        "decorator": 20
+      },
+      "mutant_set_sha256": "54451125c4099db2b4954aaf37d18525067e99474539590ff48aa47b44a84570",
+      "few_mutants": false,
+      "null_wall_seconds": 35.71
+    },
+    {
+      "name": "sustainability_score_config",
+      "id": "srinathgopinath-code/sustainability-score:src/sustainability_score/config.py",
+      "repo_url": "https://github.com/srinathgopinath-code/sustainability-score",
+      "pinned_sha": "c3b1590a3d5b9a4e0f2b53021651cc4832ee6756",
+      "path": "src/sustainability_score/config.py",
+      "module_file": "corpus/sustainability_score_config/sustainability_score_config.py",
+      "module_sha256": "7d03a2929ba798df2d8327550ac7aafe08450aceb2b4dafe107d60753dd97a7b",
+      "licence": "MIT",
+      "lines": 109,
+      "first_commit_date": "2026-08-26T22:58:42-04:00",
+      "last_change_date": "2026-08-26T22:58:42-04:00",
+      "flags": {
+        "ai_trace": false,
+        "possible_copy": false,
+        "baseline_human_certain": false
+      },
+      "stage0": false,
+      "upstream_test_kind": "none",
+      "upstream_test": null,
+      "upstream_smoke": null,
+      "mutants_total": 57,
+      "mutants_used": 57,
+      "mutants_by_category": {
+        "arithmetic": 11,
+        "boolean_logic": 1,
+        "comparison": 5,
+        "constant": 40
+      },
+      "mutant_set_sha256": "fc8e4d6e40fa28b3b6f6af1357336340307375b1bf16f5f000f38934cb52c97f",
+      "few_mutants": false,
+      "null_wall_seconds": 46.57
+    },
+    {
+      "name": "isos_kernel_version",
+      "id": "sungju/isos:source/kernel_version.py",
+      "repo_url": "https://github.com/sungju/isos",
+      "pinned_sha": "f0d4e4a1f8e91cc64aacf1bb5411e638298d6de9",
+      "path": "source/kernel_version.py",
+      "module_file": "corpus/isos_kernel_version/isos_kernel_version.py",
+      "module_sha256": "dc5cd3ac822bde19e3bcc5285a42a63a6d06d3d1e61b5be01ccf896509819391",
+      "licence": "MIT",
+      "lines": 212,
+      "first_commit_date": "2026-10-10T07:09:27+10:00",
+      "last_change_date": "2026-10-10T07:09:27+10:00",
+      "flags": {
+        "ai_trace": false,
+        "possible_copy": true,
+        "baseline_human_certain": false
+      },
+      "stage0": false,
+      "upstream_test_kind": "none",
+      "upstream_test": null,
+      "upstream_smoke": null,
+      "mutants_total": 335,
+      "mutants_used": 100,
+      "mutants_by_category": {
+        "arithmetic": 40,
+        "boolean_logic": 9,
+        "comparison": 25,
+        "constant": 25,
+        "control_flow": 1
+      },
+      "mutant_set_sha256": "9d24aed269823ff020333937125f08aa97f56d83e690fac4409b12e92074dedc",
+      "few_mutants": false,
+      "null_wall_seconds": 78.98
+    },
+    {
+      "name": "sentineledgeai_pdf",
+      "id": "vishwa-10147/SentinelEdgeAI:reporting/pdf.py",
+      "repo_url": "https://github.com/vishwa-10147/SentinelEdgeAI",
+      "pinned_sha": "c71e2e1a887040dde23a367177628a3238cc24f2",
+      "path": "reporting/pdf.py",
+      "module_file": "corpus/sentineledgeai_pdf/sentineledgeai_pdf.py",
+      "module_sha256": "7b5237e3a005386b70d7efb3f05f27e9494b12a7dc798c267bead621b2fe0cdd",
+      "licence": "Apache-2.0",
+      "lines": 79,
+      "first_commit_date": "2026-10-31T01:06:07+05:30",
+      "last_change_date": "2026-10-31T01:06:07+05:30",
+      "flags": {
+        "ai_trace": true,
+        "possible_copy": false,
+        "baseline_human_certain": false
+      },
+      "stage0": false,
+      "upstream_test_kind": "direct",
+      "upstream_test": "tests/test_integrations_ops.py",
+      "upstream_smoke": {
+        "exit_code": 2,
+        "passed": false,
+        "summary": "1 error in 0.08s",
+        "reason": "ModuleNotFoundError: No module named 'core'",
+        "note": "module + test file only, at their repo paths; other repo files absent"
+      },
+      "mutants_total": 295,
+      "mutants_used": 100,
+      "mutants_by_category": {
+        "arithmetic": 81,
+        "boolean_logic": 1,
+        "constant": 17,
+        "control_flow": 1
+      },
+      "mutant_set_sha256": "199882ed5d07621d3622d6f5470d97fa9537fa734e021f5698f884d4b00211ab",
+      "few_mutants": false,
+      "null_wall_seconds": 81.04
+    }
+  ],
+  "baseline": [
+    {
+      "name": "moirai_abstract_process_handler",
+      "id": "acristoffers/moirai:moirai/abstract_process_handler.py",
+      "repo_url": "https://github.com/acristoffers/moirai",
+      "pinned_sha": "ee6051509c022699898a8ad8194c74990fa5dc0a",
+      "path": "moirai/abstract_process_handler.py",
+      "module_file": "corpus/moirai_abstract_process_handler/moirai_abstract_process_handler.py",
+      "module_sha256": "d0d9dd72765954d0f8e9524dc2aa5aab16f395ec3e475e8dc48892a099ac09d2",
+      "licence": "MIT",
+      "lines": 171,
+      "first_commit_date": "2016-10-01T14:59:16-03:00",
+      "last_change_date": "2023-03-01T13:50:57+01:00",
+      "flags": {
+        "ai_trace": false,
+        "possible_copy": false,
+        "baseline_human_certain": false
+      },
+      "stage0": false,
+      "upstream_test_kind": "indirect",
+      "upstream_test": "tests/conftest.py",
+      "upstream_smoke": null,
+      "mutants_total": 171,
+      "mutants_used": 100,
+      "mutants_by_category": {
+        "arithmetic": 51,
+        "boolean_logic": 11,
+        "comparison": 27,
+        "constant": 8,
+        "control_flow": 2,
+        "exception": 1
+      },
+      "mutant_set_sha256": "c9f3b81e58befd57a9ee4b0231d6c1fe17d90e4fe3dd43a496b19738bcfe0c4f",
+      "few_mutants": false,
+      "null_wall_seconds": 77.23
+    },
+    {
+      "name": "databroker_pivot",
+      "id": "bluesky/databroker:databroker/pivot.py",
+      "repo_url": "https://github.com/bluesky/databroker",
+      "pinned_sha": "e4a3964126228d774b919ea0d0ef381163f268fa",
+      "path": "databroker/pivot.py",
+      "module_file": "corpus/databroker_pivot/databroker_pivot.py",
+      "module_sha256": "788774c567dbe6489aac55e3a3bec328d8a0c0e03d2239cbe3eb2006fce31611",
+      "licence": "BSD-3-Clause",
+      "lines": 203,
+      "first_commit_date": "2015-11-03T23:31:21-05:00",
+      "last_change_date": "2015-11-18T15:24:42-05:00",
+      "flags": {
+        "ai_trace": false,
+        "possible_copy": false,
+        "baseline_human_certain": true
+      },
+      "stage0": false,
+      "upstream_test_kind": "direct",
+      "upstream_test": "databroker/tests/test_pivot.py",
+      "upstream_smoke": {
+        "exit_code": 2,
+        "passed": false,
+        "summary": "1 error in 0.04s",
+        "reason": "ModuleNotFoundError: No module named 'numpy'",
+        "note": "module + test file only, at their repo paths; other repo files absent"
+      },
+      "mutants_total": 99,
+      "mutants_used": 99,
+      "mutants_by_category": {
+        "arithmetic": 11,
+        "boolean_logic": 16,
+        "comparison": 44,
+        "constant": 17,
+        "control_flow": 10,
+        "exception": 1
+      },
+      "mutant_set_sha256": "6a24e8e3aecbfa565cabecc17cd5f7f9ba85c4873329b9db53f7cc4dfb61b89a",
+      "few_mutants": false,
+      "null_wall_seconds": 76.92
+    },
+    {
+      "name": "addict",
+      "id": "stage0:addict",
+      "repo_url": "https://github.com/mewwts/addict",
+      "pinned_sha": "338936265dd924ec5892aeee9c122d7e4f77680d",
+      "path": "addict/addict.py",
+      "module_file": "corpus/addict/addict.py",
+      "module_sha256": "49c39f72568033bba0c99a17396d871cbf60097b7f5cf7be8b96d32e263cb9f5",
+      "licence": "MIT",
+      "lines": 159,
+      "first_commit_date": "2014-12-10T08:04:09+01:00",
+      "last_change_date": "2020-11-19T20:01:58+00:00",
+      "flags": {
+        "ai_trace": false,
+        "possible_copy": false,
+        "baseline_human_certain": true
+      },
+      "stage0": true,
+      "upstream_test_kind": "indirect",
+      "upstream_test": "test_addict.py",
+      "upstream_smoke": {
+        "exit_code": null,
+        "passed": true,
+        "summary": "A2.1 run 20261119T171136Z: arm_status=ran",
+        "reason": null,
+        "note": "from results.jsonl (Stage 0 harness)"
+      },
+      "mutants_total": 58,
+      "mutants_used": 58,
+      "mutants_by_category": {
+        "boolean_logic": 28,
+        "comparison": 6,
+        "constant": 13,
+        "control_flow": 9,
+        "decorator": 1,
+        "exception": 1
+      },
+      "mutant_set_sha256": "189ba4e5d395e6566a92d537165a318c511e35e8bafec9fe05f21bf94293ef07",
+      "few_mutants": false,
+      "null_wall_seconds": 48.53
+    },
+    {
+      "name": "heapdict",
+      "id": "stage0:heapdict",
+      "repo_url": "https://github.com/DanielStutzbach/heapdict",
+      "pinned_sha": "9691bab2ff952bfbbd52a9c70300972933022971",
+      "path": "heapdict.py",
+      "module_file": "corpus/heapdict/heapdict.py",
+      "module_sha256": "a433ee2f086c43223841b33de4f6e19b3eaff00ea41996484c46b3362ccc22b3",
+      "licence": "BSD-3-Clause",
+      "lines": 115,
+      "first_commit_date": "2009-10-16T09:19:49-05:00",
+      "last_change_date": "2019-09-09T10:41:20-07:00",
+      "flags": {
+        "ai_trace": false,
+        "possible_copy": false,
+        "baseline_human_certain": true
+      },
+      "stage0": true,
+      "upstream_test_kind": "direct",
+      "upstream_test": "test_heap.py",
+      "upstream_smoke": {
+        "exit_code": null,
+        "passed": false,
+        "summary": "A2.1 run 20261119T171136Z: arm_status=not runnable offline: needs test.support",
+        "reason": "not runnable offline: needs test.support",
+        "note": "from results.jsonl (Stage 0 harness)"
+      },
+      "mutants_total": 240,
+      "mutants_used": 100,
+      "mutants_by_category": {
+        "arithmetic": 41,
+        "boolean_logic": 5,
+        "comparison": 20,
+        "constant": 30,
+        "control_flow": 1,
+        "decorator": 2,
+        "exception": 1
+      },
+      "mutant_set_sha256": "48711b7eec6092bae749c518ab01cf63d12ebf13312957a67a0a76b1fb2fff06",
+      "few_mutants": false,
+      "null_wall_seconds": 80.84
+    },
+    {
+      "name": "mergedeep",
+      "id": "stage0:mergedeep",
+      "repo_url": "https://github.com/clarketm/mergedeep",
+      "pinned_sha": "ab871aff9eccb5e1bf0ea237c3cff8f6787ebc56",
+      "path": "mergedeep/mergedeep.py",
+      "module_file": "corpus/mergedeep/mergedeep.py",
+      "module_sha256": "2f2b376ed14b7bd848287b23f488173e48b475a8417829cd9882ea3d339c90ae",
+      "licence": "MIT",
+      "lines": 100,
+      "first_commit_date": "2019-02-03T17:33:43-08:00",
+      "last_change_date": "2021-02-05T10:32:14-08:00",
+      "flags": {
+        "ai_trace": false,
+        "possible_copy": false,
+        "baseline_human_certain": true
+      },
+      "stage0": true,
+      "upstream_test_kind": "direct",
+      "upstream_test": "mergedeep/test_mergedeep.py",
+      "upstream_smoke": {
+        "exit_code": null,
+        "passed": true,
+        "summary": "A2.1 run 20261119T171136Z: arm_status=ran",
+        "reason": null,
+        "note": "from results.jsonl (Stage 0 harness)"
+      },
+      "mutants_total": 50,
+      "mutants_used": 50,
+      "mutants_by_category": {
+        "arithmetic": 11,
+        "boolean_logic": 14,
+        "comparison": 14,
+        "constant": 10,
+        "control_flow": 1
+      },
+      "mutant_set_sha256": "6153ceb89fcd4050e01007c42669659e08fa88fc1baec974169909c84fe826ed",
+      "few_mutants": false,
+      "null_wall_seconds": 42.22
+    },
+    {
+      "name": "toposort",
+      "id": "stage0:toposort",
+      "repo_url": "https://gitlab.com/ericvsmith/toposort",
+      "pinned_sha": "e67c242ceec5908564837ce6ac2cb661659b0cc8",
+      "path": "src/toposort.py",
+      "module_file": "corpus/toposort/toposort.py",
+      "module_sha256": "54e9d07cb28d940a22b08ef2de176ad12c7cf90a4a4502e56c70ad83e32c570e",
+      "licence": "Apache-2.0",
+      "lines": 95,
+      "first_commit_date": "2014-02-10T10:14:53-05:00",
+      "last_change_date": "2023-02-25T14:59:30-05:00",
+      "flags": {
+        "ai_trace": false,
+        "possible_copy": true,
+        "baseline_human_certain": false
+      },
+      "stage0": true,
+      "upstream_test_kind": "direct",
+      "upstream_test": "test/test_toposort.py",
+      "upstream_smoke": {
+        "exit_code": null,
+        "passed": true,
+        "summary": "A2.1 run 20261119T171136Z: arm_status=ran",
+        "reason": null,
+        "note": "from results.jsonl (Stage 0 harness)"
+      },
+      "mutants_total": 60,
+      "mutants_used": 60,
+      "mutants_by_category": {
+        "arithmetic": 22,
+        "boolean_logic": 6,
+        "comparison": 22,
+        "constant": 8,
+        "control_flow": 2
+      },
+      "mutant_set_sha256": "c3047d078f46288a3dc76abb3ad584626347b3797f7e6ef3931ff3957e8399ab",
+      "few_mutants": false,
+      "null_wall_seconds": 47.31
+    },
+    {
+      "name": "depthcharge_log",
+      "id": "tetrelsec/depthcharge:python/depthcharge/log.py",
+      "repo_url": "https://github.com/tetrelsec/depthcharge",
+      "pinned_sha": "f8591f23cb7b216c321bc0405774ad460393bfd9",
+      "path": "python/depthcharge/log.py",
+      "module_file": "corpus/depthcharge_log/depthcharge_log.py",
+      "module_sha256": "28f7831e817693eb9ede24e780867767b413d2ba469ec34796aefc32351f83ca",
+      "licence": "BSD-3-Clause",
+      "lines": 246,
+      "first_commit_date": "2020-07-13T07:47:47-05:00",
+      "last_change_date": "2024-05-24T19:55:28+00:00",
+      "flags": {
+        "ai_trace": false,
+        "possible_copy": false,
+        "baseline_human_certain": false
+      },
+      "stage0": false,
+      "upstream_test_kind": "direct",
+      "upstream_test": "python/tests/integration/launch_scripts.py",
+      "upstream_smoke": {
+        "exit_code": 2,
+        "passed": false,
+        "summary": "1 error in 0.05s",
+        "reason": "ImportError: cannot import name 'string' from 'depthcharge' (unknown location)",
+        "note": "module + test file only, at their repo paths; other repo files absent"
+      },
+      "mutants_total": 379,
+      "mutants_used": 100,
+      "mutants_by_category": {
+        "arithmetic": 90,
+        "boolean_logic": 1,
+        "comparison": 2,
+        "constant": 5,
+        "decorator": 1,
+        "exception": 1
+      },
+      "mutant_set_sha256": "beb501c0ef963a9071d279f45c2642cd02734b24525c4a3bd1d7f0c8fab8d96f",
+      "few_mutants": false,
+      "null_wall_seconds": 80.45
+    },
+    {
+      "name": "depthcharge_version",
+      "id": "tetrelsec/depthcharge:python/depthcharge/uboot/version.py",
+      "repo_url": "https://github.com/tetrelsec/depthcharge",
+      "pinned_sha": "f8591f23cb7b216c321bc0405774ad460393bfd9",
+      "path": "python/depthcharge/uboot/version.py",
+      "module_file": "corpus/depthcharge_version/depthcharge_version.py",
+      "module_sha256": "b993c95891db0bdba62b7c0becf220bc7e8ff59405444f07165169415ee455fc",
+      "licence": "BSD-3-Clause",
+      "lines": 161,
+      "first_commit_date": "2020-12-01T01:58:24-06:00",
+      "last_change_date": "2024-05-24T19:55:28+00:00",
+      "flags": {
+        "ai_trace": false,
+        "possible_copy": false,
+        "baseline_human_certain": false
+      },
+      "stage0": false,
+      "upstream_test_kind": "indirect",
+      "upstream_test": "python/tests/unit/uboot/version.py",
+      "upstream_smoke": null,
+      "mutants_total": 305,
+      "mutants_used": 100,
+      "mutants_by_category": {
+        "arithmetic": 19,
+        "boolean_logic": 10,
+        "comparison": 63,
+        "constant": 7,
+        "decorator": 1
+      },
+      "mutant_set_sha256": "e02d2b60e0cdc119abad6707c4f3c8c2976839730ee54efc4cc9ded4fc40da6b",
+      "few_mutants": false,
+      "null_wall_seconds": 76.86
+    }
+  ],
+  "exclusions": [],
+  "excluded_by_rule": [
+    {
+      "name": "wdcnet_config_schema",
+      "id": "Cooing-code/WDCNet:src/wdcnet/utils/config_schema.py",
+      "set": "primary",
+      "mutants_used": 0,
+      "mutants_total": 0,
+      "rule": "fewer than 20 mutants"
+    },
+    {
+      "name": "home_assistant_budget_bo_const",
+      "id": "Im-Tim-mI/Home-Assistant_Budget-Book:budget_book/rootfs/app/const.py",
+      "set": "primary",
+      "mutants_used": 2,
+      "mutants_total": 2,
+      "rule": "fewer than 20 mutants"
+    },
+    {
+      "name": "hermes_telegram_stickers_schemas",
+      "id": "churnast/hermes-telegram-stickers:schemas.py",
+      "set": "primary",
+      "mutants_used": 8,
+      "mutants_total": 8,
+      "rule": "fewer than 20 mutants"
+    },
+    {
+      "name": "marigold_v2_registry",
+      "id": "huawei-bayerlab/marigold-v2:marigoldv2/core/registry.py",
+      "set": "primary",
+      "mutants_used": 7,
+      "mutants_total": 7,
+      "rule": "fewer than 20 mutants"
+    },
+    {
+      "name": "django_cfg_results",
+      "id": "markolofsen/django-cfg:django_cfg/modules/django_mcp/tools/results.py",
+      "set": "primary",
+      "mutants_used": 19,
+      "mutants_total": 19,
+      "rule": "fewer than 20 mutants"
+    },
+    {
+      "name": "sustainability_score_model",
+      "id": "srinathgopinath-code/sustainability-score:src/sustainability_score/model.py",
+      "set": "primary",
+      "mutants_used": 3,
+      "mutants_total": 3,
+      "rule": "fewer than 20 mutants"
+    },
+    {
+      "name": "sentineledgeai_bounded",
+      "id": "vishwa-10147/SentinelEdgeAI:common/bounded.py",
+      "set": "primary",
+      "mutants_used": 18,
+      "mutants_total": 18,
+      "rule": "fewer than 20 mutants"
+    },
+    {
+      "name": "d3_frame_selector",
+      "id": "lucasjinreal/d3:projects/DensePose/densepose/data/video/frame_selector.py",
+      "set": "baseline",
+      "mutants_used": 4,
+      "mutants_total": 4,
+      "rule": "fewer than 20 mutants"
+    }
+  ],
+  "pilot_b2a_draw": [
+    "ai_video_generator_text",
+    "angelbot_context_acl",
+    "blackmamba_open_source_r_power_estimator",
+    "codex_memories_redaction",
+    "hangzhou_mahjong_ai_value",
+    "hermes_telegram_stickers_schemas",
+    "home_assistant_budget_bo_analytics",
+    "portable_hermes_agent_inline_markdown",
+    "role_aware_financial_age_sanitize",
+    "sentineledgeai_pdf"
+  ],
+  "pilot_replacements": [
+    "zagentic_doi"
+  ],
+  "pilot": [
+    "ai_video_generator_text",
+    "angelbot_context_acl",
+    "blackmamba_open_source_r_power_estimator",
+    "codex_memories_redaction",
+    "hangzhou_mahjong_ai_value",
+    "home_assistant_budget_bo_analytics",
+    "portable_hermes_agent_inline_markdown",
+    "role_aware_financial_age_sanitize",
+    "sentineledgeai_pdf",
+    "zagentic_doi"
+  ]
+}

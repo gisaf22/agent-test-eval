@@ -1,0 +1,85 @@
+{
+  "run_id": "B4-full-sonnet55-toposort-s1",
+  "tag": "full",
+  "module": "toposort",
+  "model_id": "claude-sonnet-5-5",
+  "effort": "low",
+  "seed": "s1",
+  "prompt_hash": "9c407f6b6e8870edaa6b91607144c1efcd29a0947dc37d79e064fb043c03acc7",
+  "iterations": 2,
+  "stop": "writer_done",
+  "stop_reasons": [
+    "end_turn",
+    "end_turn"
+  ],
+  "tokens_in": 4496,
+  "tokens_out": 1438,
+  "estimated_cost": 0.023372,
+  "wall_seconds": 12.49,
+  "parse_failures": [],
+  "api_error": null,
+  "suite_dir": "runs/full/B4-full-sonnet55-toposort-s1/suite",
+  "suite_files": [
+    "test_toposort.py"
+  ],
+  "run_started_at": "2026-11-23T07:47:42+00:00",
+  "iterations_used": 2,
+  "suite_iterations": 1,
+  "first_iteration_pass": true,
+  "unparsable_files": [],
+  "unparsable_by_iteration": {},
+  "response_models": [
+    "claude-sonnet-5-5",
+    "claude-sonnet-5-5"
+  ],
+  "response_model": "claude-sonnet-5-5",
+  "request_ids": [
+    "req_011ChKVRHENYfacpHNcWjKhe",
+    "req_011ChKVS6WEo4bjz4H9pgmdL"
+  ],
+  "usage_full": [
+    {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "global",
+      "input_tokens": 1410,
+      "output_tokens": 1433,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "service_tier": "standard",
+      "speed": "standard"
+    },
+    {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "global",
+      "input_tokens": 3086,
+      "output_tokens": 5,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "service_tier": "standard",
+      "speed": "standard"
+    }
+  ],
+  "peak_input_tokens_per_call": 3086,
+  "retry_count": 0,
+  "api_events": [],
+  "caps": {
+    "max_iterations": 3,
+    "max_tokens_per_call": 32000,
+    "run_token_cap": 120000,
+    "run_wall_cap_s": 900,
+    "spend_cap_usd": 8.0
+  },
+  "timestamp": "2026-11-23T07:47:55+00:00"
+}

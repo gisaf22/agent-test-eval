@@ -1,0 +1,1 @@
+{"run_id": "B4-full-sonnet55-databroker_pivot-s2", "order": 18, "writer_called": true, "writer_subprocess_seconds": 38.93, "writer_wall_seconds": 37.22, "scoring_wall_seconds": 158.52, "total_seconds": 197.45, "scoring_exit": 0, "finished_at": "2026-11-23T06:43:07+00:00"}

@@ -1,0 +1,1 @@
+{"run_id": "B4-full-sonnet55-mergedeep-s3", "order": 72, "writer_called": true, "writer_subprocess_seconds": 16.73, "writer_wall_seconds": 15.08, "scoring_wall_seconds": 46.78, "total_seconds": 63.51, "scoring_exit": 0, "finished_at": "2026-11-23T07:26:15+00:00"}

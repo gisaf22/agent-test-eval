@@ -1,0 +1,1 @@
+{"run_id": "B4-full-sonnet55-skijack_ast-s3", "order": 5, "writer_called": true, "writer_subprocess_seconds": 14.62, "writer_wall_seconds": 12.97, "scoring_wall_seconds": 73.98, "total_seconds": 88.6, "scoring_exit": 1, "finished_at": "2026-11-20T06:28:40+00:00"}

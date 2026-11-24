@@ -1,0 +1,34 @@
+{
+  "run_id": "B2c-pilot-sonnet55-sentineledgeai_pdf-s2",
+  "tag": "pilot",
+  "module": "sentineledgeai_pdf",
+  "model_id": "claude-sonnet-5-5",
+  "effort": "low",
+  "seed": "s2",
+  "prompt_hash": "9c407f6b6e8870edaa6b91607144c1efcd29a0947dc37d79e064fb043c03acc7",
+  "iterations": 3,
+  "stop": "writer_done",
+  "stop_reasons": [
+    "end_turn",
+    "end_turn",
+    "end_turn"
+  ],
+  "tokens_in": 15073,
+  "tokens_out": 5375,
+  "estimated_cost": 0.083896,
+  "wall_seconds": 35.53,
+  "parse_failures": [],
+  "api_error": null,
+  "suite_dir": "runs/pilot/B2c-pilot-sonnet55-sentineledgeai_pdf-s2/suite",
+  "suite_files": [
+    "test_sentineledgeai_pdf.py"
+  ],
+  "caps": {
+    "max_iterations": 3,
+    "max_tokens_per_call": 32000,
+    "run_token_cap": 120000,
+    "run_wall_cap_s": 900,
+    "spend_cap_usd": 2.5
+  },
+  "timestamp": "2026-11-19T22:29:44+00:00"
+}

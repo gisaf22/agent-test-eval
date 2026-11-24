@@ -1,0 +1,1035 @@
+{
+ "generated_by": "derive_b3.py",
+ "inputs_sha256": {
+  "results.jsonl": "eaf7302eda27332f96d37b73bd6badffb9c7ab0e5c4d00b46ac2f9d05e3b6ccd",
+  "results_mutants.jsonl": "de249a9c23866779cb4aa36a49897d05fd479b94cc6a18eda9ec6e28f10df52a",
+  "results_null.jsonl": "7a93f4ce542901fc37a835ff4a2e5fa119c2484b1fff926c062f4cfbf2186a2e",
+  "smoke_null.jsonl": "c7a3f0b1739c95c5fd330db0355aafb0b2abfa054efbecedeb2f9cd47c8e47c9",
+  "smoke_null_mutants.jsonl": "4820ec29785d7d81df1b583fb0116cc286cc2804f2c74deb4a7136e5b327d117",
+  "corpus_final.json": "4d57f98e64d7da3587e8f127e8f90f8451fce407ea089ece96d2a094f83f0ccd"
+ },
+ "suites": [
+  {
+   "module": "angelbot_context_acl",
+   "file": "tests/angelbot_context_acl/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "angelbot_triage",
+   "file": "tests/angelbot_triage/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "wdcnet_scheduler",
+   "file": "tests/wdcnet_scheduler/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "trace2task_experience",
+   "file": "tests/trace2task_experience/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "trace2task_experience",
+   "file": "corpus/trace2task_experience/upstream_test.txt",
+   "n_tests": 3,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "trace2task_experience_runtime",
+   "file": "tests/trace2task_experience_runtime/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "trace2task_experience_runtime",
+   "file": "corpus/trace2task_experience_runtime/upstream_test.txt",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "home_assistant_budget_bo_analytics",
+   "file": "tests/home_assistant_budget_bo_analytics/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "synaptiq_belief_guard",
+   "file": "tests/synaptiq_belief_guard/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "synaptiq_belief_guard",
+   "file": "corpus/synaptiq_belief_guard/upstream_test.txt",
+   "n_tests": 8,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "synaptiq_retrieval",
+   "file": "tests/synaptiq_retrieval/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "synaptiq_retrieval",
+   "file": "corpus/synaptiq_retrieval/upstream_test.txt",
+   "n_tests": 13,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "role_aware_financial_age_sanitize",
+   "file": "tests/role_aware_financial_age_sanitize/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "role_aware_financial_age_sanitize",
+   "file": "corpus/role_aware_financial_age_sanitize/upstream_test.txt",
+   "n_tests": 17,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "codebots_arena_bot",
+   "file": "tests/codebots_arena_bot/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "codebots_arena_elo",
+   "file": "tests/codebots_arena_elo/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "codebots_arena_elo",
+   "file": "corpus/codebots_arena_elo/upstream_test.txt",
+   "n_tests": 5,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "ai_video_generator_safety",
+   "file": "tests/ai_video_generator_safety/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "ai_video_generator_safety",
+   "file": "corpus/ai_video_generator_safety/upstream_test.txt",
+   "n_tests": 0,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "ai_video_generator_text",
+   "file": "tests/ai_video_generator_text/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "wtftd_war_thunder_full_t_blk",
+   "file": "tests/wtftd_war_thunder_full_t_blk/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "wtftd_war_thunder_full_t_blk",
+   "file": "corpus/wtftd_war_thunder_full_t_blk/upstream_test.txt",
+   "n_tests": 9,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "wtftd_war_thunder_full_t_minimap",
+   "file": "tests/wtftd_war_thunder_full_t_minimap/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "wtftd_war_thunder_full_t_minimap",
+   "file": "corpus/wtftd_war_thunder_full_t_minimap/upstream_test.txt",
+   "n_tests": 26,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "portable_hermes_agent_inline_markdown",
+   "file": "tests/portable_hermes_agent_inline_markdown/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "portable_hermes_agent_inline_markdown",
+   "file": "corpus/portable_hermes_agent_inline_markdown/upstream_test.txt",
+   "n_tests": 6,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "bossalign_schema",
+   "file": "tests/bossalign_schema/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "bossalign_schema",
+   "file": "corpus/bossalign_schema/upstream_test.txt",
+   "n_tests": 18,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "intent_changes",
+   "file": "tests/intent_changes/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "intent_changes",
+   "file": "corpus/intent_changes/upstream_test.txt",
+   "n_tests": 14,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "intent_relations",
+   "file": "tests/intent_relations/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "intent_relations",
+   "file": "corpus/intent_relations/upstream_test.txt",
+   "n_tests": 12,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "zagentic_doi",
+   "file": "tests/zagentic_doi/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "zagentic_doi",
+   "file": "corpus/zagentic_doi/upstream_test.txt",
+   "n_tests": 24,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "zagentic_ir_schema",
+   "file": "tests/zagentic_ir_schema/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "zagentic_ir_schema",
+   "file": "corpus/zagentic_ir_schema/upstream_test.txt",
+   "n_tests": 9,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "codex_memories_redaction",
+   "file": "tests/codex_memories_redaction/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "codex_memories_query",
+   "file": "tests/codex_memories_query/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "blackmamba_open_source_r_power_estimator",
+   "file": "tests/blackmamba_open_source_r_power_estimator/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "blackmamba_open_source_r_power_estimator",
+   "file": "corpus/blackmamba_open_source_r_power_estimator/upstream_test.txt",
+   "n_tests": 8,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "blackmamba_open_source_r_vision",
+   "file": "tests/blackmamba_open_source_r_vision/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "blackmamba_open_source_r_vision",
+   "file": "corpus/blackmamba_open_source_r_vision/upstream_test.txt",
+   "n_tests": 8,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "hangzhou_mahjong_ai_value",
+   "file": "tests/hangzhou_mahjong_ai_value/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "hangzhou_mahjong_ai_config",
+   "file": "tests/hangzhou_mahjong_ai_config/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "hangzhou_mahjong_ai_config",
+   "file": "corpus/hangzhou_mahjong_ai_config/upstream_test.txt",
+   "n_tests": 5,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "skijack_ast",
+   "file": "tests/skijack_ast/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "skijack_ast",
+   "file": "corpus/skijack_ast/upstream_test.txt",
+   "n_tests": 25,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "sustainability_score_config",
+   "file": "tests/sustainability_score_config/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "isos_kernel_version",
+   "file": "tests/isos_kernel_version/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "sentineledgeai_pdf",
+   "file": "tests/sentineledgeai_pdf/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "sentineledgeai_pdf",
+   "file": "corpus/sentineledgeai_pdf/upstream_test.txt",
+   "n_tests": 18,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "moirai_abstract_process_handler",
+   "file": "tests/moirai_abstract_process_handler/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "databroker_pivot",
+   "file": "tests/databroker_pivot/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "databroker_pivot",
+   "file": "corpus/databroker_pivot/upstream_test.txt",
+   "n_tests": 4,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "addict",
+   "file": "tests/addict/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "addict",
+   "file": "tests/addict/strong_test.py",
+   "n_tests": 30,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "addict",
+   "file": "tests/addict/upstream_test.py",
+   "n_tests": 128,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "addict",
+   "file": "tests/addict/weak_test.py",
+   "n_tests": 2,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "heapdict",
+   "file": "tests/heapdict/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "heapdict",
+   "file": "tests/heapdict/strong_test.py",
+   "n_tests": 13,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "heapdict",
+   "file": "tests/heapdict/upstream_test.py",
+   "n_tests": 10,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "heapdict",
+   "file": "tests/heapdict/weak_test.py",
+   "n_tests": 2,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "mergedeep",
+   "file": "tests/mergedeep/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "mergedeep",
+   "file": "tests/mergedeep/strong_test.py",
+   "n_tests": 22,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "mergedeep",
+   "file": "tests/mergedeep/upstream_test.py",
+   "n_tests": 14,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "mergedeep",
+   "file": "tests/mergedeep/weak_test.py",
+   "n_tests": 2,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "toposort",
+   "file": "tests/toposort/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "toposort",
+   "file": "tests/toposort/strong_test.py",
+   "n_tests": 14,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "toposort",
+   "file": "tests/toposort/upstream_test.py",
+   "n_tests": 29,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "toposort",
+   "file": "tests/toposort/weak_test.py",
+   "n_tests": 2,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "depthcharge_log",
+   "file": "tests/depthcharge_log/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "depthcharge_log",
+   "file": "corpus/depthcharge_log/upstream_test.txt",
+   "n_tests": 14,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  },
+  {
+   "module": "depthcharge_version",
+   "file": "tests/depthcharge_version/null_test.py",
+   "n_tests": 1,
+   "n_flagged": 0,
+   "counts": {
+    "module_path_or_file": 0,
+    "inspect_source": 0,
+    "importlib_resources": 0,
+    "parse_or_exec_source": 0,
+    "sys_modules_replaced": 0,
+    "unconditional_skip_or_xfail": 0
+   }
+  }
+ ]
+}
