@@ -1,38 +1,141 @@
 # agent-test-eval
 
-> **Results:** the v1 write-up is in [WRITEUP.md](WRITEUP.md): one model, 14 modules, mutation testing.
-> The design is in [DESIGN.md](DESIGN.md) (pre-registered at tag `prereg-v1`) and the reasons are in [DECISIONS.md](DECISIONS.md).
-> Third-party sources are not included. See [Reproducibility](#reproducibility) for what a fresh clone can and cannot re-run.
+A pre-registered experiment that measures how well one AI model (Claude Sonnet 5.5) writes unit tests for real
+Python modules, scored by mutation testing in an offline, leak-hardened Docker sandbox.
 
-Prototype measurement loop for evaluating how well AI agents write tests for
-code modules. A test file is scored by mutation testing: it runs against the
-original module and against seeded mutants inside an offline Docker sandbox.
+**Start here**
+- [WRITEUP.md](WRITEUP.md): the results, what can and cannot be claimed, and the limitations.
+- [DESIGN.md](DESIGN.md): the plan, measures and analysis, pre-registered at git tag `prereg-v1`.
+- [DECISIONS.md](DECISIONS.md): the reasoning behind each stage, the deviations and what was not run.
 
-## Corpus
+**Headline** (from [WRITEUP.md](WRITEUP.md) section 3; 14 complete modules, 3 runs each):
 
-| module | version | licence | lines | upstream tests |
-|---|---|---|---|---|
-| toposort | 1.10 | Apache-2.0 | 95 | `test/test_toposort.py` @ tag 1.10 |
-| heapdict | 1.0.1 | BSD-3-Clause | 115 | not runnable offline: needs `test.support` (official Python images strip the stdlib `test` package) |
-| mergedeep | 1.3.4 | MIT | 100 | `mergedeep/test_mergedeep.py` @ tag v1.3.4 |
-| addict | 2.4.0 | MIT | 159 | `test_addict.py` @ tag v2.4.0 |
-
-`corpus/metadata.json` records source URLs, sha256 hashes (wheels checked against PyPI) and the upstream repo, tag, commit and path of each upstream test file.
-
-## Test arms
-
-| arm | file | what it is |
+| measure | primary (n=7) | baseline (n=7) |
 |---|---|---|
-| null | `tests/<name>/null_test.py` | imports the module and asserts nothing; defines which mutants are *trivially killed* |
-| strong | `tests/<name>/strong_test.py` | constructed control test file (AI-generated, strength-by-design): edge cases, error paths, invariants |
-| weak | `tests/<name>/weak_test.py` | constructed control test file (AI-generated, strength-by-design): a few shallow happy-path checks |
-| upstream | `tests/<name>/upstream_test.py` | the project's own test file, copied unedited from the upstream repo |
+| **logic score, mean [95% CI]** | **0.8097 [0.7004, 0.9110]** | **0.8985 [0.8565, 0.9375]** |
 
-The strong and weak files are controls with a known intended ordering. They
-show that the score can tell test files apart. They are not samples of agent
-output.
+Licence: MIT ([LICENSE](LICENSE)) for this repository's own code and data. The third-party modules it tests are not
+included; they keep their own licences (MIT, Apache-2.0, BSD-3-Clause), listed per module in `corpus_final.json`.
 
-## Method
+## Repo map
+
+| path | what it is |
+|---|---|
+| **Docs** | |
+| [README.md](README.md) | this file |
+| [WRITEUP.md](WRITEUP.md) | one-page v1 write-up: story, method, results, claims, limitations, what was not run |
+| [DESIGN.md](DESIGN.md) | design and pre-registered plan (measures, validity rules, analysis plan, stage plan, frozen writer prompt) |
+| [DECISIONS.md](DECISIONS.md) | dated decision log, stage by stage, including deviations and findings |
+| [CLAUDE.md](CLAUDE.md) | standing rules for the coding agent that worked in this repo (append-only results, no key in the repo, untrusted code) |
+| [LICENSE](LICENSE) | MIT licence |
+| [candidate_counts.md](candidate_counts.md) | Stage A1b table: seeded estimates of how many GitHub modules meet the corpus rules |
+| [.gitignore](.gitignore) | ignores the venv, caches, coverage and mutation-tool state |
+| **Core code** | |
+| [run_eval.py](run_eval.py) | the scorer: runs suites against the module and its sampled mutants (cosmic-ray) in the scoring sandbox and appends rows to the results files |
+| [writer.py](writer.py) | the test writer: asks the model for a pytest suite, shows it only its own test results and coverage, up to 3 calls; logs tokens and cost |
+| [run_full.py](run_full.py) | the resumable full-run driver: preflight checks, fixed plan, writer then scorer per run, hard stops and spend caps |
+| [analysis.py](analysis.py) | the pre-registered analysis: allowlisted rows only, per-module means and bootstrap intervals; prints every table the write-up uses |
+| [static_checks.py](static_checks.py) | `ast`-only gaming detector (drops tests that read the module's source or skip themselves) and descriptive style profile |
+| [corpus_select.py](corpus_select.py) | Stage A1/A1b: seeded GitHub search and counts of candidate modules under the corpus rules |
+| [corpus_freeze.py](corpus_freeze.py) | Stage A1c: freezes the selected candidates into `candidates_frozen.json` |
+| [corpus_build.py](corpus_build.py) | Stage B2a: `fetch` downloads the frozen modules at pinned SHAs (sha256-checked, read with `ast` only); `smoke` and `final` built `corpus_final.json` |
+| [pilot.py](pilot.py) | Stage B2c pilot driver (10 modules x 3 runs; a rehearsal, excluded from the analysis) |
+| [derive_b3.py](derive_b3.py) | Stage B3: computes the files in `derived/` from the results files; never writes a results file |
+| **Tests** (run with pytest; see Reproducibility) | |
+| [conftest.py](conftest.py) | skips Tier 2 tests, with the reason, when their inputs are absent |
+| [test_analysis.py](test_analysis.py) | the analysis allowlist, logic-score recomputation, bootstrap determinism, completeness rule, commit fallback |
+| [test_static_checks.py](test_static_checks.py) | the gaming detector against synthetic cheats, and the style profile |
+| [test_writer.py](test_writer.py) | writer isolation: no request contains mutants, scores or reference suites; reply extraction; API logging |
+| [test_run_full.py](test_run_full.py) | the driver's plan, resume and every hard stop, with fake writer and scorer |
+| [test_leakage.py](test_leakage.py) | Docker leakage audit: canaries and privilege checks for the writer and scoring sandboxes |
+| **Data and results** (append-only) | |
+| [results.jsonl](results.jsonl) | one row per (run, module, suite): validity, coverage, mutation and logic scores, cost, writer fields |
+| [results_mutants.jsonl](results_mutants.jsonl) | one row per mutant per suite: operator, status, kill cause, null-killed flag |
+| [results_null.jsonl](results_null.jsonl) | stored null-suite rows and their per-mutant statuses, reused when writer suites are scored |
+| [results_mutmut.jsonl](results_mutmut.jsonl) | mutmut cross-check rows (toposort and mergedeep) |
+| [candidates.json](candidates.json) | Stage A1b output: search funnel, sampled repos and candidate modules |
+| [candidates_frozen.json](candidates_frozen.json) | the frozen corpus input: repo, pinned SHA, path, licence and sha256 per candidate |
+| [corpus_fetch.json](corpus_fetch.json) | record of the B2a fetch (source URL, licence, upstream test, errors) per candidate |
+| [corpus_final.json](corpus_final.json) | the usable corpus: 31 primary and 8 baseline modules, mutant sets, exclusions, pilot draw |
+| [full_plan.json](full_plan.json) | the full-run plan: 117 runs (39 modules x 3), seed 20261120, `design_commit` |
+| [smoke_results.jsonl](smoke_results.jsonl) | B2a smoke check per candidate (import, upstream test, null suite, mutant counts) |
+| [smoke_null.jsonl](smoke_null.jsonl) | B2a null-suite rows |
+| [smoke_null_mutants.jsonl](smoke_null_mutants.jsonl) | B2a null-suite per-mutant rows |
+| **Folders** | |
+| [runs/](runs/) | run records for `dry_run` (B1, plus the B2b verification run), `pilot` (B2c) and `full` (B4): per run `meta.json`, `driver.json` (pilot and full) and the final `suite/`; per tag `ledger.jsonl`; `full/` also holds `progress.txt` and the run-5 stop record. Transcripts, per-iteration files and logs are not shipped |
+| [sandbox/](sandbox/) | the scoring sandbox: pinned Dockerfile and `requirements.lock`, the in-container runner, pytest plugins (kill cause, suite order, upstream import alias), script wrapper, `as_user.py` |
+| [tests/](tests/) | reference suites: `null_test.py` (imports only) for each of the 47 candidates; `strong_test.py` and `weak_test.py` controls for the 4 Stage 0 modules (AI-written, built to differ in strength: they show the score separates suites, they are not samples of agent output) |
+| [derived/](derived/) | B3 and B4 derived data: module covariates, pilot backfill, reference gaming counts, verification results, the synthetic gaming check, tolerated runs, and `b3_report.md` |
+| [corpus/](corpus/) | `metadata.json` only (Stage 0 modules: wheel URLs, versions, sha256s, upstream test pins). Third-party sources are not shipped |
+
+## Reproducibility
+
+A published copy has no third-party code (`corpus/` holds only `metadata.json`), no git history, and none of
+the model transcripts or scoring logs. That gives two tiers.
+
+### Setup (host)
+
+Python 3.10 (tested with 3.10.14). `analysis.py` uses the standard library only. The tests need pytest, and
+the writer and driver tests need the Anthropic SDK (no API call is made by any test):
+
+```
+python3 -m venv .venv
+.venv/bin/pip install pytest==9.2.0 anthropic==2.10.0
+```
+
+### Tier 1: works on a fresh clone
+
+Re-run the analysis on the shipped results files. The output is byte-identical to the tables behind
+WRITEUP.md. Without git history there is no `prereg-v1` tag, so `analysis.py` uses the commit recorded in
+DECISIONS.md (`c530e516…`) and says so on stderr.
+
+```
+python3 analysis.py
+.venv/bin/python -m pytest -q test_analysis.py test_static_checks.py test_run_full.py test_writer.py test_leakage.py
+```
+
+Run the tests with pytest: `conftest.py` skips the Tier 2 tests below, with the reason, when their inputs are
+absent. `python -m unittest` does not read it.
+
+### Tier 2: re-scoring needs Docker and a fetched corpus
+
+- Fetch the newer modules, their licences and upstream tests at their pinned SHAs (sha256-checked, read with
+  `ast` only). `corpus/` must exist (it does in a clone, because `corpus/metadata.json` is shipped). The fetch rewrites `corpus_fetch.json` (timestamps; error messages
+  with local paths), so restore it afterwards:
+
+  ```
+  python3 corpus_build.py fetch
+  git checkout -- corpus_fetch.json
+  ```
+
+- The 4 Stage 0 baseline modules are **not** fetched automatically: toposort 1.10 (Apache-2.0), heapdict 1.0.1
+  (BSD-3-Clause), mergedeep 1.3.4 (MIT) and addict 2.4.0 (MIT), from PyPI wheels.
+  `corpus/metadata.json` pins each one by package version, wheel URL and sha256 (module file and wheel), and
+  pins its upstream test by repo, commit and path. Place them by hand at `corpus/<m>/<m>.py` and
+  `tests/<m>/upstream_test.py`. heapdict's upstream test cannot run offline (it needs the stdlib `test.support`
+  package, which official Python images strip), so heapdict has no upstream line.
+- Scoring (`run_eval.py`, below) needs Docker. The writer (`writer.py`) also needs an API key in
+  `AGENT_EVAL_API_KEY`.
+- Tests skipped in Tier 1, and what they need:
+
+| tests | needs |
+|---|---|
+| `test_writer.py`: `test_detector_catches_leaks`, `test_max_tokens_reply_fails_run_without_parsing`, `test_spend_caps_are_per_tag`, `test_final_suite_that_does_not_parse_is_extraction_failed_and_unscored`, `test_fake_client_marks_retry_count_unavailable`, `test_retry_and_rate_limit_are_logged` | Stage 0 module toposort |
+| `test_writer.py`: `test_payloads_clean_and_sandbox_holds_only_module_and_writer_files` | all 4 Stage 0 modules and angelbot_context_acl (fetched) |
+| `test_leakage.py`: `test_scoring_sandbox_protects_module_and_mutants`, `test_writer_loop_sandbox_sees_no_canary_key_or_earlier_state` | Stage 0 module toposort and Docker |
+| `test_run_full.py`: `BranchlessSummaryCrash` (10 tests), `Run5` (1 test) | run 5's `scoring_log.txt` (not published: it records absolute host paths) |
+| `test_run_full.py`: `Preflight::test_frozen_files_match_tag` | the `prereg-v1` git tag |
+| `test_writer.py`: `SavedTranscripts` (2 tests) | saved transcripts (not published); these skip by their own check |
+
+### Scoring runs (Tier 2)
+
+```
+python3 run_eval.py [--max-mutants 100] [--modules toposort,heapdict,mergedeep,addict] [--mutmut toposort,mergedeep]
+```
+
+This needs Docker with the arm64 image buildable. The first build needs network access; the eval itself does not. It is Tier 2: the modules must be in `corpus/` first (see Reproducibility).
+
+## How scoring works
 
 Harness version A2.1 (see DECISIONS.md, Stage A2). A suite is a directory of one or more test files.
 
@@ -68,6 +171,9 @@ These add up to `killed`. The first failure decides the cause.
 | `assertion_kill_rate` | killed_by_assertion / mutants_used |
 | `assertion_kill_rate_nontrivial` | killed_by_assertion / (mutants_used − trivially_killed) |
 
+In the analysis, a post-hoc corrected non-trivial assertion-kill rate also drops null-killed mutants from the
+numerator (DECISIONS.md, Wrap-up v1). It equals the stored value on all 42 v1 runs.
+
 ## Sandbox and environment identity
 
 Each module gets one long-lived container, run with these flags:
@@ -96,84 +202,3 @@ Rows record `env_id = sha256(base_image_digest, dockerfile_sha256, packages_sha2
 - Each run checks that the built image's `pip freeze` matches the lock.
 
 Docker's local image ID can't serve as this identifier, because it changes on every rebuild, even a fully cached one. Rows before this change carry that ID as `image_digest`.
-
-## Files
-
-- `run_eval.py`: host-side orchestration, stdlib only. `--writer-meta <meta.json>` scores a writer run alongside the module's reference suites.
-- `corpus_build.py`: Stage B2a. It fetches the frozen candidates at their pinned SHAs (read with `ast` only on the host), smoke-checks them in the sandbox, records the mutant sets and null-suite timings, and writes `corpus_final.json` with the pilot draw.
-- `writer.py`: the test writer (Anthropic SDK, in `.venv`). It reads the key from `AGENT_EVAL_API_KEY` only and writes `runs/<tag>/<run_id>/` (transcript, per-iteration files, final suite, meta) and `runs/<tag>/ledger.jsonl` (per-call tokens and cost). `test_writer.py` checks that no request leaks mutants, scores or reference suites.
-- `sandbox/`: Dockerfile, lock file, the in-container runner, the pytest plugins (`killtype_plugin.py`, `suite_plugin.py`, `alias_plugin.py` for upstream tests that import the module by its repo path), the script wrapper and `as_user.py`
-- `static_checks.py` (B3): `ast`-only gaming detector (pre-registered; writer suites only) and descriptive test-style profile. Tests: `test_static_checks.py`
-- `analysis.py` (B3): the analysis input allowlist (tag `full`, `design_commit` = `prereg-v1`). Tests: `test_analysis.py`
-- `derive_b3.py` (B3): derived files in `derived/` (module covariates, pilot backfill, reference gaming counts, report tables). It never writes a results file
-- `test_leakage.py` (B3, needs Docker): canary and privilege audit of the writer-loop and scoring sandboxes
-- `conftest.py` (wrap-up): under pytest, skips Tier 2 tests whose inputs are absent, with the reason
-- `results.jsonl`: one row per (run, module, suite), append-only. Rows from harness A2.1 carry `harness_version`, and model fields (`model_id`, `effort`, `prompt_hash`, tokens, cost) are null for reference suites.
-- `results_mutants.jsonl`: one row per (run, module, suite, mutant)
-- `results_null.jsonl`: null-suite rows scored once per module (keyed by module, harness_version, env_id, mutant set, null file) and reused by writer scoring runs. Append-only.
-- `results_mutmut.jsonl`: one row per (run, module, suite) for the mutmut cross-check
-
-## Reproducibility
-
-A published copy has no third-party code (`corpus/` holds only `metadata.json`), no git history, and none of
-the model transcripts or scoring logs. That gives two tiers.
-
-### Setup (host)
-
-Python 3.10 (tested with 3.10.14). `analysis.py` uses the standard library only. The tests need pytest, and
-the writer and driver tests need the Anthropic SDK (no API call is made by any test):
-
-```
-python3 -m venv .venv
-.venv/bin/pip install pytest==9.2.0 anthropic==2.10.0
-```
-
-### Tier 1: works on a fresh clone
-
-Re-run the analysis on the shipped results files. The output is byte-identical to the tables behind
-WRITEUP.md. Without git history there is no `prereg-v1` tag, so `analysis.py` uses the commit recorded in
-DECISIONS.md (`c530e516…`) and says so on stderr.
-
-```
-python3 analysis.py
-.venv/bin/python -m pytest -q test_analysis.py test_static_checks.py test_run_full.py test_writer.py test_leakage.py
-```
-
-Run the tests with pytest: `conftest.py` skips the Tier 2 tests below, with the reason, when their inputs are
-absent. `python -m unittest` does not read it.
-
-### Tier 2: re-scoring needs Docker and a fetched corpus
-
-- Fetch the newer modules, their licences and upstream tests at their pinned SHAs (sha256-checked, read with
-  `ast` only). `corpus/` must exist first. The fetch rewrites `corpus_fetch.json` (timestamps; error messages
-  with local paths), so restore it afterwards:
-
-  ```
-  python3 corpus_build.py fetch
-  git checkout -- corpus_fetch.json
-  ```
-
-- The 4 Stage 0 baseline modules (toposort, heapdict, mergedeep, addict) are **not** fetched automatically.
-  `corpus/metadata.json` pins each one by package version, wheel URL and sha256 (module file and wheel), and
-  pins its upstream test by repo, commit and path. Place them by hand at `corpus/<m>/<m>.py` and
-  `tests/<m>/upstream_test.py`.
-- Scoring (`run_eval.py`, below) needs Docker. The writer (`writer.py`) also needs an API key in
-  `AGENT_EVAL_API_KEY`.
-- Tests skipped in Tier 1, and what they need:
-
-| tests | needs |
-|---|---|
-| `test_writer.py`: `test_detector_catches_leaks`, `test_max_tokens_reply_fails_run_without_parsing`, `test_spend_caps_are_per_tag`, `test_final_suite_that_does_not_parse_is_extraction_failed_and_unscored`, `test_fake_client_marks_retry_count_unavailable`, `test_retry_and_rate_limit_are_logged` | Stage 0 module toposort |
-| `test_writer.py`: `test_payloads_clean_and_sandbox_holds_only_module_and_writer_files` | all 4 Stage 0 modules and angelbot_context_acl (fetched) |
-| `test_leakage.py`: `test_scoring_sandbox_protects_module_and_mutants`, `test_writer_loop_sandbox_sees_no_canary_key_or_earlier_state` | Stage 0 module toposort and Docker |
-| `test_run_full.py`: `BranchlessSummaryCrash` (10 tests), `Run5` (1 test) | run 5's `scoring_log.txt` (not published: it records absolute host paths) |
-| `test_run_full.py`: `Preflight::test_frozen_files_match_tag` | the `prereg-v1` git tag |
-| `test_writer.py`: `SavedTranscripts` (2 tests) | saved transcripts (not published); these skip by their own check |
-
-## Run
-
-```
-python3 run_eval.py [--max-mutants 100] [--modules toposort,heapdict,mergedeep,addict] [--mutmut toposort,mergedeep]
-```
-
-This needs Docker with the arm64 image buildable. The first build needs network access; the eval itself does not. It is Tier 2: the modules must be in `corpus/` first (see Reproducibility).
